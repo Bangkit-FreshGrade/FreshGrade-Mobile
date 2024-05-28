@@ -11,6 +11,8 @@ import com.example.freshgrade.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+//    testing
+
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
