@@ -1,0 +1,19 @@
+Index: app/src/main/java/com/example/freshgrade/MainActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.freshgrade\r\n\r\nimport android.os.Bundle\r\nimport com.google.android.material.bottomnavigation.BottomNavigationView\r\nimport androidx.appcompat.app.AppCompatActivity\r\nimport androidx.navigation.findNavController\r\nimport androidx.navigation.ui.AppBarConfiguration\r\nimport androidx.navigation.ui.setupActionBarWithNavController\r\nimport androidx.navigation.ui.setupWithNavController\r\nimport com.example.freshgrade.databinding.ActivityMainBinding\r\n\r\nclass MainActivity : AppCompatActivity() {\r\n\r\n//    testing\r\n\r\n    private lateinit var binding: ActivityMainBinding\r\n\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n\r\n        binding = ActivityMainBinding.inflate(layoutInflater)\r\n        setContentView(binding.root)\r\n\r\n        val navView: BottomNavigationView = binding.navView\r\n\r\n        val navController = findNavController(R.id.nav_host_fragment_activity_main)\r\n        // Passing each menu ID as a set of Ids because each\r\n        // menu should be considered as top level destinations.\r\n        val appBarConfiguration = AppBarConfiguration(\r\n            setOf(\r\n                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications\r\n            )\r\n        )\r\n        setupActionBarWithNavController(navController, appBarConfiguration)\r\n        navView.setupWithNavController(navController)\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/freshgrade/MainActivity.kt b/app/src/main/java/com/example/freshgrade/MainActivity.kt
+--- a/app/src/main/java/com/example/freshgrade/MainActivity.kt	(revision 3c878b63c0796afa986750f4ebf985c6af12c7c8)
++++ b/app/src/main/java/com/example/freshgrade/MainActivity.kt	(date 1716879056492)
+@@ -11,7 +11,7 @@
+ 
+ class MainActivity : AppCompatActivity() {
+ 
+-//    testing
++//    bababoi
+ 
+     private lateinit var binding: ActivityMainBinding
+ 
