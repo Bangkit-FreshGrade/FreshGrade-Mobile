@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-mergeDebugResources-3:\\layout\\fragment_dashboard.xml",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-mergeDebugResources-3:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-mergeDebugResources-3:\\layout\\fragment_notifications.xml",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\layout\\fragment_notifications.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-mergeDebugResources-3:/layout/activity_authorization.xml",
+        "source": "com.example.freshgrade.app-main-6:/layout/activity_authorization.xml"
+    },
+    {
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-mergeDebugResources-3:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\layout\\activity_main.xml"
+    }
+]
