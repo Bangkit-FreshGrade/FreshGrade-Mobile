@@ -4,7 +4,7 @@
             "outputFile": "com.example.freshgrade.app-mergeDebugResources-2:/values-fr/values-fr.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-3\\76e4f1acfbd4a08dba2ddc778bacbea6\\transformed\\appcompat-1.6.1\\res\\values-fr\\values-fr.xml",
+                    "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-3\\9d2a7facd968c6cd79d12328ddc16b30\\transformed\\appcompat-1.6.1\\res\\values-fr\\values-fr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-3\\ff458f05d834535bbd3bf0aacf8f599e\\transformed\\core-1.13.1\\res\\values-fr\\values-fr.xml",
+                    "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-3\\4d1e12b735aa0cce671643f643c15040\\transformed\\core-1.13.1\\res\\values-fr\\values-fr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-3\\7b0e08800b345426e79979f4654a832d\\transformed\\material-1.12.0\\res\\values-fr\\values-fr.xml",
+                    "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-3\\9c62a25f43cc1b9a23b0b7af3b598439\\transformed\\material-1.12.0\\res\\values-fr\\values-fr.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -57,7 +57,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-3\\81da8f6e408433c26587d54b96229fd3\\transformed\\navigation-ui-2.7.7\\res\\values-fr\\values-fr.xml",
+                    "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-3\\4875d790320c741b44fd0b4fbe08ce1c\\transformed\\navigation-ui-2.7.7\\res\\values-fr\\values-fr.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

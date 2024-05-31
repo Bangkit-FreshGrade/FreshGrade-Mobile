@@ -1,22 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="blue">#2196F3</color>
+    <color name="dark">#FF2c3e50</color>
+    <color name="green">#4CAF50</color>
+    <color name="navy">#2D3D4F</color>
+    <color name="pink_200">#FF8FAF</color>
+    <color name="pink_500">#D81B60</color>
+    <color name="primary">#FF637dc6</color>
+    <color name="primaryDark">#FF3b5998</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
+    <color name="red">#F44336</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+    <color name="transparant">#00FFFFFF</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="yelow">#FFEB3B</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="If_you_have_an_acount">Jika anda belum punya akun, silahkan</string>
+    <string name="Register">Register</string>
     <string name="app_name">FreshGrade</string>
+    <string name="article_label">Article</string>
+    <string name="camera_label">Camera</string>
+    <string name="dashboard_label">Dashboard</string>
+    <string name="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="dont_have_permision">"Belum mendapatkan permission, silahkan login terlebih dahulu"</string>
+    <string name="email">Email</string>
+    <string name="error_invalid_email">email tidak valid</string>
+    <string name="error_password">Password tidak boleh kurang dari 8 karakter</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="go_to_Register">daftar</string>
+    <string name="go_to_login">masuk</string>
+    <string name="greeting">Halo %1$s,</string>
+    <string name="have_permision">anda sudah login</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="history_label">History</string>
+    <string name="hybrid_type">Hybrid</string>
+    <string name="if_you_already_have_an_acount">jika kamu sudah punya akun</string>
+    <string name="input_email">Input email\n</string>
+    <string name="input_name">Input nama</string>
+    <string name="input_password">Input passwoerd</string>
     <string name="landing_login">Login</string>
     <string name="landing_register">Register</string>
     <string name="landing_tv">Welcome to</string>
     <string name="landing_tv2">FreshGrade</string>
+    <string name="login">Login</string>
+    <string name="login_failed">Login gagal, silahkan coba lagi !</string>
+    <string name="login_success">Login berhasil</string>
+    <string name="logout">Keluar</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="make_new_story">buat cerita baru</string>
+    <string name="message_login_page">Masukkan dulu datamu ya</string>
+    <string name="message_main_page">Selamat Belajar di Dicoding.</string>
+    <string name="message_welcome_page">Mau belajar Android, iOS, Machine Learning, Cloud, Front-End, Back-End, dan bidang IT lainnya? Di Dicoding aja!</string>
+    <string name="name">Nama</string>
+    <string name="next">Next</string>
+    <string name="normal_type">Normal</string>
+    <string name="password">Password</string>
+    <string name="previous">Previous</string>
+    <string name="register_failed">Akun gagal dibuat, silahkan coba lagi !</string>
+    <string name="register_success">Akun berhasil dibuat, silahkan login !</string>
+    <string name="satellite_type">Satellite</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="terrain_type">Terrain</string>
+    <string name="title_activity_maps">MapsActivity</string>
     <string name="title_dashboard">Dashboard</string>
+    <string name="title_history">History</string>
     <string name="title_home">Home</string>
+    <string name="title_login_page">Sudah siap untuk upgrade skill?</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_register_page">Lengkapi data dirimu di bawah ini ya</string>
+    <string name="title_welcome_page">Selamat datang di Story App!</string>
     <style name="Theme.FreshGrade" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
