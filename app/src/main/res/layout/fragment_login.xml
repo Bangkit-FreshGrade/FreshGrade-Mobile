@@ -197,7 +197,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
-                android:layout_marginStart="1dp"
+                android:layout_marginStart="3dp"
                 android:textColor="@color/primary"
                 android:text="@string/change_password" />
         </LinearLayout>
@@ -240,7 +240,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
-                android:layout_marginStart="1dp"
+                android:layout_marginStart="3dp"
                 android:textColor="@color/primary"
                 android:text="@string/Register" />
         </LinearLayout>
