@@ -8,8 +8,13 @@
     <fragment
         android:id="@+id/navigation_camera"
         android:name="com.example.freshgrade.ui.main.camera.CameraFragment"
-        android:label="@string/camera_label"
-        tools:layout="@layout/fragment_camera" />
+        android:label="@string/scan_label"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_navigation_camera_to_navigation_history"
+            app:destination="@id/navigation_history"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_history"

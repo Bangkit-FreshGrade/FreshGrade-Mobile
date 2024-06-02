@@ -1,4 +1,4 @@
-#Fri May 31 21:54:21 WIB 2024
+#Sun Jun 02 10:27:24 CDT 2024
 base.0=C\:\\SELO\\BANGKIT\\FreshGrade\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\SELO\\BANGKIT\\FreshGrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\SELO\\BANGKIT\\FreshGrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex

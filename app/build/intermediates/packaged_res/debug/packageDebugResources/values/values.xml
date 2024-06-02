@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr format="color" name="bottomNavBgColor"/>
+    <attr format="color" name="buttonColor"/>
     <color name="black">#FF000000</color>
     <color name="blue">#2196F3</color>
     <color name="dark">#FF2c3e50</color>
     <color name="green">#4CAF50</color>
-    <color name="navy">#2D3D4F</color>
     <color name="pink_200">#FF8FAF</color>
     <color name="pink_500">#D81B60</color>
-    <color name="primary">#FF637dc6</color>
-    <color name="primaryDark">#FF3b5998</color>
+    <color name="primary">#006769</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="red">#F44336</color>
+    <color name="secondary">#E6FF94</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+    <color name="tertiary">#E0FBE2</color>
     <color name="transparant">#00FFFFFF</color>
     <color name="white">#FFFFFFFF</color>
     <color name="yelow">#FFEB3B</color>
@@ -32,6 +34,7 @@
     <string name="error_invalid_email">email tidak valid</string>
     <string name="error_password">Password tidak boleh kurang dari 8 karakter</string>
     <string name="first_fragment_label">First Fragment</string>
+    <string name="gallery_label">Gallery</string>
     <string name="go_to_Register">daftar</string>
     <string name="go_to_login">masuk</string>
     <string name="greeting">Halo %1$s,</string>
@@ -99,6 +102,7 @@
     <string name="register_failed">Akun gagal dibuat, silahkan coba lagi !</string>
     <string name="register_success">Akun berhasil dibuat, silahkan login !</string>
     <string name="satellite_type">Satellite</string>
+    <string name="scan_label">Scan</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="terrain_type">Terrain</string>
     <string name="title_activity_maps">MapsActivity</string>
@@ -109,7 +113,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_register_page">Lengkapi data dirimu di bawah ini ya</string>
     <string name="title_welcome_page">Selamat datang di Story App!</string>
-    <style name="Theme.FreshGrade" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.FreshGrade" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -121,5 +125,9 @@
         
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         
+        <item name="bottomNavBgColor">@color/primary</item>
+        <item name="buttonColor">@color/primary</item>
+
+
     </style>
 </resources>

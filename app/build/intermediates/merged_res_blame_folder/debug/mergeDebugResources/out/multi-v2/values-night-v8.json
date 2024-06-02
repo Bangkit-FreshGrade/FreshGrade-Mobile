@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.freshgrade.app-mergeDebugResources-2:/values-night-v8/values-night-v8.xml",
+            "outputFile": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-mergeDebugResources-2:\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-3\\9c62a25f43cc1b9a23b0b7af3b598439\\transformed\\material-1.12.0\\res\\values-night-v8\\values-night-v8.xml",
@@ -54,6 +54,60 @@
                         "endLines": "21",
                         "endColumns": "12",
                         "endOffsets": "1265"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.example.freshgrade.app-mergeDebugResources-2:/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-3\\9c62a25f43cc1b9a23b0b7af3b598439\\transformed\\material-1.12.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,49,50,51,52,53,54,55,56",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1268,1343,1454,1543,1644,1751,1858,1957,2064,2167,2294,2382,2506,2608,2710,2826,2928,3042,3170,3286,3408,3544,3664,3798,3918,4030,4245,4362,4486,4616,4738,4876,5010,5126",
+                        "endColumns": "74,110,88,100,106,106,98,106,102,126,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
+                        "endOffsets": "1338,1449,1538,1639,1746,1853,1952,2059,2162,2289,2377,2501,2603,2705,2821,2923,3037,3165,3281,3403,3539,3659,3793,3913,4025,4151,4357,4481,4611,4733,4871,5005,5121,5241"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-3\\9d2a7facd968c6cd79d12328ddc16b30\\transformed\\appcompat-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,48",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,4156",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,4240"
+                    }
+                },
+                {
+                    "source": "C:\\SELO\\BANGKIT\\FreshGrade\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "797"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "687",
+                        "endLines": "21",
+                        "endColumns": "12",
+                        "endOffsets": "1263"
                     }
                 }
             ]

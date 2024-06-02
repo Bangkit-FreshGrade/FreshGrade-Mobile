@@ -92,8 +92,10 @@
     <string name="input_password">Input passwoerd</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_history">History</string>
-    <string name="camera_label">Camera</string>
+    <string name="scan_label">Scan</string>
     <string name="dashboard_label">Dashboard</string>
     <string name="article_label">Article</string>
     <string name="history_label">History</string>
+    <string name="camera_label">Camera</string>
+    <string name="gallery_label">Gallery</string>
 </resources>
