@@ -41,6 +41,10 @@ class EmailEdit @JvmOverloads constructor(
 
             }
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+
+            }
+
+            override fun afterTextChanged(s: Editable) {
                 val email = s.toString()
 
                 if (android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
@@ -52,10 +56,6 @@ class EmailEdit @JvmOverloads constructor(
                     setError("Email  invalid", null)
 
                 }
-            }
-
-            override fun afterTextChanged(s: Editable) {
-                // Do nothing.
             }
         })
     }

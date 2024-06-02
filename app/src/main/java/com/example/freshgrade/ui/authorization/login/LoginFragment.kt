@@ -2,12 +2,14 @@ package com.example.freshgrade.ui.authorization.login
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
@@ -61,6 +63,13 @@ class LoginFragment : Fragment() {
 
         binding.RegisterLink.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.registerFragment))
 
+        loginButton.setOnClickListener {
+            val email = emailEdit.text.toString()
+            val password = passwordEdit.text.toString()
+
+            authenticate(email, password)
+        }
+
         playAnimation()
 
         onBackPress()
@@ -80,10 +89,11 @@ class LoginFragment : Fragment() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 val email = s.toString()
                 if (android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                    binding.loginEmailEditText.error = null
+                    binding.loginEmailEditTextLayout.error = null
                     setLoginButtonEnable()
                 } else {
                     binding.loginEmailEditText.error = getString(R.string.error_invalid_email)
+//                    binding.loginEmailEditText.error = ""
 //                    Toast.makeText(context, getString(R.string.error_invalid_email), Toast.LENGTH_SHORT).show()
                 }
             }
@@ -103,7 +113,36 @@ class LoginFragment : Fragment() {
             override fun afterTextChanged(s: Editable?) {}
         })
 
+
+
     }
+
+    private fun authenticate(email: String, password: String) {
+
+//        loginViewModel.userLogin(email, password).observe(this) {
+//            when (it) {
+//                is Result.Success -> {
+//                    showLoading(false)
+//                    dataStore
+//                    val response = it.data
+//                    loginViewModel.saveUserData(
+//                        UserModel(
+//                            response.loginResult?.name.toString(),
+//                            response.loginResult?.token.toString(),
+//                            true
+//                        )
+//                    )
+//
+//                    startActivity(Intent(this, MainActivity::class.java))
+//                    finishAffinity()
+//                }
+//                is Result.Loading -> showLoading(true)
+//                is Result.Error -> {
+//                    showDialog(ERROR)
+//                    showLoading(false)
+//                }
+//            }
+        }
 
 
     private fun playAnimation() {

@@ -45,6 +45,8 @@ drawable inner_bg
 drawable inner_layout_bg
 drawable layout_bg
 drawable logo_fresh
+id ChangePasswordLink
+id ChangePasswordText
 id LoginLink
 id LoginPasswordText
 id LoginText
@@ -58,6 +60,7 @@ id action_registerFragment_to_landingFragment
 id authContainer
 id auth_nav
 id auth_nav_host_fragment
+id changePasswordLayout
 id container
 id emailLayout
 id iv_logo
@@ -80,6 +83,7 @@ id loginTitleTextView
 id main
 id mainActivity
 id mobile_navigation
+id nameLayout
 id nav_host_fragment_activity_main
 id nav_view
 id navigation_article
@@ -125,18 +129,21 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation auth_nav
 navigation mobile_navigation
-string If_you_have_an_acount
+string If_you_dont_have_an_acount
 string Register
 string app_name
 string article_label
 string camera_label
+string change_password
 string dashboard_label
 string description
 string dont_have_permision
 string email
 string error_invalid_email
+string error_name
 string error_password
 string first_fragment_label
+string frogot_your_password
 string go_to_Register
 string go_to_login
 string greeting

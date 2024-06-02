@@ -3191,6 +3191,8 @@ int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
 int id CTRL 0x7f080003
+int id ChangePasswordLink 0x7f080244
+int id ChangePasswordText 0x7f080245
 int id FUNCTION 0x7f080004
 int id LoginLink 0x7f080005
 int id LoginPasswordText 0x7f080242
@@ -3314,6 +3316,7 @@ int id center_vertical 0x7f080079
 int id chain 0x7f08007a
 int id chain2 0x7f08007b
 int id chains 0x7f08007c
+int id changePasswordLayout 0x7f080246
 int id checkbox 0x7f08007d
 int id checked 0x7f08007e
 int id chronometer 0x7f08007f
@@ -3529,6 +3532,7 @@ int id mtrl_picker_text_input_range_start 0x7f080150
 int id mtrl_picker_title_text 0x7f080151
 int id mtrl_view_tag_bottom_padding 0x7f080152
 int id multiply 0x7f080153
+int id nameLayout 0x7f080247
 int id nav_controller_view_tag 0x7f080154
 int id nav_host_fragment_activity_main 0x7f080155
 int id nav_host_fragment_container 0x7f080156
@@ -3983,7 +3987,7 @@ int mipmap ic_launcher_round 0x7f0e0001
 int navigation auth_nav 0x7f0f0000
 int navigation mobile_navigation 0x7f0f0001
 int plurals mtrl_badge_content_description 0x7f100000
-int string If_you_have_an_acount 0x7f110000
+int string If_you_dont_have_an_acount 0x7f1100e0
 int string Register 0x7f110001
 int string abc_action_bar_home_description 0x7f110002
 int string abc_action_bar_up_description 0x7f110003
@@ -4030,6 +4034,7 @@ int string call_notification_incoming_text 0x7f11002b
 int string call_notification_ongoing_text 0x7f11002c
 int string call_notification_screening_text 0x7f11002d
 int string camera_label 0x7f11002e
+int string change_password 0x7f1100e1
 int string character_counter_content_description 0x7f11002f
 int string character_counter_overflowed_content_description 0x7f110030
 int string character_counter_pattern 0x7f110031
@@ -4042,11 +4047,13 @@ int string email 0x7f110037
 int string error_a11y_label 0x7f110038
 int string error_icon_content_description 0x7f110039
 int string error_invalid_email 0x7f11003a
+int string error_name 0x7f1100e3
 int string error_password 0x7f11003b
 int string exposed_dropdown_menu_content_description 0x7f11003c
 int string fab_transformation_scrim_behavior 0x7f11003d
 int string fab_transformation_sheet_behavior 0x7f11003e
 int string first_fragment_label 0x7f11003f
+int string frogot_your_password 0x7f1100e2
 int string go_to_Register 0x7f110040
 int string go_to_login 0x7f110041
 int string greeting 0x7f110042

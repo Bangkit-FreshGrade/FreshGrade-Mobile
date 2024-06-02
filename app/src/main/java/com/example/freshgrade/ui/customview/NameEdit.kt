@@ -29,10 +29,11 @@ class NameEdit @JvmOverloads constructor(
 
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
                 if (s.toString().isNotEmpty()) showClearButton() else hideClearButton()
+
             }
 
             override fun afterTextChanged(s: Editable) {
-                // Do nothing.
+                if (s.toString().isEmpty()) setError("Name is required", null)
             }
         })
     }
@@ -93,4 +94,6 @@ class NameEdit @JvmOverloads constructor(
         }
         return false
     }
+
+
 }

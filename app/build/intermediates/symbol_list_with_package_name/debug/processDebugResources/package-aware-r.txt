@@ -3192,6 +3192,8 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id ChangePasswordLink
+id ChangePasswordText
 id FUNCTION
 id LoginLink
 id LoginPasswordText
@@ -3315,6 +3317,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id changePasswordLayout
 id checkbox
 id checked
 id chronometer
@@ -3530,6 +3533,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nameLayout
 id nav_controller_view_tag
 id nav_host_fragment_activity_main
 id nav_host_fragment_container
@@ -3984,7 +3988,7 @@ mipmap ic_launcher_round
 navigation auth_nav
 navigation mobile_navigation
 plurals mtrl_badge_content_description
-string If_you_have_an_acount
+string If_you_dont_have_an_acount
 string Register
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -4031,6 +4035,7 @@ string call_notification_incoming_text
 string call_notification_ongoing_text
 string call_notification_screening_text
 string camera_label
+string change_password
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -4043,11 +4048,13 @@ string email
 string error_a11y_label
 string error_icon_content_description
 string error_invalid_email
+string error_name
 string error_password
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string first_fragment_label
+string frogot_your_password
 string go_to_Register
 string go_to_login
 string greeting

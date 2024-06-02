@@ -24,37 +24,40 @@
     <color name="yelow">#FFEB3B</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <string name="If_you_have_an_acount">Jika anda belum punya akun, silahkan</string>
+    <string name="If_you_dont_have_an_acount">"Don’t have an account? "</string>
     <string name="Register">Register</string>
     <string name="app_name">FreshGrade</string>
     <string name="article_label">Article</string>
     <string name="camera_label">Camera</string>
+    <string name="change_password">change password</string>
     <string name="dashboard_label">Dashboard</string>
     <string name="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
     <string name="dont_have_permision">"Belum mendapatkan permission, silahkan login terlebih dahulu"</string>
     <string name="email">Email</string>
     <string name="error_invalid_email">email invalid</string>
-    <string name="error_password">Password Can\'t be less than 8 karakter</string>
+    <string name="error_name">name is required</string>
+    <string name="error_password">Password Can\'t be less than 8 characters</string>
     <string name="first_fragment_label">First Fragment</string>
-    <string name="go_to_Register">daftar</string>
-    <string name="go_to_login">masuk</string>
+    <string name="frogot_your_password">frogot your password? then</string>
+    <string name="go_to_Register">Sign Up Here</string>
+    <string name="go_to_login">Log In Here</string>
     <string name="greeting">Halo %1$s,</string>
     <string name="have_permision">anda sudah login</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="history_label">History</string>
     <string name="hybrid_type">Hybrid</string>
-    <string name="if_you_already_have_an_acount">jika kamu sudah punya akun</string>
+    <string name="if_you_already_have_an_acount">Already Part of Us?</string>
     <string name="input_email">Input email\n</string>
-    <string name="input_name">Input nama</string>
-    <string name="input_password">Input passwoerd</string>
+    <string name="input_name">Input name</string>
+    <string name="input_password">Input password</string>
     <string name="landing_login">Login</string>
     <string name="landing_register">Register</string>
     <string name="landing_tv">Welcome to</string>
     <string name="landing_tv2">FreshGrade</string>
     <string name="login">Login</string>
-    <string name="login_failed">Login gagal, silahkan coba lagi !</string>
-    <string name="login_success">Login berhasil</string>
-    <string name="logout">Keluar</string>
+    <string name="login_failed">login failed, try again !</string>
+    <string name="login_success">login success</string>
+    <string name="logout">Log out</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
@@ -95,13 +98,13 @@
     <string name="message_login_page">Login in Here</string>
     <string name="message_main_page">Selamat Belajar di Dicoding.</string>
     <string name="message_welcome_page">Mau belajar Android, iOS, Machine Learning, Cloud, Front-End, Back-End, dan bidang IT lainnya? Di Dicoding aja!</string>
-    <string name="name">Nama</string>
+    <string name="name">Name</string>
     <string name="next">Next</string>
     <string name="normal_type">Normal</string>
     <string name="password">Password</string>
     <string name="previous">Previous</string>
-    <string name="register_failed">Akun gagal dibuat, silahkan coba lagi !</string>
-    <string name="register_success">Akun berhasil dibuat, silahkan login !</string>
+    <string name="register_failed">register failed, try again !</string>
+    <string name="register_success">register success</string>
     <string name="satellite_type">Satellite</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="slogan">Be Active, Be Healthy, Become Fruity</string>
@@ -132,5 +135,8 @@
         
         <item name="android:statusBarColor">@color/primary</item>
         
+        <item name="strokeColor">@color/white</item>
+        <item name="editTextColor">@color/white</item>
+        <item name="editTextStyle">@color/white</item>
     </style>
 </resources>

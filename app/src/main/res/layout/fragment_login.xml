@@ -53,7 +53,6 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/authContainer"
-        android:orientation="vertical"
         android:layout_width="350dp"
         android:paddingBottom="12dp"
         android:layout_height="wrap_content"
@@ -71,7 +70,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="12dp"
             android:layout_marginBottom="24dp"
-            android:paddingBottom="4dp"
+            android:paddingBottom="8dp"
             android:background="@drawable/layout_bg"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -128,7 +127,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="12dp"
             android:layout_marginBottom="24dp"
-            android:paddingBottom="4dp"
+            android:paddingBottom="8dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/emailLayout">

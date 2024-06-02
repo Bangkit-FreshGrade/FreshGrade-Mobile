@@ -30,6 +30,10 @@ class PasswordEdit @JvmOverloads constructor(
             }
 
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+
+            }
+
+            override fun afterTextChanged(s: Editable) {
                 val password = s.toString()
                 val minLength = 8 // Minimum length of the password
 
@@ -41,13 +45,6 @@ class PasswordEdit @JvmOverloads constructor(
                     setTextColor(ContextCompat.getColor(context, R.color.red))
                     setError("Minimal password 8 characters", null)
                 }
-
-
-
-            }
-
-            override fun afterTextChanged(s: Editable) {
-                // Do nothing.
             }
         })
     }
