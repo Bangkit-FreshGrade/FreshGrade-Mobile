@@ -30,6 +30,6 @@ class RegisterButton : AppCompatButton {
         setTextColor(txtColor)
         textSize = 12f
         gravity = Gravity.CENTER
-        text = if(isEnabled) "Register" else "Isi Dulu"
+        text = if(isEnabled) ("Create Account") else "Input First"
     }
 }

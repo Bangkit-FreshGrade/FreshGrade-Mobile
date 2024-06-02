@@ -76,7 +76,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b62e8dc2-a2b4-48e5-a780-67b7cd4bfa08" name="Changes" comment="Login Register Design" />
+    <list default="true" id="b62e8dc2-a2b4-48e5-a780-67b7cd4bfa08" name="Changes" comment="Login Register Design">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/freshgrade/ui/customview/RegisterButton.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/freshgrade/ui/customview/RegisterButton.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -335,7 +341,31 @@
       <option name="project" value="LOCAL" />
       <updated>1717329894816</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Login Register Design">
+      <option name="closed" value="true" />
+      <created>1717329925736</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717329925736</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Login Register Design">
+      <option name="closed" value="true" />
+      <created>1717329971806</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717329971806</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Login Register Design">
+      <option name="closed" value="true" />
+      <created>1717330018876</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717330018876</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
