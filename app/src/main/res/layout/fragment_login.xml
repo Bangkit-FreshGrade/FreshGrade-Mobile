@@ -51,10 +51,11 @@
         tools:alpha="100" />
 
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/authContainer"
         android:orientation="vertical"
         android:layout_width="350dp"
+        android:paddingBottom="12dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,6 +81,7 @@
                 android:id="@+id/loginEmailText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/primary"
                 android:alpha="0"
                 android:background="@null"
                 android:layout_marginStart="12dp"
@@ -136,6 +138,7 @@
                 android:id="@+id/LoginPasswordText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/primary"
                 android:alpha="0"
                 android:background="@null"
                 android:text="@string/password"
@@ -171,7 +174,33 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <LinearLayout
+            android:id="@+id/changePasswordLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordLayout">
 
+            <TextView
+                android:id="@+id/ChangePasswordText"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:layout_height="wrap_content"
+                android:text="@string/frogot_your_password" />
+
+            <TextView
+                android:id="@+id/ChangePasswordLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginStart="1dp"
+                android:textColor="@color/primary"
+                android:text="@string/change_password" />
+        </LinearLayout>
 
 
         <com.cscorner.storyapp.ui.customview.LoginButton
@@ -186,14 +215,14 @@
             android:text="@string/login"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/authContainer"
+            app:layout_constraintTop_toBottomOf="@+id/changePasswordLayout"
             tools:alpha="100" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
             android:background="@null"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -202,24 +231,23 @@
             <TextView
                 android:id="@+id/RegisterText"
                 android:layout_width="wrap_content"
-                android:layout_marginStart="24dp"
                 android:background="@null"
                 android:layout_height="wrap_content"
-                android:text="@string/If_you_have_an_acount" />
+                android:text="@string/If_you_dont_have_an_acount" />
 
             <TextView
                 android:id="@+id/RegisterLink"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="1dp"
                 android:textColor="@color/primary"
                 android:text="@string/Register" />
         </LinearLayout>
 
 
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

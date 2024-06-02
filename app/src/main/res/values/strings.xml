@@ -22,7 +22,7 @@
     <string name="greeting">Halo %1$s,</string>
     <string name="logout">Keluar</string>
     <string name="go_to_Register">daftar</string>
-    <string name="If_you_have_an_acount">Jika anda belum punya akun, silahkan</string>
+    <string name="If_you_dont_have_an_acount">If you dont\' have an acount, then</string>
     <string name="if_you_already_have_an_acount">jika kamu sudah punya akun</string>
     <string name="go_to_login">masuk</string>
     <string name="error_password">Password Can\'t be less than 8 karakter</string>
@@ -97,4 +97,6 @@
     <string name="history_label">History</string>
     <string name="slogan">Be Active, Be Healthy, Become Fruity</string>
     <string name="password">Password</string>
+    <string name="change_password">change password</string>
+    <string name="frogot_your_password">frogot your password? then</string>
 </resources>
