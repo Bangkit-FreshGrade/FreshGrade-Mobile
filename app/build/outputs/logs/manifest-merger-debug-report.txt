@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:2:1-35:12
+ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:2:1-36:12
 MERGED from [androidx.databinding:viewbinding:8.3.0] C:\Users\SELO AZIZ\.gradle\caches\transforms-3\3b7a35e38777bf7b5b874e7a6b5005a7\transformed\viewbinding-8.3.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\SELO AZIZ\.gradle\caches\transforms-3\67f36eee25574cfcd1565676861940aa\transformed\navigation-common-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\SELO AZIZ\.gradle\caches\transforms-3\e1cb4831e95873bbc324fc3e18f8021b\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
@@ -80,8 +80,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\SELO AZ
 	xmlns:android
 		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:5:5-33:19
-INJECTED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:5:5-33:19
+ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:5:5-34:19
+INJECTED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:5:5-34:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\SELO AZIZ\.gradle\caches\transforms-3\9c62a25f43cc1b9a23b0b7af3b598439\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\SELO AZIZ\.gradle\caches\transforms-3\9c62a25f43cc1b9a23b0b7af3b598439\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\SELO AZIZ\.gradle\caches\transforms-3\608f4a1f0d382a6eb25d63a026992374\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -123,35 +123,35 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\SE
 	android:dataExtractionRules
 		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:7:9-65
 activity#com.example.freshgrade.ui.splash.SplashActivity
-ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:15:9-23:20
+ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:15:9-19:20
 	android:exported
 		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:17:13-36
 	android:name
 		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:16:13-53
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:18:13-22:29
-action#android.intent.action.MAIN
-ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:19:17-69
-	android:name
-		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:19:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:21:17-77
-	android:name
-		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:21:27-74
 activity#com.example.freshgrade.ui.authorization.AuthActivity
-ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:24:9-26:40
+ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
-		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:26:13-37
+		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:25:13-58
+		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:21:13-58
 activity#com.example.freshgrade.MainActivity
-ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:27:9-32:20
+ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:23:9-33:20
 	android:label
-		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:30:13-45
+		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:26:13-45
 	android:exported
-		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:29:13-36
+		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:25:13-36
 	android:name
-		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:28:13-41
+		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:24:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:27:13-31:29
+action#android.intent.action.MAIN
+ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:30:27-74
 uses-sdk
 INJECTED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml

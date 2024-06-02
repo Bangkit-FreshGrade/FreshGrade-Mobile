@@ -8,6 +8,22 @@
         "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_ic_profile.xml.flat",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\ic_profile.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-4:/drawable_car8.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-6:/drawable/car8.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\color_bottom_nav_icon_color.xml.flat",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\color\\bottom_nav_icon_color.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-4:/drawable_car1.jpg.flat",
+        "source": "com.example.freshgrade.app-main-6:/drawable/car1.jpg"
+    },
+    {
         "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_ic_home_black_24dp.xml.flat",
         "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\ic_home_black_24dp.xml"
     },
@@ -28,6 +44,14 @@
         "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.freshgrade.app-debug-4:/drawable_car2.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-6:/drawable/car2.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_ic_cam.xml.flat",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\ic_cam.xml"
+    },
+    {
         "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
@@ -36,12 +60,20 @@
         "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\layout\\fragment_camera.xml"
     },
     {
+        "merged": "com.example.freshgrade.app-debug-4:/drawable_car3.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-6:/drawable/car3.jpeg"
+    },
+    {
         "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-pngs-0:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_ic_history.xml.flat",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\ic_history.xml"
     },
     {
         "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\xml_data_extraction_rules.xml.flat",
@@ -56,12 +88,12 @@
         "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_ic_dashboard_black_24dp.xml.flat",
-        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\ic_dashboard_black_24dp.xml"
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_ic_history_secondary.xml.flat",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\ic_history_secondary.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-4:/layout_fragment_article.xml.flat",
-        "source": "com.example.freshgrade.app-main-6:/layout/fragment_article.xml"
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\ic_dashboard_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\layout_fragment_landing.xml.flat",
@@ -72,28 +104,32 @@
         "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_baseline_close_24.xml.flat",
-        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\baseline_close_24.xml"
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_ic_upload.xml.flat",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\ic_upload.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-4:/drawable_car9.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-6:/drawable/car9.jpeg"
     },
     {
         "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_ic_notifications_black_24dp.xml.flat",
         "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\ic_notifications_black_24dp.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-4:/layout_fragment_history.xml.flat",
-        "source": "com.example.freshgrade.app-main-6:/layout/fragment_history.xml"
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_baseline_close_24.xml.flat",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\baseline_close_24.xml"
     },
     {
         "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_baseline_lightbulb_outline_24.xml.flat",
         "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\baseline_lightbulb_outline_24.xml"
     },
     {
-        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_baseline_lightbulb_24.xml.flat",
-        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\baseline_lightbulb_24.xml"
+        "merged": "com.example.freshgrade.app-debug-4:/drawable_car10.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-6:/drawable/car10.jpeg"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-4:/navigation_mobile_navigation.xml.flat",
-        "source": "com.example.freshgrade.app-main-6:/navigation/mobile_navigation.xml"
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_baseline_lightbulb_24.xml.flat",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\baseline_lightbulb_24.xml"
     },
     {
         "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\layout_fragment_result.xml.flat",
@@ -116,8 +152,32 @@
         "source": "com.example.freshgrade.app-main-6:/layout/fragment_camera.xml"
     },
     {
+        "merged": "com.example.freshgrade.app-debug-4:/drawable_car4.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-6:/drawable/car4.jpeg"
+    },
+    {
         "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\layout_activity_auth.xml.flat",
         "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\layout\\activity_auth.xml"
+    },
+    {
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_ic_article.xml.flat",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\ic_article.xml"
+    },
+    {
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_ic_scan.xml.flat",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\ic_scan.xml"
+    },
+    {
+        "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_ic_camera.xml.flat",
+        "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\ic_camera.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-4:/drawable_car7.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-6:/drawable/car7.jpeg"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-4:/drawable_ic_camera.xml.flat",
+        "source": "com.example.freshgrade.app-main-6:/drawable/ic_camera.xml"
     },
     {
         "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\layout_fragment_profile.xml.flat",
@@ -152,6 +212,10 @@
         "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\baseline_person_24.xml"
     },
     {
+        "merged": "com.example.freshgrade.app-debug-4:/drawable_car6.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-6:/drawable/car6.jpeg"
+    },
+    {
         "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\menu_bottom_nav_menu.xml.flat",
         "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\menu\\bottom_nav_menu.xml"
     },
@@ -178,6 +242,10 @@
     {
         "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_bg_button_disable.xml.flat",
         "source": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-main-6:\\drawable\\bg_button_disable.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-4:/drawable_car5.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-6:/drawable/car5.jpeg"
     },
     {
         "merged": "C:\\Users\\SELO AZIZ\\.gradle\\daemon\\8.4\\com.example.freshgrade.app-debug-4:\\drawable_baseline_image_24.xml.flat",

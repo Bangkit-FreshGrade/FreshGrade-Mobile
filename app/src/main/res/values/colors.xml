@@ -3,9 +3,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="primary">#FF637dc6</color>
-    <color name="primaryDark">#FF3b5998</color>
-    <color name="navy">#2D3D4F</color>
+    <color name="primary">#006769</color>
+    <color name="secondary">#E6FF94</color>
+    <color name="tertiary">#E0FBE2</color>
+
+
 
     <color name="dark">#FF2c3e50</color>
     <color name="blue">#2196F3</color>
@@ -21,5 +23,7 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+
+
 
 </resources>

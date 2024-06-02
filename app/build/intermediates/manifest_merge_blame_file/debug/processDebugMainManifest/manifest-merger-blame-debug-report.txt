@@ -20,7 +20,7 @@
 15-->[androidx.core:core:1.13.1] C:\Users\SELO AZIZ\.gradle\caches\transforms-3\4d1e12b735aa0cce671643f643c15040\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:5:5-33:19
+17-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:5:5-34:19
 18        android:allowBackup="true"
 18-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -43,36 +43,36 @@
 29        android:theme="@style/Theme.FreshGrade" >
 29-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:13:9-48
 30        <activity
-30-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:15:9-23:20
+30-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:15:9-19:20
 31            android:name="com.example.freshgrade.ui.splash.SplashActivity"
 31-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:16:13-53
 32            android:exported="true" >
 32-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:17:13-36
-33            <intent-filter>
-33-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:18:13-22:29
-34                <action android:name="android.intent.action.MAIN" />
-34-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:19:17-69
-34-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:19:25-66
-35
-36                <category android:name="android.intent.category.LAUNCHER" />
-36-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:21:17-77
-36-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:21:27-74
-37            </intent-filter>
-38        </activity>
-39        <activity
-39-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:24:9-26:40
-40            android:name="com.example.freshgrade.ui.authorization.AuthActivity"
-40-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:25:13-58
-41            android:exported="false" />
-41-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:26:13-37
-42        <activity
-42-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:27:9-32:20
-43            android:name="com.example.freshgrade.MainActivity"
-43-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:28:13-41
-44            android:exported="true"
-44-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:29:13-36
-45            android:label="@string/app_name" >
-45-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:30:13-45
+33        </activity>
+34        <activity
+34-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:20:9-22:40
+35            android:name="com.example.freshgrade.ui.authorization.AuthActivity"
+35-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:21:13-58
+36            android:exported="false" />
+36-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:22:13-37
+37        <activity
+37-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:23:9-33:20
+38            android:name="com.example.freshgrade.MainActivity"
+38-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:24:13-41
+39            android:exported="true"
+39-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:25:13-36
+40            android:label="@string/app_name" >
+40-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:26:13-45
+41            <intent-filter>
+41-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:27:13-31:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:28:17-69
+42-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:28:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:30:17-77
+44-->C:\SELO\BANGKIT\FreshGrade\app\src\main\AndroidManifest.xml:30:27-74
+45            </intent-filter>
 46        </activity>
 47
 48        <provider
