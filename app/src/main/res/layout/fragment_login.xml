@@ -100,7 +100,7 @@
                 android:background="@null"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/loginEmailText" Of="parent"
+                app:layout_constraintTop_toBottomOf="@+id/loginEmailText"
                 tools:alpha="100"
                 tools:ignore="SmallSp">
 
