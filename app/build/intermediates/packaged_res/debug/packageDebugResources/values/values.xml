@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="bacground_auth">#006769</color>
     <color name="black">#FF000000</color>
     <color name="blue">#2196F3</color>
     <color name="dark">#FF2c3e50</color>
     <color name="green">#4CAF50</color>
     <color name="navy">#2D3D4F</color>
+    <color name="on_primary">#006769</color>
     <color name="pink_200">#FF8FAF</color>
     <color name="pink_500">#D81B60</color>
-    <color name="primary">#FF637dc6</color>
+    <color name="primary">#E6FF94</color>
     <color name="primaryDark">#FF3b5998</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
-    <color name="red">#F44336</color>
+    <color name="red">#FF695E</color>
+    <color name="secondary_text">#A9FFFFFF</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="transparant">#00FFFFFF</color>
+    <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="yelow">#FFEB3B</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>
@@ -29,8 +33,8 @@
     <string name="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
     <string name="dont_have_permision">"Belum mendapatkan permission, silahkan login terlebih dahulu"</string>
     <string name="email">Email</string>
-    <string name="error_invalid_email">email tidak valid</string>
-    <string name="error_password">Password tidak boleh kurang dari 8 karakter</string>
+    <string name="error_invalid_email">email invalid</string>
+    <string name="error_password">Password Can\'t be less than 8 karakter</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="go_to_Register">daftar</string>
     <string name="go_to_login">masuk</string>
@@ -88,7 +92,7 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="make_new_story">buat cerita baru</string>
-    <string name="message_login_page">Masukkan dulu datamu ya</string>
+    <string name="message_login_page">Login in Here</string>
     <string name="message_main_page">Selamat Belajar di Dicoding.</string>
     <string name="message_welcome_page">Mau belajar Android, iOS, Machine Learning, Cloud, Front-End, Back-End, dan bidang IT lainnya? Di Dicoding aja!</string>
     <string name="name">Nama</string>
@@ -100,6 +104,7 @@
     <string name="register_success">Akun berhasil dibuat, silahkan login !</string>
     <string name="satellite_type">Satellite</string>
     <string name="second_fragment_label">Second Fragment</string>
+    <string name="slogan">Be Active, Be Healthy, Become Fruity</string>
     <string name="terrain_type">Terrain</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_dashboard">Dashboard</string>
@@ -107,19 +112,25 @@
     <string name="title_home">Home</string>
     <string name="title_login_page">Sudah siap untuk upgrade skill?</string>
     <string name="title_notifications">Notifications</string>
-    <string name="title_register_page">Lengkapi data dirimu di bawah ini ya</string>
+    <string name="title_register_page">Create Account</string>
     <string name="title_welcome_page">Selamat datang di Story App!</string>
     <style name="Theme.FreshGrade" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/on_primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+
+        <item name="android:textColor">@color/white</item>
+
+        <item name="android:textColorHint">@color/secondary_text</item>
+
+        <item name="android:background">@color/bacground_auth</item>
         
         <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
         
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/primary</item>
         
     </style>
 </resources>

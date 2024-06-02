@@ -17,9 +17,11 @@ class PasswordEdit @JvmOverloads constructor(
 ) : AppCompatEditText(context, attrs), View.OnTouchListener {
 
     private var clearButtonImage: Drawable
+    private var textColors: Int=0
 
     init {
         clearButtonImage = ContextCompat.getDrawable(context, R.drawable.baseline_close_24) as Drawable
+        textColors = ContextCompat.getColor(context, R.color.white)
         setOnTouchListener(this)
 
         addTextChangedListener(object : TextWatcher {
@@ -37,7 +39,7 @@ class PasswordEdit @JvmOverloads constructor(
                 } else {
 
                     setTextColor(ContextCompat.getColor(context, R.color.red))
-                    setError("Password minimal 8 karakter", null)
+                    setError("Minimal password 8 characters", null)
                 }
 
 
@@ -52,7 +54,7 @@ class PasswordEdit @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        hint = "Masukkan Email Anda"
+        hint = "Input you're Password"
         textAlignment = View.TEXT_ALIGNMENT_VIEW_START
     }
 

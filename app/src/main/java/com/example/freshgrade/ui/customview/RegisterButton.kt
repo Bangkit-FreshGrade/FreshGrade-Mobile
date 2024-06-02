@@ -19,7 +19,7 @@ class RegisterButton : AppCompatButton {
     private var disabledBackground: Drawable
 
     init {
-        txtColor = ContextCompat.getColor(context, android.R.color.background_light)
+        txtColor = ContextCompat.getColor(context, R.color.on_primary)
         enabledBackground = ContextCompat.getDrawable(context, R.drawable.bg_button) as Drawable
         disabledBackground = ContextCompat.getDrawable(context, R.drawable.bg_button_disable) as Drawable
     }
@@ -30,6 +30,6 @@ class RegisterButton : AppCompatButton {
         setTextColor(txtColor)
         textSize = 12f
         gravity = Gravity.CENTER
-        text = if(isEnabled) "Submit" else "Isi Dulu"
+        text = if(isEnabled) "Register" else "Isi Dulu"
     }
 }

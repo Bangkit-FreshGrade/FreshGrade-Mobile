@@ -39,7 +39,7 @@ class NameEdit @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        hint = "Masukkan Email Anda"
+        hint = "Input you're Name"
         textAlignment = View.TEXT_ALIGNMENT_VIEW_START
     }
 

@@ -13,10 +13,9 @@
     <string name="login">Login</string>
     <string name="message_welcome_page">Mau belajar Android, iOS, Machine Learning, Cloud, Front-End, Back-End, dan bidang IT lainnya? Di Dicoding aja!</string>
     <string name="title_welcome_page">Selamat datang di Story App!</string>
-    <string name="title_register_page">Lengkapi data dirimu di bawah ini ya</string>
+    <string name="title_register_page">Create Account</string>
     <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="message_login_page">Masukkan dulu datamu ya</string>
+    <string name="message_login_page">Login in Here</string>
     <string name="title_login_page">Sudah siap untuk upgrade skill?</string>
     <string name="name">Nama</string>
     <string name="message_main_page">Selamat Belajar di Dicoding.</string>
@@ -26,7 +25,7 @@
     <string name="If_you_have_an_acount">Jika anda belum punya akun, silahkan</string>
     <string name="if_you_already_have_an_acount">jika kamu sudah punya akun</string>
     <string name="go_to_login">masuk</string>
-    <string name="error_password">Password tidak boleh kurang dari 8 karakter</string>
+    <string name="error_password">Password Can\'t be less than 8 karakter</string>
 
 
     <string name="login_success">Login berhasil</string>
@@ -86,7 +85,7 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="have_permision">anda sudah login</string>
-    <string name="error_invalid_email">email tidak valid</string>
+    <string name="error_invalid_email">email invalid</string>
     <string name="input_name">Input nama</string>
     <string name="input_email">Input email\n</string>
     <string name="input_password">Input passwoerd</string>
@@ -96,4 +95,6 @@
     <string name="dashboard_label">Dashboard</string>
     <string name="article_label">Article</string>
     <string name="history_label">History</string>
+    <string name="slogan">Be Active, Be Healthy, Become Fruity</string>
+    <string name="password">Password</string>
 </resources>

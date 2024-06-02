@@ -2,14 +2,22 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>"
 
-    <color name="primary">#FF637dc6</color>
+    <color name="secondary_text">#A9FFFFFF</color>
+
+
+    <color name="primary">#E6FF94</color>
+    <color name="on_primary">#006769</color>"
+
+    <color name="bacground_auth">#006769</color>
+
     <color name="primaryDark">#FF3b5998</color>
     <color name="navy">#2D3D4F</color>
 
     <color name="dark">#FF2c3e50</color>
     <color name="blue">#2196F3</color>
-    <color name="red">#F44336</color>
+    <color name="red">#FF695E</color>
     <color name="green">#4CAF50</color>
     <color name="yelow">#FFEB3B</color>
     <color name="transparant">#00FFFFFF</color>
@@ -21,5 +29,7 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+
+
 
 </resources>

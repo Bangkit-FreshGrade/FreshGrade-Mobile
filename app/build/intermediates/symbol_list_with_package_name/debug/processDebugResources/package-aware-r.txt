@@ -1402,6 +1402,7 @@ color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
+color bacground_auth
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -2130,6 +2131,7 @@ color navy
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
+color on_primary
 color pink_200
 color pink_500
 color primary
@@ -2148,6 +2150,7 @@ color purple_700
 color red
 color ripple_material_dark
 color ripple_material_light
+color secondary_text
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -2163,6 +2166,7 @@ color teal_700
 color tooltip_background_dark
 color tooltip_background_light
 color transparant
+color transparent
 color white
 color yelow
 dimen abc_action_bar_content_inset_material
@@ -3105,6 +3109,10 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_notifications_black_24dp
 drawable ic_search_black_24
 drawable indeterminate_static
+drawable inner_bg
+drawable inner_layout_bg
+drawable layout_bg
+drawable logo_fresh
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3186,6 +3194,7 @@ id BOTTOM_START
 id CTRL
 id FUNCTION
 id LoginLink
+id LoginPasswordText
 id LoginText
 id META
 id NO_DEBUG
@@ -3274,6 +3283,7 @@ id anticipate
 id arc
 id asConfigured
 id async
+id authContainer
 id auth_nav
 id auth_nav_host_fragment
 id auto
@@ -3291,8 +3301,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button2
-id button3
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3370,6 +3378,7 @@ id edge
 id edit_query
 id edit_text_id
 id elastic
+id emailLayout
 id embed
 id end
 id endToStart
@@ -3418,7 +3427,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3449,14 +3457,13 @@ id locale
 id loginButton
 id loginEmailEditText
 id loginEmailEditTextLayout
-id loginEmailTextView
+id loginEmailText
 id loginFragment
 id loginGuidelineHorizontal
 id loginGuidelineHorizontal2
 id loginImageView
 id loginPasswordEditText
 id loginPasswordEditTextLayout
-id loginPasswordTextView
 id loginTitleTextView
 id ltr
 id m3_side_sheet
@@ -3574,6 +3581,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id passwordLayout
 id password_toggle
 id path
 id pathRelative
@@ -3648,6 +3656,7 @@ id skipped
 id slide
 id sliding_pane_detail_container
 id sliding_pane_layout
+id sloganTextView
 id snackbar_action
 id snackbar_text
 id snap
@@ -3699,8 +3708,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
-id textView2
 id text_article
 id text_camera
 id text_history
@@ -3734,7 +3741,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tv_app_name
 id unchecked
 id uniform
 id unlabeled
@@ -3874,7 +3880,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_auth
-layout activity_authorization
 layout activity_main
 layout activity_splash
 layout custom_dialog
@@ -4192,6 +4197,7 @@ string searchview_navigation_content_description
 string second_fragment_label
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
+string slogan
 string status_bar_notification_info_overflow
 string terrain_type
 string title_activity_maps
