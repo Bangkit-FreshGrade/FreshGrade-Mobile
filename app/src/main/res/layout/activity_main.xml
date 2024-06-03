@@ -10,6 +10,14 @@
     >
 
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="82dp" />
+
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
@@ -79,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="100dp" />
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="103dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
