@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.freshgrade.app-mergeDebugResources-2:/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "com.example.freshgrade.app-mergeDebugResources-47:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-3\\9d2a7facd968c6cd79d12328ddc16b30\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\44a5303f1f5e09148e128bb1ede8558a\\transformed\\appcompat-1.7.0\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

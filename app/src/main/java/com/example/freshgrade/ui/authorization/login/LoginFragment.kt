@@ -18,16 +18,7 @@ import com.cscorner.storyapp.ui.customview.PasswordEdit
 import com.example.freshgrade.R
 import com.example.freshgrade.databinding.FragmentLoginBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [LoginFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class LoginFragment : Fragment() {
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
@@ -70,6 +61,13 @@ class LoginFragment : Fragment() {
 
         binding.RegisterLink.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.registerFragment))
 
+//        loginButton.setOnClickListener {
+//            val email = emailEdit.text.toString()
+//            val password = passwordEdit.text.toString()
+//
+//            authenticate(email, password)
+//        }
+
         playAnimation()
 
         onBackPress()
@@ -92,7 +90,9 @@ class LoginFragment : Fragment() {
                     binding.loginEmailEditTextLayout.error = null
                     setLoginButtonEnable()
                 } else {
-                    binding.loginEmailEditTextLayout.error = getString(R.string.error_invalid_email)
+                    binding.loginEmailEditText.error = getString(R.string.error_invalid_email)
+//                    binding.loginEmailEditText.error = ""
+//                    Toast.makeText(context, getString(R.string.error_invalid_email), Toast.LENGTH_SHORT).show()
                 }
             }
             override fun afterTextChanged(s: Editable?) {}
@@ -102,15 +102,44 @@ class LoginFragment : Fragment() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 if (s != null && s.length < 8) {
-                    binding.loginPasswordEditTextLayout.error = getString(R.string.error_password)
+                    binding.loginPasswordEditText.error = getString(R.string.error_password)
                 } else {
-                    binding.loginPasswordEditTextLayout.error = null
+                    binding.loginPasswordEditText.error = null
                     setLoginButtonEnable()
                 }
             }
             override fun afterTextChanged(s: Editable?) {}
         })
 
+
+
+    }
+
+    private fun authenticate(email: String, password: String) {
+
+//        loginViewModel.userLogin(email, password).observe(this) {
+//            when (it) {
+//                is Result.Success -> {
+//                    showLoading(false)
+//                    dataStore
+//                    val response = it.data
+//                    loginViewModel.saveUserData(
+//                        UserModel(
+//                            response.loginResult?.name.toString(),
+//                            response.loginResult?.token.toString(),
+//                            true
+//                        )
+//                    )
+//
+//                    startActivity(Intent(this, MainActivity::class.java))
+//                    finishAffinity()
+//                }
+//                is Result.Loading -> showLoading(true)
+//                is Result.Error -> {
+//                    showDialog(ERROR)
+//                    showLoading(false)
+//                }
+//            }
     }
 
 
@@ -123,11 +152,11 @@ class LoginFragment : Fragment() {
 
         val title = ObjectAnimator.ofFloat(binding.loginTitleTextView, View.ALPHA, 1f).setDuration(100)
         val emailTextView =
-            ObjectAnimator.ofFloat(binding.loginEmailTextView, View.ALPHA, 1f).setDuration(100)
+            ObjectAnimator.ofFloat(binding.loginEmailText, View.ALPHA, 1f).setDuration(100)
         val emailEditTextLayout =
             ObjectAnimator.ofFloat(binding.loginEmailEditTextLayout, View.ALPHA, 1f).setDuration(100)
         val passwordTextView =
-            ObjectAnimator.ofFloat(binding.loginPasswordEditText, View.ALPHA, 1f).setDuration(100)
+            ObjectAnimator.ofFloat(binding.LoginPasswordText, View.ALPHA, 1f).setDuration(100)
         val passwordEditTextLayout =
             ObjectAnimator.ofFloat(binding.loginPasswordEditTextLayout, View.ALPHA, 1f).setDuration(100)
         val login = ObjectAnimator.ofFloat(binding.loginButton, View.ALPHA, 1f).setDuration(100)
@@ -183,16 +212,8 @@ class LoginFragment : Fragment() {
         _binding = null
     }
 
-
-
     companion object {
 
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            LoginFragment().apply {
-                arguments = Bundle().apply {
 
-                }
-            }
     }
 }

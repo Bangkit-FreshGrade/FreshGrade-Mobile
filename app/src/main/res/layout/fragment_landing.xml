@@ -3,19 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    style="@style/Theme.FreshGrade.auth"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.authorization.landing.LandingFragment">
 
     <ImageView
         android:id="@+id/landing_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_foreground"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="293dp"
+        android:layout_height="219dp"
+        android:src="@drawable/logo_fresh"
         app:layout_constraintBottom_toTopOf="@+id/landing_buttons_layout"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <LinearLayout
         android:id="@+id/landing_buttons_layout"
         android:layout_width="wrap_content"

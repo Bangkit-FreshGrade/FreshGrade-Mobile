@@ -19,7 +19,7 @@ class LoginButton : AppCompatButton {
     private var disabledBackground: Drawable
 
     init {
-        txtColor = ContextCompat.getColor(context, android.R.color.background_light)
+        txtColor = ContextCompat.getColor(context, R.color.primary)
         enabledBackground = ContextCompat.getDrawable(context, R.drawable.bg_button) as Drawable
         disabledBackground = ContextCompat.getDrawable(context, R.drawable.bg_button_disable) as Drawable
     }
@@ -30,7 +30,7 @@ class LoginButton : AppCompatButton {
         setTextColor(txtColor)
         textSize = 12f
         gravity = Gravity.CENTER
-        text = if(isEnabled) "Submit" else "Isi Dulu"
+        text = if(isEnabled) "Login" else "Input First"
     }
 
 }
