@@ -104,4 +104,6 @@
     <string name="history_label">History</string>
     <string name="camera_label">Camera</string>
     <string name="gallery_label">Gallery</string>
+    <string name="error_first_name">first name required</string>
+    <string name="error_last_name">last name required</string>
 </resources>
