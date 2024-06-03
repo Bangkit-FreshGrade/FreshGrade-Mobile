@@ -642,7 +642,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Scan" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -670,7 +670,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="_Designer_Tab" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -814,7 +814,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716478399468</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added icons and pictures">
+      <option name="closed" value="true" />
+      <created>1717396184349</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717396184349</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -831,6 +839,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial code" />
     <MESSAGE value="Initial code + imageView di activity main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial code + imageView di activity main" />
+    <MESSAGE value="added icons and pictures" />
+    <option name="LAST_COMMIT_MESSAGE" value="added icons and pictures" />
   </component>
 </project>
