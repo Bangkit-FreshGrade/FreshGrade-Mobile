@@ -17,9 +17,11 @@ class PasswordEdit @JvmOverloads constructor(
 ) : AppCompatEditText(context, attrs), View.OnTouchListener {
 
     private var clearButtonImage: Drawable
+    private var textColors: Int=0
 
     init {
         clearButtonImage = ContextCompat.getDrawable(context, R.drawable.baseline_close_24) as Drawable
+        textColors = ContextCompat.getColor(context, R.color.white)
         setOnTouchListener(this)
 
         addTextChangedListener(object : TextWatcher {
@@ -28,6 +30,10 @@ class PasswordEdit @JvmOverloads constructor(
             }
 
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+
+            }
+
+            override fun afterTextChanged(s: Editable) {
                 val password = s.toString()
                 val minLength = 8 // Minimum length of the password
 
@@ -37,22 +43,15 @@ class PasswordEdit @JvmOverloads constructor(
                 } else {
 
                     setTextColor(ContextCompat.getColor(context, R.color.red))
-                    setError("Password minimal 8 karakter", null)
+                    setError("Minimal password 8 characters", null)
                 }
-
-
-
-            }
-
-            override fun afterTextChanged(s: Editable) {
-                // Do nothing.
             }
         })
     }
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        hint = "Masukkan Email Anda"
+        hint = "Input you're Password"
         textAlignment = View.TEXT_ALIGNMENT_VIEW_START
     }
 

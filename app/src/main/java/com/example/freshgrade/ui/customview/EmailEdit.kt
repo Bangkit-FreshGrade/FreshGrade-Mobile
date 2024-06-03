@@ -17,20 +17,29 @@ class EmailEdit @JvmOverloads constructor(
 ) : AppCompatEditText(context, attrs), View.OnTouchListener {
 
     private var clearButtonImage: Drawable
+    private var background: Drawable? = null
+    private var textColors: Int = 0
 
     init {
         clearButtonImage = ContextCompat.getDrawable(context, R.drawable.baseline_close_24) as Drawable
+        background = ContextCompat.getDrawable(context, R.drawable.inner_layout_bg)
+        textColors = ContextCompat.getColor(context, R.color.white)
+
+
+
         setOnTouchListener(this)
+
 
         addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
-                // Do nothing.
+
+            }
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+
             }
 
-            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+            override fun afterTextChanged(s: Editable) {
                 val email = s.toString()
-
-
 
                 if (android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
 
@@ -38,19 +47,16 @@ class EmailEdit @JvmOverloads constructor(
                 } else {
 
                     setTextColor(ContextCompat.getColor(context, R.color.red))
-                    setError("Email tidak valid", null)
-                }
-            }
+                    setError("Email  invalid", null)
 
-            override fun afterTextChanged(s: Editable) {
-                // Do nothing.
+                }
             }
         })
     }
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        hint = "Masukkan Email Anda"
+        hint = "Imput you're Email "
         textAlignment = View.TEXT_ALIGNMENT_VIEW_START
     }
 
@@ -65,6 +71,8 @@ class EmailEdit @JvmOverloads constructor(
     private fun setButtonDrawables(startOfTheText: Drawable? = null, topOfTheText: Drawable? = null, endOfTheText: Drawable? = null, bottomOfTheText: Drawable? = null){
         setCompoundDrawablesWithIntrinsicBounds(startOfTheText, topOfTheText, endOfTheText, bottomOfTheText)
     }
+
+
 
     override fun onTouch(v: View?, event: MotionEvent): Boolean {
         if (compoundDrawables[2] != null) {

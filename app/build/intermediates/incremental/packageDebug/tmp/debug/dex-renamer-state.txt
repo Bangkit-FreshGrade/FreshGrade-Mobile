@@ -1,14 +1,14 @@
-#Sun Jun 02 10:27:24 CDT 2024
-base.0=C\:\\SELO\\BANGKIT\\FreshGrade\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\SELO\\BANGKIT\\FreshGrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\SELO\\BANGKIT\\FreshGrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
-base.3=C\:\\SELO\\BANGKIT\\FreshGrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
-base.4=C\:\\SELO\\BANGKIT\\FreshGrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
-base.5=C\:\\SELO\\BANGKIT\\FreshGrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
-base.6=C\:\\SELO\\BANGKIT\\FreshGrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.7=C\:\\SELO\\BANGKIT\\FreshGrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
-base.8=C\:\\SELO\\BANGKIT\\FreshGrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
-base.9=C\:\\SELO\\BANGKIT\\FreshGrade\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Mon Jun 03 16:47:46 WITA 2024
+base.0=D\:\\program\\Smt6-Bangkit\\Capstone\\TestGitHub\\FreshGrade-Mobile\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=D\:\\program\\Smt6-Bangkit\\Capstone\\TestGitHub\\FreshGrade-Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=D\:\\program\\Smt6-Bangkit\\Capstone\\TestGitHub\\FreshGrade-Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
+base.3=D\:\\program\\Smt6-Bangkit\\Capstone\\TestGitHub\\FreshGrade-Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.4=D\:\\program\\Smt6-Bangkit\\Capstone\\TestGitHub\\FreshGrade-Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.5=D\:\\program\\Smt6-Bangkit\\Capstone\\TestGitHub\\FreshGrade-Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.6=D\:\\program\\Smt6-Bangkit\\Capstone\\TestGitHub\\FreshGrade-Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.7=D\:\\program\\Smt6-Bangkit\\Capstone\\TestGitHub\\FreshGrade-Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+base.8=D\:\\program\\Smt6-Bangkit\\Capstone\\TestGitHub\\FreshGrade-Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+base.9=D\:\\program\\Smt6-Bangkit\\Capstone\\TestGitHub\\FreshGrade-Mobile\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=10/classes.dex

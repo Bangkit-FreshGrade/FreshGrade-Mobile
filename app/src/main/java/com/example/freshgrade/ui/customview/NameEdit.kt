@@ -29,17 +29,18 @@ class NameEdit @JvmOverloads constructor(
 
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
                 if (s.toString().isNotEmpty()) showClearButton() else hideClearButton()
+
             }
 
             override fun afterTextChanged(s: Editable) {
-                // Do nothing.
+                if (s.toString().isEmpty()) setError("Name is required", null)
             }
         })
     }
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        hint = "Masukkan Email Anda"
+        hint = "Input you're Name"
         textAlignment = View.TEXT_ALIGNMENT_VIEW_START
     }
 

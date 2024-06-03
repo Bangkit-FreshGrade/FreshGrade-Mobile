@@ -59,6 +59,16 @@ class RegisterFragment : Fragment() {
         binding.registerButton.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.loginFragment))
         binding.LoginLink.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.loginFragment))
 
+//        registerButton.setOnClickListener {
+//            val name = nameEdit.text.toString()
+//            val email = emailEdit.text.toString()
+//            val password = passwordEdit.text.toString()
+//
+//
+//            registerUser(name, email, password)
+//
+//        }
+
         playAnimation()
 
         onBackPress()
@@ -74,12 +84,38 @@ class RegisterFragment : Fragment() {
             resultName != null && resultEmail != null && resultPassword != null && resultPassword.length >= 6
     }
 
-    private fun Enabler(){
+    private fun registerUser(name: String, email: String, password: String) {
+
+//        registerViewModel.register(name, email, password).observe(this) {
+//            when (it) {
+//                is Result.Success -> {
+//                    showLoading(false)
+//                    showDialog(SUCCESS)
+//                    startActivity(Intent(this, LoginActivity::class.java))
+//                    finishAffinity()
+//                }
+//                is Result.Loading -> showLoading(true)
+//                is Result.Error -> {
+//                    showDialog(ERROR)
+//                    showLoading(false)
+//                }
+//            }
+//        }
+
+    }
+
+    private fun Enabler() {
 
         nameEdit.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                setRegisterEnable()
+                if (s.toString().isNotEmpty()) {
+                    binding.registerNameEditTextLayout.error = null
+                    setRegisterEnable()
+                }
+                else {
+                    binding.registerNameEditText.error = getString(R.string.error_name)
+                }
             }
 
             override fun afterTextChanged(s: Editable?) {}
@@ -88,32 +124,45 @@ class RegisterFragment : Fragment() {
         emailEdit.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+
+
+            }
+
+            override fun afterTextChanged(s: Editable?) {
                 val email = s.toString()
                 if (android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                     binding.registerEmailEditTextLayout.error = null
                     setRegisterEnable()
                 } else {
-                    binding.registerEmailEditTextLayout.error = getString(R.string.error_invalid_email)
+//                        binding.registerEmailEditText.error
+                    binding.registerEmailEditText.error =
+                        getString(R.string.error_invalid_email)
                 }
             }
-
-            override fun afterTextChanged(s: Editable?) {}
         })
 
         passwordEdit.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                if (s != null && s.length < 8) {
-                    binding.registerPasswordEditTextLayout.error =
-                        getString(R.string.error_password)
-                } else {
-                    binding.registerPasswordEditTextLayout.error = null
-                    setRegisterEnable()
-                }
+
             }
 
-            override fun afterTextChanged(s: Editable?) {}
+            override fun afterTextChanged(s: Editable?) {
+                if (s != null && s.length < 8) {
+                    binding.registerPasswordEditText.error =
+                        getString(R.string.error_password)
+                } else {
+                    binding.registerPasswordEditText.error = null
+                    setRegisterEnable()
+                }
+
+            }
         })
+
+        registerButton.setOnClickListener {
+            showLoading(true)
+
+        }
 
     }
 
@@ -167,13 +216,14 @@ class RegisterFragment : Fragment() {
     }
 
     private fun onBackPress() {
-        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                findNavController().navigateUp()
-            }
-        })
+        requireActivity().onBackPressedDispatcher.addCallback(
+            viewLifecycleOwner,
+            object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    findNavController().navigateUp()
+                }
+            })
     }
-
 
 
     override fun onDestroyView() {
