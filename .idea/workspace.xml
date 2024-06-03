@@ -61,7 +61,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b62e8dc2-a2b4-48e5-a780-67b7cd4bfa08" name="Changes" comment="Initial code + imageView di activity main" />
+    <list default="true" id="b62e8dc2-a2b4-48e5-a780-67b7cd4bfa08" name="Changes" comment="Initial code + imageView di activity main">
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,7 +180,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Scan",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/SELO/BANGKIT/FreshGrade"
   }
@@ -288,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716478399468</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added icons and pictures">
+      <option name="closed" value="true" />
+      <created>1717396184349</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717396184349</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,6 +315,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial code" />
     <MESSAGE value="Initial code + imageView di activity main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial code + imageView di activity main" />
+    <MESSAGE value="added icons and pictures" />
+    <option name="LAST_COMMIT_MESSAGE" value="added icons and pictures" />
   </component>
 </project>
