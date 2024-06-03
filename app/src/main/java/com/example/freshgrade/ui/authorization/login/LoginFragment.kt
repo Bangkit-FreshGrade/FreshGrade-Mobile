@@ -9,14 +9,21 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.cscorner.storyapp.ui.customview.EmailEdit
 import com.cscorner.storyapp.ui.customview.LoginButton
 import com.cscorner.storyapp.ui.customview.PasswordEdit
 import com.example.freshgrade.R
+import com.example.freshgrade.data.api.Result
 import com.example.freshgrade.databinding.FragmentLoginBinding
+import com.example.freshgrade.ui.util.ViewModelFactory
 
 
 class LoginFragment : Fragment() {
@@ -27,27 +34,20 @@ class LoginFragment : Fragment() {
     private lateinit var emailEdit: EmailEdit
     private lateinit var passwordEdit: PasswordEdit
 
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-
-        }
+    private val loginViewModel: LoginViewModel by viewModels {
+        ViewModelFactory.getInstance(requireContext())
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
         showLoading(false)
-
 
         loginButton = binding.loginButton
         emailEdit = binding.loginEmailEditText
@@ -56,23 +56,17 @@ class LoginFragment : Fragment() {
 
         Enabler()
 
-
-        binding.loginButton.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.mainActivity))
-
         binding.RegisterLink.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.registerFragment))
 
-//        loginButton.setOnClickListener {
-//            val email = emailEdit.text.toString()
-//            val password = passwordEdit.text.toString()
-//
-//            authenticate(email, password)
-//        }
+        loginButton.setOnClickListener {
+            val email = emailEdit.text.toString()
+            val password = passwordEdit.text.toString()
+            authenticate(email, password)
+        }
 
         playAnimation()
-
         onBackPress()
     }
-
 
     private fun setLoginButtonEnable() {
         val email = emailEdit.text
@@ -91,8 +85,6 @@ class LoginFragment : Fragment() {
                     setLoginButtonEnable()
                 } else {
                     binding.loginEmailEditText.error = getString(R.string.error_invalid_email)
-//                    binding.loginEmailEditText.error = ""
-//                    Toast.makeText(context, getString(R.string.error_invalid_email), Toast.LENGTH_SHORT).show()
                 }
             }
             override fun afterTextChanged(s: Editable?) {}
@@ -104,44 +96,32 @@ class LoginFragment : Fragment() {
                 if (s != null && s.length < 8) {
                     binding.loginPasswordEditText.error = getString(R.string.error_password)
                 } else {
-                    binding.loginPasswordEditText.error = null
+                    binding.loginPasswordEditTextLayout.error = null
                     setLoginButtonEnable()
                 }
             }
             override fun afterTextChanged(s: Editable?) {}
         })
-
-
-
     }
 
     private fun authenticate(email: String, password: String) {
+        loginViewModel.login(email, password).observe(viewLifecycleOwner, Observer {
+            when (it) {
+                is Result.Error -> {
+                    showLoading(false)
+                    showDialog(ERROR)
+                    Toast.makeText(context, it.error, Toast.LENGTH_LONG).show()
 
-//        loginViewModel.userLogin(email, password).observe(this) {
-//            when (it) {
-//                is Result.Success -> {
-//                    showLoading(false)
-//                    dataStore
-//                    val response = it.data
-//                    loginViewModel.saveUserData(
-//                        UserModel(
-//                            response.loginResult?.name.toString(),
-//                            response.loginResult?.token.toString(),
-//                            true
-//                        )
-//                    )
-//
-//                    startActivity(Intent(this, MainActivity::class.java))
-//                    finishAffinity()
-//                }
-//                is Result.Loading -> showLoading(true)
-//                is Result.Error -> {
-//                    showDialog(ERROR)
-//                    showLoading(false)
-//                }
-//            }
+                }
+                Result.Loading -> showLoading(true)
+                is Result.Success -> {
+                    showDialog(SUCCESS)
+                    findNavController().navigate(R.id.mainActivity)
+
+                }
+            }
+        })
     }
-
 
     private fun playAnimation() {
         ObjectAnimator.ofFloat(binding.loginImageView, View.TRANSLATION_X, -30f, 30f).apply {
@@ -179,21 +159,7 @@ class LoginFragment : Fragment() {
             )
             startDelay = 100
         }.start()
-
     }
-
-//    private fun setupView() {
-//        @Suppress("DEPRECATION")
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-//            window.insetsController?.hide(WindowInsets.Type.statusBars())
-//        } else {
-//            window.setFlags(
-//                WindowManager.LayoutParams.FLAG_FULLSCREEN,
-//                WindowManager.LayoutParams.FLAG_FULLSCREEN
-//            )
-//        }
-//        supportActionBar?.hide()
-//    }
 
     private fun onBackPress() {
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
@@ -203,17 +169,32 @@ class LoginFragment : Fragment() {
         })
     }
 
-    private fun showLoading(isLoading: Boolean) {
-        binding.progressbar.visibility = if (isLoading) View.VISIBLE else View.GONE
-    }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
 
-    companion object {
-
-
+    private fun showDialog(mode: String, message: String? = null) {
+        val builder = AlertDialog.Builder(requireContext())
+        if (mode == ERROR) {
+            val title = getString(R.string.login_failed)
+            val msg = message ?: getString(R.string.login_failed)
+            builder.setTitle(title)
+            builder.setMessage(msg)
+            builder.setPositiveButton(android.R.string.ok) { _, _ -> }
+            builder.show()
+        } else if (mode == SUCCESS) {
+            Toast.makeText(requireContext(), getString(R.string.login_success), Toast.LENGTH_SHORT).show()
+        }
     }
+
+    private fun showLoading(isLoading: Boolean) {
+        binding.progressbar.visibility = if (isLoading) View.VISIBLE else View.GONE
+    }
+
+    companion object {
+        const val ERROR = "error"
+        const val SUCCESS = "success"
+    }
+
 }

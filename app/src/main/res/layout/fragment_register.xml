@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,10 +8,20 @@
     style="@style/Theme.FreshGrade.auth"
     tools:context=".ui.authorization.register.RegisterFragment">
 
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+
     <ImageView
         android:id="@+id/registerImageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="373dp"
+        android:layout_height="94dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:importantForAccessibility="no"
@@ -34,21 +45,23 @@
         app:layout_constraintTop_toBottomOf="@+id/registerImageView" />
 
     <TextView
-        style="@style/Theme.FreshGrade.auth"
         android:id="@+id/registerTitleTextView"
+        style="@style/Theme.FreshGrade.auth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="4dp"
         android:alpha="0"
         android:text="@string/title_register_page"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/registerGuidelineHorizontal"
         tools:alpha="100" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:background="@drawable/layout_bg"
@@ -58,22 +71,119 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerTitleTextView">
 
+        <LinearLayout
+            android:id="@+id/LastFirstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@null"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/FirstLayout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:id="@+id/registerFirstNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@null"
+                    android:text="First Name"
+                    android:textColor="@color/on_primary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/registerFirstNameEditTextLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/registerFirstNameTextView"
+                    tools:alpha="100">
+
+                    <com.cscorner.storyapp.ui.customview.FirstNameEdit
+                        android:id="@+id/registerFirstNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/inner_layout_bg"
+                        android:ems="8"
+                        android:inputType="text"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/LasttLayout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/layout_bg"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:id="@+id/registerLastNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@null"
+                    android:text="Last Name"
+                    android:textColor="@color/on_primary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/registerLastNameEditTextLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/registerLastNameTextView"
+                    tools:alpha="100">
+
+                    <com.cscorner.storyapp.ui.customview.LastNameEdit
+                        android:id="@+id/registerLastNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/inner_layout_bg"
+                        android:ems="8"
+                        android:inputType="text"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/nameLayout"
+            android:id="@+id/userNameLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:layout_marginBottom="24dp"
             android:background="@drawable/layout_bg"
             android:paddingBottom="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@id/LastFirstLayout"
+            >
 
             <TextView
-                android:id="@+id/registerNameTextView"
+                android:id="@+id/registerUserNameTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/on_primary"
@@ -86,18 +196,18 @@
                 tools:alpha="100" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/registerNameEditTextLayout"
+                android:id="@+id/registerUserNameEditTextLayout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@null"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/registerNameTextView"
+                app:layout_constraintTop_toBottomOf="@+id/registerUserNameTextView"
                 tools:alpha="100">
 
                 <com.cscorner.storyapp.ui.customview.NameEdit
-                    android:id="@+id/registerNameEditText"
+                    android:id="@+id/registerUserNameEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/inner_layout_bg"
@@ -113,14 +223,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:layout_marginBottom="24dp"
             android:background="@drawable/layout_bg"
             android:paddingBottom="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nameLayout">
+            app:layout_constraintTop_toBottomOf="@+id/userNameLayout">
 
 
             <TextView
@@ -170,7 +280,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/layout_bg"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:layout_marginBottom="24dp"
             android:paddingBottom="4dp"
@@ -219,17 +329,16 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
         <com.cscorner.storyapp.ui.customview.RegisterButton
             android:id="@+id/registerButton"
-            android:layout_width="0dp"
-            android:layout_height="64dp"
+            android:layout_width="282dp"
+            android:layout_height="49dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
-            android:textColor="@color/primary"
             android:alpha="0"
             android:text="@string/Register"
+            android:textColor="@color/primary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passwordLayout"
@@ -272,7 +381,7 @@
         android:layout_height="64dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintGuide_end="558dp"
+        app:layout_constraintGuide_percent="0.18"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -280,7 +389,7 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="31dp" />
+        app:layout_constraintGuide_begin="16dp" />
 
     <ProgressBar
         android:id="@+id/progressbar"
@@ -291,5 +400,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
