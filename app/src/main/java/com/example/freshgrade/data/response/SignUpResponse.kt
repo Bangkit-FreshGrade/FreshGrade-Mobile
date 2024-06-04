@@ -5,7 +5,5 @@ import com.google.gson.annotations.SerializedName
 data class SignUpResponse(
 
 	@field:SerializedName("access_token")
-	val accessToken: String,
-
-
+	val accessToken: String
 )
