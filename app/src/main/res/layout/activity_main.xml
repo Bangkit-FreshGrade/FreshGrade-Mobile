@@ -6,17 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="@color/bacground_main"
+    android:background="@color/background_main"
     >
 
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="178dp"
-        tools:layout_editor_absoluteY="82dp" />
 
     <View
         android:id="@+id/view"
@@ -65,7 +57,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/baseline_person_24" />
+        app:srcCompat="@drawable/ic_profile" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

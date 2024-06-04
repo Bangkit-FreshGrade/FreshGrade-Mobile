@@ -18,6 +18,12 @@
         <item name="bottomNavBgColor">@color/primary</item>
         <item name="buttonColor">@color/primary</item>
     </style>
+
+    <style name="RoundedTextViewStyle">
+        <item name="android:background">@drawable/round_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">16dp</item>
+    </style>
 <!---->
     <style name="Theme.FreshGrade.auth" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->

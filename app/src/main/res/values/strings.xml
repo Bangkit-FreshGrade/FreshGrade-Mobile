@@ -106,4 +106,5 @@
     <string name="gallery_label">Gallery</string>
     <string name="error_first_name">first name required</string>
     <string name="error_last_name">last name required</string>
+    <string name="info_desc">For the time being we can only scan Mangoes, Apples and Oranges. we\'re continously working on to more fruits in the future</string>
 </resources>

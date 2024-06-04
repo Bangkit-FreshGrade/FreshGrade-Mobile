@@ -104,5 +104,8 @@ dependencies {
     testImplementation(libs.mockito.inline)
     testImplementation (libs.robolectric)
 
+    //lottie animation
+    implementation(libs.lottie)
+
 
 }

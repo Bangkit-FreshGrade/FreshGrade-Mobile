@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.freshgrade.app-mergeDebugResources-61:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.example.freshgrade.app-mergeDebugResources-2:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-4\\4abcaf4cc6e41cd3666f39d636916f4b\\transformed\\appcompat-1.6.1\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-4\\63dffa04cb48cab70a90090690c2b99b\\transformed\\appcompat-1.6.1\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-4\\57b9543695575a196d3b7f210ef6a978\\transformed\\core-1.13.1\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-4\\f3f74b3b39111217041f8e929df40d3a\\transformed\\core-1.13.1\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-4\\0965de5e1720f94b2353014e5b68cc5a\\transformed\\navigation-ui-2.7.7\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-4\\f017a3d7b3d22a57830e7ca718713a10\\transformed\\navigation-ui-2.7.7\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

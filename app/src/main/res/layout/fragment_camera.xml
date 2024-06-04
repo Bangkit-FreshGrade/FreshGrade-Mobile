@@ -6,22 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.camera.CameraFragment">
 
+    <ImageView
+        android:id="@+id/info_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_info"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/desc_tv"
+        android:layout_width="385dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        style="@style/RoundedTextViewStyle"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/info_desc"
+        android:textColor="@color/primary"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/carousel_cam_rv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/carousel_cam_rv"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline9">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/carousel_scanner_rv"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </RelativeLayout>
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="0.717" />
 
     <Button
         android:id="@+id/camera_btn"
@@ -74,5 +98,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.095759235" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
