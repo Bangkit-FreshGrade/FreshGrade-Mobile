@@ -22,8 +22,10 @@ import com.cscorner.storyapp.ui.customview.LoginButton
 import com.cscorner.storyapp.ui.customview.PasswordEdit
 import com.example.freshgrade.R
 import com.example.freshgrade.data.api.Result
+import com.example.freshgrade.data.pref.UserModel
 import com.example.freshgrade.databinding.FragmentLoginBinding
 import com.example.freshgrade.ui.util.ViewModelFactory
+
 
 
 class LoginFragment : Fragment() {
@@ -105,7 +107,7 @@ class LoginFragment : Fragment() {
     }
 
     private fun authenticate(email: String, password: String) {
-        loginViewModel.login(email, password).observe(viewLifecycleOwner, Observer {
+        loginViewModel.userLogin(email, password).observe(viewLifecycleOwner) {
             when (it) {
                 is Result.Error -> {
                     showLoading(false)
@@ -113,14 +115,23 @@ class LoginFragment : Fragment() {
                     Toast.makeText(context, it.error, Toast.LENGTH_LONG).show()
 
                 }
+
                 Result.Loading -> showLoading(true)
                 is Result.Success -> {
+                    showLoading(false)
+                    val response = it.data
+                    loginViewModel.saveUserData(
+                        UserModel(
+                            response.accessToken,
+                            true
+                        )
+                    )
                     showDialog(SUCCESS)
                     findNavController().navigate(R.id.mainActivity)
 
                 }
             }
-        })
+        }
     }
 
     private fun playAnimation() {
