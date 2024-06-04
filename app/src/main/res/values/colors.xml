@@ -6,7 +6,8 @@
     <color name="primary">#006769</color>
     <color name="on_primary">#E6FF94</color>
     <color name="secondary">#E6FF94</color>
-    <color name="tertiary">#E0FBE2</color>
+    <color name="tertiary">#40A578</color>
+    <color name="forth">#C2ECCE</color>
 
 
     <color name="transparent">#00000000</color>"
@@ -17,7 +18,7 @@
 <!--    <color name="on_primary">#006769</color>"-->
 
     <color name="bacground_auth">#006769</color>
-    <color name="bacground_main">#E0FBE2</color>
+    <color name="background_main">#66BA8B</color>
 
 
     <color name="primaryDark">#FF3b5998</color>

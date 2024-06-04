@@ -3,10 +3,11 @@
     <attr format="color" name="bottomNavBgColor"/>
     <attr format="color" name="buttonColor"/>
     <color name="bacground_auth">#006769</color>
-    <color name="bacground_main">#E0FBE2</color>
+    <color name="background_main">#66BA8B</color>
     <color name="black">#FF000000</color>
     <color name="blue">#2196F3</color>
     <color name="dark">#FF2c3e50</color>
+    <color name="forth">#C2ECCE</color>
     <color name="green">#4CAF50</color>
     <color name="navy">#2D3D4F</color>
     <color name="on_primary">#E6FF94</color>
@@ -22,7 +23,7 @@
     <color name="secondary_text">#A9FFFFFF</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="tertiary">#E0FBE2</color>
+    <color name="tertiary">#40A578</color>
     <color name="transparant">#00FFFFFF</color>
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
@@ -55,6 +56,7 @@
     <string name="history_label">History</string>
     <string name="hybrid_type">Hybrid</string>
     <string name="if_you_already_have_an_acount">Already Part of Us?</string>
+    <string name="info_desc">For the time being we can only scan Mangoes, Apples and Oranges. we\'re continously working on to more fruits in the future</string>
     <string name="input_email">Input email\n</string>
     <string name="input_name">Input name</string>
     <string name="input_password">Input password</string>
@@ -126,6 +128,15 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_register_page">Create Account</string>
     <string name="title_welcome_page">Selamat datang di Story App!</string>
+    <style name="RoundedTextViewStyle">
+        <item name="android:background">@drawable/round_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.CornerRadius" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
     <style name="Theme.FreshGrade" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/primary</item>

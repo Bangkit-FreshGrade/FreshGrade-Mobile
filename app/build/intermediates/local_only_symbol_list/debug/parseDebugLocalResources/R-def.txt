@@ -3,11 +3,12 @@ local
 attr bottomNavBgColor
 attr buttonColor
 color bacground_auth
-color bacground_main
+color background_main
 color black
 color blue
 color bottom_nav_icon_color
 color dark
+color forth
 color green
 color navy
 color on_primary
@@ -61,6 +62,7 @@ drawable ic_camera
 drawable ic_dashboard_black_24dp
 drawable ic_history
 drawable ic_home_black_24dp
+drawable ic_info
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_notifications_black_24dp
@@ -71,6 +73,7 @@ drawable inner_bg
 drawable inner_layout_bg
 drawable layout_bg
 drawable logo_fresh
+drawable round_bg
 id ChangePasswordLink
 id ChangePasswordText
 id FirstLayout
@@ -90,11 +93,11 @@ id action_registerFragment_to_landingFragment
 id authContainer
 id auth_nav
 id auth_nav_host_fragment
-id button2
 id camera_btn
-id carousel_scanner_rv
+id carousel_cam_rv
 id changePasswordLayout
 id container
+id desc_tv
 id emailLayout
 id gallery_btn
 id guideline
@@ -104,6 +107,7 @@ id guideline5
 id guideline7
 id guideline9
 id imageView
+id info_iv
 id iv_logo
 id landiing_register_button
 id landingFragment
@@ -170,11 +174,13 @@ layout fragment_login
 layout fragment_profile
 layout fragment_register
 layout fragment_result
+layout item_view_carousel_camera
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation auth_nav
 navigation mobile_navigation
+raw animation_cam_carousel
 string If_you_dont_have_an_acount
 string Register
 string app_name
@@ -201,6 +207,7 @@ string hello_blank_fragment
 string history_label
 string hybrid_type
 string if_you_already_have_an_acount
+string info_desc
 string input_email
 string input_name
 string input_password
@@ -237,6 +244,8 @@ string title_login_page
 string title_notifications
 string title_register_page
 string title_welcome_page
+style RoundedTextViewStyle
+style ShapeAppearanceOverlay.CornerRadius
 style Theme.FreshGrade
 style Theme.FreshGrade.auth
 xml backup_rules
