@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.freshgrade.app-mergeDebugResources-2:/values-small-v4/values-small-v4.xml",
+            "outputFile": "com.example.freshgrade.app-mergeDebugResources-62:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SELO AZIZ\\.gradle\\caches\\transforms-4\\b1a50edb16e2f3377e0f38fbbab45b5c\\transformed\\material-1.12.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-4\\b1a50edb16e2f3377e0f38fbbab45b5c\\transformed\\material-1.12.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
