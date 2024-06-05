@@ -7,7 +7,7 @@
     <layouts>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_auth.xml">
         <config>
-          <theme>@style/Theme.FreshGrade</theme>
+          <theme>@style/Theme.FreshGrade.auth</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
@@ -35,11 +35,6 @@
           <theme>@style/Theme.FreshGrade</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_landing.xml">
-        <config>
-          <theme>@style/Theme.FreshGrade</theme>
-        </config>
-      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml">
         <config>
           <theme>@style/Theme.FreshGrade</theme>
@@ -60,22 +55,17 @@
           <theme>@style/Theme.FreshGrade</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_view_article.xml">
-        <config>
-          <theme>@style/Theme.FreshGrade</theme>
-        </config>
-      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_view_carousel_camera.xml">
         <config>
           <theme>@style/Theme.FreshGrade</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_view_history.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml">
         <config>
           <theme>@style/Theme.FreshGrade</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/navigation/auth_nav.xml">
         <config>
           <theme>@style/Theme.FreshGrade</theme>
         </config>
@@ -149,18 +139,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Object" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Class" />
         <option value="valueResourceFile" />
         <option value="resourceFile" />
-        <option value="Class" />
-        <option value="Kotlin Class" />
-        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="history-layout" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -204,6 +197,7 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -216,24 +210,15 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "history-layout",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/program/Smt6-Bangkit/Capstone/Fruty/FreshGrade-Mobile/app/src/main/res/layout",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "last_opened_file_path": "C:/SELO/BANGKIT/FreshGrade",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\program\Smt6-Bangkit\Capstone\Fruty\FreshGrade-Mobile\app\src\main\res\layout" />
-      <recent name="D:\program\Smt6-Bangkit\Capstone\TestGitHub\FreshGrade-Mobile\app\src\main\res\drawable" />
-    </key>
     <key name="android.template.-1494621181">
       <recent name="com.example.freshgrade.ui.main.profile" />
     </key>
@@ -242,6 +227,10 @@
       <recent name="com.example.freshgrade.ui.main.history" />
       <recent name="com.example.freshgrade.ui.main.article" />
       <recent name="com.example.freshgrade.ui.main.camera" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.example.freshgrade.ui.authorization.register" />
+      <recent name="com.example.freshgrade.ui.customview" />
     </key>
   </component>
   <component name="RunManager">
