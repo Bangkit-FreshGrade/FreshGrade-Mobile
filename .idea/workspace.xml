@@ -81,7 +81,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b62e8dc2-a2b4-48e5-a780-67b7cd4bfa08" name="Changes" comment="add api auth" />
+    <list default="true" id="b62e8dc2-a2b4-48e5-a780-67b7cd4bfa08" name="Changes" comment="add history &amp; article">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,6 +165,16 @@
     &quot;assignee&quot;: &quot;SeloazizLaraybafih&quot;
   }
 }</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="4d08f285-3f9d-4419-869e-1baf3a5a364f" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -323,13 +335,13 @@
       <option name="project" value="LOCAL" />
       <updated>1717396184349</updated>
     </task>
-    <task id="LOCAL-00004" summary="add api auth">
+    <task id="LOCAL-00004" summary="add history &amp; article">
       <option name="closed" value="true" />
-      <created>1717438980149</created>
+      <created>1717562810852</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1717438980149</updated>
+      <updated>1717562810852</updated>
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
@@ -349,7 +361,7 @@
     <MESSAGE value="Initial code" />
     <MESSAGE value="Initial code + imageView di activity main" />
     <MESSAGE value="added icons and pictures" />
-    <MESSAGE value="add api auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="add api auth" />
+    <MESSAGE value="add history &amp; article" />
+    <option name="LAST_COMMIT_MESSAGE" value="add history &amp; article" />
   </component>
 </project>
