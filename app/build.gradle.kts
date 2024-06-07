@@ -107,5 +107,9 @@ dependencies {
     //lottie animation
     implementation(libs.lottie)
 
+    //circle image view
+    implementation (libs.circleimageview)
+
+
 
 }
