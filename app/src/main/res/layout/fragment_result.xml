@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ACE1AF"
     tools:context=".ui.main.result.ResultFragment">
 
-    
+
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/fruitImg"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/circle_bg"
-        android:padding="12dp"
+        android:background="@drawable/fruit_img_circle_bg"
+        android:padding="4dp"
         tools:src="@drawable/car1"
         tools:ignore="ImageContrastCheck"
         app:civ_border_color="@color/white"
