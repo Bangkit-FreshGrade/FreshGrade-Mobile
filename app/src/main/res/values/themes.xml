@@ -18,6 +18,11 @@
         <item name="bottomNavBgColor">@color/primary</item>
         <item name="buttonColor">@color/primary</item>
     </style>
+
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 <!---->
     <style name="Theme.FreshGrade.auth" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->

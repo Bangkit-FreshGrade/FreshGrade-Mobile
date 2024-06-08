@@ -56,7 +56,7 @@ class EmailEdit @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        hint = "Imput you're Email "
+        hint = "Imput your Email "
         textAlignment = View.TEXT_ALIGNMENT_VIEW_START
     }
 

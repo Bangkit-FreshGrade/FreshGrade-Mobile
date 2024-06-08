@@ -40,7 +40,7 @@ class NameEdit @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        hint = "Input you're Name"
+        hint = "Input your Name"
         textAlignment = View.TEXT_ALIGNMENT_VIEW_START
     }
 

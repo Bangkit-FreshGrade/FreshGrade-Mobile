@@ -106,4 +106,10 @@
     <string name="gallery_label">Gallery</string>
     <string name="error_first_name">first name required</string>
     <string name="error_last_name">last name required</string>
+    <string name="profile_forgot_your_pass">Forgot your password?</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_kebijakan_btn">Kebijakan dan Privasi</string>
+    <string name="profile_tentang_btn">Tentang FreshGrade</string>
+    <string name="profile_hapus_akun">Hapus Akun</string>
+    <string name="profile_logout_btn">Log out</string>
 </resources>
