@@ -83,6 +83,17 @@
         app:layout_constraintStart_toStartOf="@id/fruitImg"
         app:layout_constraintTop_toBottomOf="@id/fruitFreshnes" />
 
+<Button
+    android:theme="@style/Theme.FreshGrade.auth"
+    android:id="@+id/scanAgain"
+    android:textAllCaps="false"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:text="Scan Again"
+    app:layout_constraintEnd_toEndOf="@id/fruitImg"
+    app:layout_constraintStart_toStartOf="@id/fruitImg"
+    app:layout_constraintTop_toBottomOf="@id/fruitDisease"/>
 
 
 
