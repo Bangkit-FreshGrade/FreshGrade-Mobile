@@ -27,4 +27,9 @@
         android:name="com.example.freshgrade.ui.main.article.ArticleFragment"
         android:label="@string/article_label"
         tools:layout="@layout/fragment_article" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.freshgrade.ui.main.result.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
 </navigation>
