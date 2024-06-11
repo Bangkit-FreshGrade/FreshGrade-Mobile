@@ -4,19 +4,209 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bacground_auth"
     tools:context=".ui.main.profile.ProfileFragment">
 
-    <TextView
-        android:id="@+id/text_profile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+
+
+    <FrameLayout
+        android:id="@+id/profil_layout_top"
+        android:layout_width="326dp"
+        android:layout_height="274dp"
+        android:background="@color/forth"
+        app:layout_constraintBottom_toTopOf="@+id/profile_layout_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.cscorner.storyapp.ui.customview.NameEdit
+                android:id="@+id/profileNameEditText"
+                android:layout_width="272dp"
+                android:layout_height="47dp"
+                android:background="@drawable/inner_layout_bg"
+                android:ems="8"
+                android:inputType="text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.176"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/profile_email_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_email"
+                android:textColor="@color/secondary"
+                app:layout_constraintBottom_toTopOf="@+id/profileEmailEditText"
+                app:layout_constraintEnd_toEndOf="@+id/profileEmailEditText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/profileEmailEditText" />
+
+            <com.cscorner.storyapp.ui.customview.EmailEdit
+                android:id="@+id/profileEmailEditText"
+                android:layout_width="272dp"
+                android:layout_height="47dp"
+                android:background="@drawable/inner_layout_bg"
+                android:ems="8"
+                android:inputType="text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.506"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/profile_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/secondary"
+                app:layout_constraintBottom_toTopOf="@+id/profileNameEditText"
+                app:layout_constraintEnd_toEndOf="@+id/profileNameEditText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/profileNameEditText" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="268dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                android:text="Ubah Profil"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileEmailEditText" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/profile_forgot_your_pass"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginBottom="16dp"
+                android:text="change here"
+                android:textColor="@color/secondary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toEndOf="@+id/textView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="76dp"
+        android:layout_height="62dp"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:src="@drawable/car5"
+        app:layout_constraintBottom_toTopOf="@+id/profil_layout_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:strokeColor="@android:color/darker_gray"
+        app:strokeWidth="2dp" />
+
+    <FrameLayout
+        android:id="@+id/profile_layout_bottom"
+        android:layout_width="332dp"
+        android:layout_height="266dp"
+        android:layout_marginBottom="84dp"
+        android:background="@color/forth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/btn_kebijakan"
+                android:layout_width="254dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/profile_kebijakan_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_tentang"
+                android:layout_width="252dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/profile_tentang_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_kebijakan" />
+
+            <Button
+                android:id="@+id/btn_hapus_akun"
+                android:layout_width="252dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/profile_hapus_akun"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_tentang" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="243dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/profile_logout_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_layout_bottom" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
