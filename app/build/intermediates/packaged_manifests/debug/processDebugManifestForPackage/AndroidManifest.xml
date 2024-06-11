@@ -36,6 +36,11 @@
         <activity
             android:name="com.example.freshgrade.ui.splash.SplashActivity"
             android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.example.freshgrade.ui.authorization.AuthActivity"
@@ -43,14 +48,9 @@
             android:theme="@style/Theme.FreshGrade.auth" >
         </activity>
         <activity
-            android:name="com.example.freshgrade.MainActivity"
+            android:name="com.example.freshgrade.ui.main.MainActivity"
             android:exported="true"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <service

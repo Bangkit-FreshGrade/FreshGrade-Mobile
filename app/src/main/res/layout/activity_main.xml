@@ -48,7 +48,7 @@
         app:navGraph="@navigation/mobile_navigation" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/profileImageView"
         android:layout_width="60dp"
         android:layout_height="57dp"
         android:layout_marginEnd="16dp"

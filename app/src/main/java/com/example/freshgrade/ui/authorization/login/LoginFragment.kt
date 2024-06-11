@@ -83,10 +83,10 @@ class LoginFragment : Fragment() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 val email = s.toString()
                 if (android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                    binding.loginEmailEditTextLayout.error = null
+                    binding.loginEmailEditText.error = null
                     setLoginButtonEnable()
                 } else {
-                    binding.loginEmailEditText.error = getString(R.string.error_invalid_email)
+                    binding.loginEmailEditText.error
                 }
             }
             override fun afterTextChanged(s: Editable?) {}
@@ -96,9 +96,9 @@ class LoginFragment : Fragment() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 if (s != null && s.length < 8) {
-                    binding.loginPasswordEditText.error = getString(R.string.error_password)
+                    binding.loginPasswordEditText.error
                 } else {
-                    binding.loginPasswordEditTextLayout.error = null
+                    binding.loginPasswordEditText.error = null
                     setLoginButtonEnable()
                 }
             }
@@ -122,7 +122,8 @@ class LoginFragment : Fragment() {
                     val response = it.data
                     loginViewModel.saveUserData(
                         UserModel(
-                            response.accessToken,
+                            response.loginResult?.name.toString(),
+                            response.loginResult?.token.toString(),
                             true
                         )
                     )
@@ -144,12 +145,12 @@ class LoginFragment : Fragment() {
         val title = ObjectAnimator.ofFloat(binding.loginTitleTextView, View.ALPHA, 1f).setDuration(100)
         val emailTextView =
             ObjectAnimator.ofFloat(binding.loginEmailText, View.ALPHA, 1f).setDuration(100)
-        val emailEditTextLayout =
-            ObjectAnimator.ofFloat(binding.loginEmailEditTextLayout, View.ALPHA, 1f).setDuration(100)
+//        val emailEditTextLayout =
+//            ObjectAnimator.ofFloat(binding.loginEmailEditTextLayout, View.ALPHA, 1f).setDuration(100)
         val passwordTextView =
             ObjectAnimator.ofFloat(binding.LoginPasswordText, View.ALPHA, 1f).setDuration(100)
-        val passwordEditTextLayout =
-            ObjectAnimator.ofFloat(binding.loginPasswordEditTextLayout, View.ALPHA, 1f).setDuration(100)
+//        val passwordEditTextLayout =
+//            ObjectAnimator.ofFloat(binding.loginPasswordEditTextLayout, View.ALPHA, 1f).setDuration(100)
         val login = ObjectAnimator.ofFloat(binding.loginButton, View.ALPHA, 1f).setDuration(100)
 
         val registerText =
@@ -161,9 +162,9 @@ class LoginFragment : Fragment() {
             playSequentially(
                 title,
                 emailTextView,
-                emailEditTextLayout,
+//                emailEditTextLayout,
                 passwordTextView,
-                passwordEditTextLayout,
+//                passwordEditTextLayout,
                 login,
                 registerText,
                 registerLink
@@ -192,6 +193,7 @@ class LoginFragment : Fragment() {
             val msg = message ?: getString(R.string.login_failed)
             builder.setTitle(title)
             builder.setMessage(msg)
+            message?.let { builder.setNeutralButton(android.R.string.ok) { _, _ -> } }
             builder.setPositiveButton(android.R.string.ok) { _, _ -> }
             builder.show()
         } else if (mode == SUCCESS) {

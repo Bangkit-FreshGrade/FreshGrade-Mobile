@@ -31,24 +31,24 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Guideline guideline2;
 
   @NonNull
-  public final ImageView imageView;
+  public final BottomNavigationView navView;
 
   @NonNull
-  public final BottomNavigationView navView;
+  public final ImageView profileImageView;
 
   @NonNull
   public final View view;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout container, @NonNull Guideline guideline,
-      @NonNull Guideline guideline2, @NonNull ImageView imageView,
-      @NonNull BottomNavigationView navView, @NonNull View view) {
+      @NonNull Guideline guideline2, @NonNull BottomNavigationView navView,
+      @NonNull ImageView profileImageView, @NonNull View view) {
     this.rootView = rootView;
     this.container = container;
     this.guideline = guideline;
     this.guideline2 = guideline2;
-    this.imageView = imageView;
     this.navView = navView;
+    this.profileImageView = profileImageView;
     this.view = view;
   }
 
@@ -93,15 +93,15 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView;
-      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
-      if (imageView == null) {
-        break missingId;
-      }
-
       id = R.id.nav_view;
       BottomNavigationView navView = ViewBindings.findChildViewById(rootView, id);
       if (navView == null) {
+        break missingId;
+      }
+
+      id = R.id.profileImageView;
+      ImageView profileImageView = ViewBindings.findChildViewById(rootView, id);
+      if (profileImageView == null) {
         break missingId;
       }
 
@@ -112,7 +112,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, container, guideline, guideline2,
-          imageView, navView, view);
+          navView, profileImageView, view);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
