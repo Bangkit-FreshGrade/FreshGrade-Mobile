@@ -126,6 +126,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/shapeableImageView"
         android:layout_width="76dp"
@@ -135,13 +136,13 @@
         android:src="@drawable/car5"
         app:layout_constraintBottom_toTopOf="@+id/profil_layout_top"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685"
         app:shapeAppearanceOverlay="@style/circleImageView"
         app:strokeColor="@android:color/darker_gray"
         app:strokeWidth="2dp" />
-
 
     <FrameLayout
         android:id="@+id/profile_layout_bottom"
@@ -205,6 +206,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_layout_bottom" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="61dp"
+        android:layout_height="25dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="6dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
