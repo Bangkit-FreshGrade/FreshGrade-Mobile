@@ -38,22 +38,17 @@ class UserRepository private constructor(
         userPreference.logout()
         val userModel = userPreference.getUserData().first()
 
-        // Check if the user's name is empty
-//        val isNameEmpty = userModel.name.isEmpty()
-//        if (isNameEmpty) {
-//            // Display a message indicating that the name has been successfully removed
-//            Log.d("Logout", "User name successfully removed")
-//        } else {
-//            // Display a message or take action to handle the error
-//            Log.e("Logout", "Error: User name not removed")
-//        }
+        val isNameEmpty = userModel.name.isEmpty()
+        if (isNameEmpty) {
+            Log.d("Logout", "User name successfully removed")
+        } else {
+            Log.e("Logout", "Error: User name not removed")
+        }
 
         val isTokenEmpty = userModel.token.isEmpty()
         if (isTokenEmpty) {
-            // Display a message indicating that the name has been successfully removed
             Log.d("Logout", "Token successfully removed")
         } else {
-            // Display a message or take action to handle the error
             Log.e("Logout", "Error: Token not removed")
         }
 
@@ -78,7 +73,6 @@ class UserRepository private constructor(
         }
     }
 
-    //
     fun userLogin(email: String, password: String): LiveData<Result<SignInResponse>> = liveData {
         emit(Result.Loading)
         try {

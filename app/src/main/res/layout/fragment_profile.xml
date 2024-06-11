@@ -80,7 +80,7 @@
                 android:layout_width="268dp"
                 android:layout_height="42dp"
                 android:layout_marginTop="16dp"
-                android:text="Ubah Profil"
+                android:text="@string/change_profile"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/profileEmailEditText" />
@@ -161,42 +161,42 @@
 
 
             <Button
-                android:id="@+id/btn_kebijakan"
+                android:id="@+id/btn_privacy"
                 android:layout_width="254dp"
                 android:layout_height="49dp"
                 android:layout_marginTop="28dp"
-                android:text="@string/profile_kebijakan_btn"
+                android:text="@string/privacy_policy"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/btn_tentang"
+                android:id="@+id/btn_about"
                 android:layout_width="252dp"
                 android:layout_height="49dp"
                 android:layout_marginTop="24dp"
-                android:text="@string/profile_tentang_btn"
+                android:text="@string/about"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_kebijakan" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_privacy" />
 
             <Button
-                android:id="@+id/btn_hapus_akun"
+                android:id="@+id/btn_delete_acc"
                 android:layout_width="252dp"
                 android:layout_height="49dp"
                 android:layout_marginTop="24dp"
-                android:text="@string/profile_hapus_akun"
+                android:text="@string/delete_account"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.512"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_tentang" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_about" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </FrameLayout>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/logoutButton"
         android:layout_width="243dp"
         android:layout_height="55dp"
         android:layout_marginTop="14dp"

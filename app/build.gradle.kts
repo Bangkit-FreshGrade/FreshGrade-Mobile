@@ -1,6 +1,9 @@
 plugins {
-    alias(libs.plugins.androidApplication)
-    alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.jetbrains.kotlin.kapt)
+    alias(libs.plugins.jetbrains.kotlin.parcelize)
+
 }
 
 android {
@@ -83,8 +86,9 @@ dependencies {
     //room
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.room.runtime)
+    
     //noinspection KaptUsageInsteadOfKsp
-//    kapt(libs.androidx.room.compiler)
+    kapt(libs.androidx.room.compiler)
 
     //retrofit
     implementation(libs.retrofit)
