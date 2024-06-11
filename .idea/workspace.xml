@@ -106,9 +106,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b62e8dc2-a2b4-48e5-a780-67b7cd4bfa08" name="Changes" comment="add history &amp; article">
+    <list default="true" id="b62e8dc2-a2b4-48e5-a780-67b7cd4bfa08" name="Changes" comment="add on profile and add already loged in">
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/freshgrade/ui/main/MainActivity.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/freshgrade/ui/main/MainViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/freshgrade/ui/main/profile/about/AboutFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/freshgrade/ui/main/profile/privacy/PrivacyFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_about.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_privacy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
@@ -800,7 +804,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717562810852</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add on profile and add already loged in">
+      <option name="closed" value="true" />
+      <created>1718099472904</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718099472904</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -819,6 +831,7 @@
     <MESSAGE value="Initial code + imageView di activity main" />
     <MESSAGE value="added icons and pictures" />
     <MESSAGE value="add history &amp; article" />
-    <option name="LAST_COMMIT_MESSAGE" value="add history &amp; article" />
+    <MESSAGE value="add on profile and add already loged in" />
+    <option name="LAST_COMMIT_MESSAGE" value="add on profile and add already loged in" />
   </component>
 </project>
