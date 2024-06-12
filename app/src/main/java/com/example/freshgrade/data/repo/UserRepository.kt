@@ -54,6 +54,11 @@ class UserRepository private constructor(
 
     }
 
+    suspend fun deleteAccount() {
+        userPreference.deleteAccount()
+        Log.d("Logout", "User data successfully removed")
+    }
+
 
     fun register(
         email: String,

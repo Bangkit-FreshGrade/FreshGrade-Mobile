@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AlertDialog
@@ -65,6 +66,8 @@ class LoginFragment : Fragment() {
             val password = passwordEdit.text.toString()
             authenticate(email, password)
         }
+
+        binding.ChangePasswordLink.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.changePasswordFragment))
 
         playAnimation()
         onBackPress()

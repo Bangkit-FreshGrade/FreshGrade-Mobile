@@ -212,13 +212,13 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="32dp"
             android:textColor="@color/primary"
-            android:alpha="0"
             android:ems="12"
             android:text="@string/login"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/changePasswordLayout"
-            tools:alpha="100" />
+            tools:alpha="100"
+            />
 
 
 
@@ -284,6 +284,18 @@
         android:background="@null"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/change_password"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:navGraph="@navigation/change_password_nav"-->
+<!--        />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
