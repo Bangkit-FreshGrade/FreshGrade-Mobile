@@ -3,8 +3,8 @@ package com.example.freshgrade.data.response
 import com.google.gson.annotations.SerializedName
 
 data class SignInResponse(
-	@field:SerializedName("loginResult")
-	val loginResult: SignInResult? = null,
+	@field:SerializedName("SignInResult")
+	val signInResult: SignInResult? = null,
 
 	@field:SerializedName("access_token")
 	val accessToken: String

@@ -5,10 +5,12 @@ import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AlertDialog
@@ -66,6 +68,8 @@ class LoginFragment : Fragment() {
             authenticate(email, password)
         }
 
+        binding.ChangePasswordLink.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.changePasswordFragment))
+
         playAnimation()
         onBackPress()
     }
@@ -122,14 +126,13 @@ class LoginFragment : Fragment() {
                     val response = it.data
                     loginViewModel.saveUserData(
                         UserModel(
-                            response.loginResult?.name.toString(),
-                            response.loginResult?.token.toString(),
+                            response.signInResult?.name.toString(),
+                            response.accessToken,
                             true
                         )
                     )
                     showDialog(SUCCESS)
                     findNavController().navigate(R.id.mainActivity)
-
                 }
             }
         }
@@ -145,12 +148,12 @@ class LoginFragment : Fragment() {
         val title = ObjectAnimator.ofFloat(binding.loginTitleTextView, View.ALPHA, 1f).setDuration(100)
         val emailTextView =
             ObjectAnimator.ofFloat(binding.loginEmailText, View.ALPHA, 1f).setDuration(100)
-//        val emailEditTextLayout =
-//            ObjectAnimator.ofFloat(binding.loginEmailEditTextLayout, View.ALPHA, 1f).setDuration(100)
+        val emailEditTextLayout =
+            ObjectAnimator.ofFloat(binding.loginEmailEditTextLayout, View.ALPHA, 1f).setDuration(100)
         val passwordTextView =
             ObjectAnimator.ofFloat(binding.LoginPasswordText, View.ALPHA, 1f).setDuration(100)
-//        val passwordEditTextLayout =
-//            ObjectAnimator.ofFloat(binding.loginPasswordEditTextLayout, View.ALPHA, 1f).setDuration(100)
+        val passwordEditTextLayout =
+            ObjectAnimator.ofFloat(binding.loginPasswordEditTextLayout, View.ALPHA, 1f).setDuration(100)
         val login = ObjectAnimator.ofFloat(binding.loginButton, View.ALPHA, 1f).setDuration(100)
 
         val registerText =
@@ -162,9 +165,9 @@ class LoginFragment : Fragment() {
             playSequentially(
                 title,
                 emailTextView,
-//                emailEditTextLayout,
+                emailEditTextLayout,
                 passwordTextView,
-//                passwordEditTextLayout,
+                passwordEditTextLayout,
                 login,
                 registerText,
                 registerLink

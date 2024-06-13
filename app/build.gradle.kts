@@ -94,6 +94,8 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.logging.interceptor)
+    implementation (libs.retrofit.v290)
+    implementation (libs.converter.gson.v290)
 
     implementation (libs.gson)
 

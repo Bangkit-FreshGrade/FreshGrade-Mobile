@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -41,9 +42,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
         val navView: BottomNavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         navView.setupWithNavController(navController)
+
 
         // Visibility of navbar only in 3 fragments
         val visibleDestinations = setOf(
@@ -74,6 +78,8 @@ class MainActivity : AppCompatActivity() {
         mainViewModel.getUser().observe(this@MainActivity) { user ->
             if (user.isLogin) {
                 Toast.makeText(this, R.string.have_permision, Toast.LENGTH_SHORT).show()
+                Log.d("MainActivity", "User: $user")
+
             } else {
                 Toast.makeText(this, R.string.dont_have_permision, Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, AuthActivity::class.java))
