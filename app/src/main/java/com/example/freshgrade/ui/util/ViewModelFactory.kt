@@ -7,6 +7,7 @@ import com.example.freshgrade.data.repo.UserRepository
 import com.example.freshgrade.di.Injection
 import com.example.freshgrade.ui.authorization.login.LoginViewModel
 import com.example.freshgrade.ui.authorization.register.RegisterViewModel
+import com.example.freshgrade.ui.changepass.ChangePasswordViewModel
 import com.example.freshgrade.ui.main.MainViewModel
 import com.example.freshgrade.ui.main.profile.ProfileViewModel
 
@@ -26,6 +27,9 @@ class ViewModelFactory(private val repository: UserRepository) : ViewModelProvid
             }
             modelClass.isAssignableFrom(ProfileViewModel::class.java) -> {
                 ProfileViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(ChangePasswordViewModel::class.java) -> {
+                ChangePasswordViewModel(repository) as T
             }
 
 

@@ -16,7 +16,7 @@ class LoginViewModel(private val userRepository: UserRepository) : ViewModel() {
         }
     }
 
-    fun login() {
+    fun signIn() {
         viewModelScope.launch {
             userRepository.signIn()
         }

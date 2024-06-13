@@ -47,6 +47,8 @@
     <string name="article_label">Article</string>
     <string name="camera_label">Camera</string>
     <string name="change_password">change password</string>
+    <string name="change_password_failed">Failed to change password</string>
+    <string name="change_password_success">Successfuly changed password</string>
     <string name="change_profile">Change Profile</string>
     <string name="dashboard_label">Dashboard</string>
     <string name="delete_account">Delete Account</string>

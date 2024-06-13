@@ -250,6 +250,8 @@ string app_name
 string article_label
 string camera_label
 string change_password
+string change_password_failed
+string change_password_success
 string change_profile
 string dashboard_label
 string delete_account

@@ -114,5 +114,7 @@
     <string name="privacy_policy">Privacy Policy</string>
     <string name="about">About</string>
     <string name="delete_account">Delete Account</string>
+    <string name="change_password_failed">Failed to change password</string>
+    <string name="change_password_success">Successfuly changed password</string>
 
 </resources>
