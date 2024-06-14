@@ -72,22 +72,22 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Initialize the ViewModel using the custom factory
-        val factory = ViewModelFactory.getInstance(this)
-        mainViewModel = ViewModelProvider(this, factory).get(MainViewModel::class.java)
-
-        mainViewModel.getUser().observe(this@MainActivity) { user ->
-            if (user.isLogin) {
-                Toast.makeText(this, R.string.have_permision, Toast.LENGTH_SHORT).show()
-                Log.d("MainActivity", "User: $user")
-
-            } else {
-                Toast.makeText(this, R.string.dont_have_permision, Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this, AuthActivity::class.java))
-                finish()
-            }
-        }
-
-        toProfile()
+//        val factory = ViewModelFactory.getInstance(this)
+//        mainViewModel = ViewModelProvider(this, factory).get(MainViewModel::class.java)
+//
+//        mainViewModel.getUser().observe(this@MainActivity) { user ->
+//            if (user.isLogin) {
+//                Toast.makeText(this, R.string.have_permision, Toast.LENGTH_SHORT).show()
+//                Log.d("MainActivity", "User: $user")
+//
+//            } else {
+//                Toast.makeText(this, R.string.dont_have_permision, Toast.LENGTH_SHORT).show()
+//                startActivity(Intent(this, AuthActivity::class.java))
+//                finish()
+//            }
+//        }
+//
+//        toProfile()
     }
 
     private fun toProfile() {

@@ -45,6 +45,7 @@
     </string>
     <string name="app_name">FreshGrade</string>
     <string name="article_label">Article</string>
+    <string name="article_topLeftTitle">Check out the Articles! :)</string>
     <string name="camera_label">Camera</string>
     <string name="change_password">change password</string>
     <string name="change_password_failed">Failed to change password</string>
@@ -143,6 +144,10 @@
     <style name="ShapeAppearanceOverlay.CornerRadius" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">16dp</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.CornerRadiusArticle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
     </style>
     <style name="Theme.FreshGrade" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         

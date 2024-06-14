@@ -45,9 +45,11 @@ class ArticleFragment : Fragment() {
     }
 
     private fun fetchArticles() {
+        binding.progressBar.visibility = View.VISIBLE
         val call = ApiConfig.getApiService().getArticles()
         call.enqueue(object : Callback<List<ArticleResponse>> {
             override fun onResponse(call: Call<List<ArticleResponse>>, response: Response<List<ArticleResponse>>) {
+                binding.progressBar.visibility = View.GONE
                 if (response.isSuccessful) {
                     response.body()?.let { articles ->
                         articleAdapter.updateData(articles)
