@@ -1,5 +1,6 @@
 package com.example.freshgrade.data.api
 
+import com.example.freshgrade.data.response.ArticleResponse
 import com.example.freshgrade.data.response.ChangePasswordRequest
 import com.example.freshgrade.data.response.ChangePasswordResponse
 import com.example.freshgrade.data.response.GetUserResponse
@@ -7,6 +8,7 @@ import com.example.freshgrade.data.response.SignInRequest
 import com.example.freshgrade.data.response.SignInResponse
 import com.example.freshgrade.data.response.SignUpRequest
 import com.example.freshgrade.data.response.SignUpResponse
+import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
@@ -55,6 +57,9 @@ interface ApiService {
         @Header("Authorization") token: String,
         @Body requestBody: ChangePasswordRequest
     ): ChangePasswordResponse
+
+    @GET("api/articles")
+    fun getArticles(): Call<List<ArticleResponse>>
 
 
 }
