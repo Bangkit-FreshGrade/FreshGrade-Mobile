@@ -5,13 +5,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.freshgrade.data.api.Result
-import com.example.freshgrade.data.pref.UserModel
 import com.example.freshgrade.data.repo.UserRepository
 import com.example.freshgrade.data.response.GetUserResponse
-import com.example.freshgrade.data.response.SignInResult
-import com.example.freshgrade.data.response.SignUpRequest
-
 import kotlinx.coroutines.launch
 
 class ProfileViewModel(private val repository: UserRepository) : ViewModel() {
@@ -25,7 +20,6 @@ class ProfileViewModel(private val repository: UserRepository) : ViewModel() {
                 val response = repository.getUser()
                 _userResponse.value = response
             } catch (e: Exception) {
-                // Handle error fetching user data
                 Log.e("ProfileViewModel", "getUserData: ${e.message}")
             }
         }
@@ -39,30 +33,7 @@ class ProfileViewModel(private val repository: UserRepository) : ViewModel() {
         }
     }
 
-//    fun getUser(): LiveData<UserModel> {
-//        return repository.getUserData()
-//    }
 
-//    fun getUserResponse(token: String) {
-//        viewModelScope.launch {
-//            try {
-//                val response = repository.getUser(token)
-//                _userResponse.value = response
-//            } catch (e: Exception) {
-//               Log.d("ProfileViewModel", "getUserResponse: ${e.message.toString()}")
-//            }
-//        }
-//    }
-
-//    fun getToken() {
-//        return repository.getToken()
-//    }
-
-    fun deleteAccount() {
-        viewModelScope.launch {
-            repository.deleteAccount()
-        }
-    }
 
 
 

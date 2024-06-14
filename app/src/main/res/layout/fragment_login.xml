@@ -174,34 +174,34 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <LinearLayout
-            android:id="@+id/changePasswordLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"
-            android:background="@null"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/passwordLayout">
+<!--        <LinearLayout-->
+<!--            android:id="@+id/changePasswordLayout"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:layout_marginBottom="12dp"-->
+<!--            android:background="@null"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/passwordLayout">-->
 
-            <TextView
-                android:id="@+id/ChangePasswordText"
-                android:layout_width="wrap_content"
-                android:background="@null"
-                style="@style/Theme.FreshGrade.auth"
-                android:layout_height="wrap_content"
-                android:text="@string/frogot_your_password" />
+<!--            <TextView-->
+<!--                android:id="@+id/ChangePasswordText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:background="@null"-->
+<!--                style="@style/Theme.FreshGrade.auth"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/frogot_your_password" />-->
 
-            <TextView
-                android:id="@+id/ChangePasswordLink"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@null"
-                android:layout_marginStart="3dp"
-                android:textColor="@color/on_primary"
-                android:text="@string/change_password" />
-        </LinearLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/ChangePasswordLink"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@null"-->
+<!--                android:layout_marginStart="3dp"-->
+<!--                android:textColor="@color/on_primary"-->
+<!--                android:text="@string/change_password" />-->
+<!--        </LinearLayout>-->
 
 
         <com.cscorner.storyapp.ui.customview.LoginButton
@@ -216,7 +216,7 @@
             android:text="@string/login"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/changePasswordLayout"
+            app:layout_constraintTop_toBottomOf="@+id/passwordLayout"
             tools:alpha="100"
             />
 

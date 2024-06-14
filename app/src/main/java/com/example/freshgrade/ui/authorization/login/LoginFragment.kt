@@ -5,18 +5,14 @@ import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.cscorner.storyapp.ui.customview.EmailEdit
@@ -27,7 +23,6 @@ import com.example.freshgrade.data.api.Result
 import com.example.freshgrade.data.pref.UserModel
 import com.example.freshgrade.databinding.FragmentLoginBinding
 import com.example.freshgrade.ui.util.ViewModelFactory
-
 
 
 class LoginFragment : Fragment() {
@@ -58,7 +53,7 @@ class LoginFragment : Fragment() {
         passwordEdit = binding.loginPasswordEditText
         setLoginButtonEnable()
 
-        Enabler()
+        enabler()
 
         binding.RegisterLink.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.registerFragment))
 
@@ -68,7 +63,7 @@ class LoginFragment : Fragment() {
             authenticate(email, password)
         }
 
-        binding.ChangePasswordLink.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.changePasswordFragment))
+//        binding.ChangePasswordLink.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.changePasswordFragment))
 
         playAnimation()
         onBackPress()
@@ -81,7 +76,7 @@ class LoginFragment : Fragment() {
             .isNotEmpty() && password != null && password.toString().isNotEmpty()
     }
 
-    private fun Enabler(){
+    private fun enabler(){
         emailEdit.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
@@ -126,7 +121,6 @@ class LoginFragment : Fragment() {
                     val response = it.data
                     loginViewModel.saveUserData(
                         UserModel(
-                            response.signInResult?.name.toString(),
                             response.accessToken,
                             true
                         )

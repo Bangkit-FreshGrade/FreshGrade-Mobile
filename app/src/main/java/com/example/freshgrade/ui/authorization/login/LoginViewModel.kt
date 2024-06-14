@@ -20,4 +20,5 @@ class LoginViewModel(private val userRepository: UserRepository) : ViewModel() {
         viewModelScope.launch {
             userRepository.signIn()
         }
-    }}
+    }
+}
