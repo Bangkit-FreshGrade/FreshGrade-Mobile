@@ -18,7 +18,7 @@ class ImgCamAdapter(private var items: List<ImgCamera>) :
 
     override fun onBindViewHolder(holder: CarouselViewHolder, position: Int) {
         val item = items[position]
-        holder.binding.imageView.setImageResource(item.imageId)
+        holder.binding.profileImageView.setImageResource(item.imageId)
     }
 
     override fun getItemCount(): Int {

@@ -8,11 +8,16 @@ import com.example.freshgrade.data.api.ApiService
 import com.example.freshgrade.data.pref.UserPreference
 import com.example.freshgrade.data.api.Result
 import com.example.freshgrade.data.pref.UserModel
+import com.example.freshgrade.data.response.ChangePasswordRequest
+import com.example.freshgrade.data.response.ChangePasswordResponse
+import com.example.freshgrade.data.response.GetUserResponse
 import com.example.freshgrade.data.response.SignInRequest
 import com.example.freshgrade.data.response.SignInResponse
 import com.example.freshgrade.data.response.SignUpRequest
 import com.example.freshgrade.data.response.SignUpResponse
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.firstOrNull
 
 
 class UserRepository private constructor(
@@ -29,6 +34,16 @@ class UserRepository private constructor(
         return userPreference.getUserData().asLiveData()
     }
 
+    fun getToken(): Flow<String?> {
+        return userPreference.getToken()
+    }
+
+    suspend fun getUser(): GetUserResponse {
+        val token = getToken().firstOrNull() ?: throw IllegalStateException("Token not available")
+        return apiService.getUser("Bearer $token")
+    }
+
+
     suspend fun signIn() {
         userPreference.signIn()
     }
@@ -38,25 +53,44 @@ class UserRepository private constructor(
         userPreference.logout()
         val userModel = userPreference.getUserData().first()
 
-        // Check if the user's name is empty
-//        val isNameEmpty = userModel.name.isEmpty()
-//        if (isNameEmpty) {
-//            // Display a message indicating that the name has been successfully removed
-//            Log.d("Logout", "User name successfully removed")
-//        } else {
-//            // Display a message or take action to handle the error
-//            Log.e("Logout", "Error: User name not removed")
-//        }
+        val isNameEmpty = userModel.name.isEmpty()
+        if (isNameEmpty) {
+            Log.d("Logout", "User name successfully removed")
+        } else {
+            Log.e("Logout", "Error: User name not removed")
+        }
 
         val isTokenEmpty = userModel.token.isEmpty()
         if (isTokenEmpty) {
-            // Display a message indicating that the name has been successfully removed
             Log.d("Logout", "Token successfully removed")
         } else {
-            // Display a message or take action to handle the error
             Log.e("Logout", "Error: Token not removed")
         }
+    }
 
+
+    suspend fun changePassword(request: ChangePasswordRequest): LiveData<Result<ChangePasswordResponse>> = liveData {
+        val token = userPreference.getToken().firstOrNull() ?: throw IllegalStateException("Token not available")
+        Log.d("UserRepository", "Token: $token")
+        Log.d("UserRepository", "ChangePasswordRequest: $request")
+
+        emit(Result.Loading)
+        try {
+            val response = apiService.changePassword("Bearer $token", request)
+            Log.d("UserRepository", "ChangePasswordResponse: $response")
+            Log.d("UserRepository", "ChangePasswordRequest: $request")
+            emit(Result.Success(response))
+        } catch (e: Exception) {
+            Log.d("UserRepository", "ChangePasswordRequest: $request")
+            Log.e("UserRepository", "ChangePassword failed: ${e.message}")
+            emit(Result.Error(e.message ?: "An unknown error occurred"))
+        }
+    }
+
+
+    suspend fun deleteAccount() {
+        userPreference.deleteAccount()
+        Log.d("Logout", "User data successfully removed")
     }
 
 
@@ -78,7 +112,6 @@ class UserRepository private constructor(
         }
     }
 
-    //
     fun userLogin(email: String, password: String): LiveData<Result<SignInResponse>> = liveData {
         emit(Result.Loading)
         try {

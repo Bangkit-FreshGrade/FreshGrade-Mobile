@@ -14,17 +14,69 @@
             android:id="@+id/action_navigation_camera_to_navigation_history"
             app:destination="@id/navigation_history"
             app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_navigation_camera_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_navigation_camera_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_navigation_camera_to_navigation_article"
+            app:destination="@id/navigation_article" />
     </fragment>
 
     <fragment
         android:id="@+id/navigation_history"
         android:name="com.example.freshgrade.ui.main.history.HistoryFragment"
         android:label="@string/history_label"
-        tools:layout="@layout/fragment_history" />
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_navigation_history_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_article"
         android:name="com.example.freshgrade.ui.main.article.ArticleFragment"
         android:label="@string/article_label"
-        tools:layout="@layout/fragment_article" />
+        tools:layout="@layout/fragment_article" >
+        <action
+            android:id="@+id/action_navigation_article_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.freshgrade.ui.main.result.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.freshgrade.ui.main.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.example.freshgrade.ui.main.profile.privacy.PrivacyFragment"
+        android:label="fragment_privacy"
+        tools:layout="@layout/fragment_privacy" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.freshgrade.ui.main.profile.about.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/changePasswordFragment2"
+        android:name="com.example.freshgrade.ui.changepass.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
 </navigation>

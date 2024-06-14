@@ -1,298 +1,342 @@
 [
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_ic_article.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/ic_article.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_ic_upload.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/ic_upload.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_baseline_photo_library_24.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/baseline_photo_library_24.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.freshgrade.app-main-67:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_inner_layout_bg.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/inner_layout_bg.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_percent_circle_green_bg.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/percent_circle_green_bg.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/xml_backup_rules.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/xml/backup_rules.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_fruit_img_circle_bg.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/fruit_img_circle_bg.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_car4.jpeg.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/car4.jpeg"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_baseline_photo_camera_24.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/baseline_photo_camera_24.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_inner_bg.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/inner_bg.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_article.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/fragment_article.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_car10.jpeg.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/car10.jpeg"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_register.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/fragment_register.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/navigation_mobile_navigation.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/navigation/mobile_navigation.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.freshgrade.app-main-67:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/raw_animation_cam_carousel.json.flat",
-        "source": "com.example.freshgrade.app-main-66:/raw/animation_cam_carousel.json"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_landing.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/fragment_landing.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_baseline_lock_24.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/baseline_lock_24.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_car7.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/car7.jpeg"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_ic_camera.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/ic_camera.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.freshgrade.app-main-67:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_bg_button.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/bg_button.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_inner_bg.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/inner_bg.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_ic_baseline_email_24.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/ic_baseline_email_24.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_ic_home_black_24dp.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/ic_home_black_24dp.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_car7.jpeg.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/car7.jpeg"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_ic_cam.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/ic_cam.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_baseline_close_24.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/baseline_close_24.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_ic_info.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/ic_info.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/navigation_auth_nav.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/navigation/auth_nav.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_baseline_image_24.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/baseline_image_24.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/layout_fragment_camera.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/layout/fragment_camera.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_baseline_lightbulb_outline_24.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/baseline_lightbulb_outline_24.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/layout_fragment_landing.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/layout/fragment_landing.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_item_view_history.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/item_view_history.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_round_bg.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/round_bg.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_logo_fresh.png.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/logo_fresh.png"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_change_password.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/fragment_change_password.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/layout_fragment_login.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/layout/fragment_login.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_baseline_person_24.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/baseline_person_24.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.freshgrade.app-main-66:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.freshgrade.app-debug-65:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.freshgrade.app-main-67:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_car6.jpeg.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/car6.jpeg"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_percent_circle_red_bg.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/percent_circle_red_bg.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_ic_home_black_24dp.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/ic_home_black_24dp.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_ic_history.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/ic_history.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.freshgrade.app-main-66:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_car10.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/car10.jpeg"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_car1.jpg.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/car1.jpg"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_baseline_article_24.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/baseline_article_24.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/layout_activity_auth.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/layout/activity_auth.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_car5.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/car5.jpeg"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_baseline_map_24.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/baseline_map_24.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_baseline_logout_24.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/baseline_logout_24.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_car5.jpeg.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/car5.jpeg"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_ic_scan.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/ic_scan.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_baseline_photo_camera_24.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/baseline_photo_camera_24.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_camera.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/fragment_camera.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.freshgrade.app-main-66:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_bg_button_disable.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/bg_button_disable.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.freshgrade.app-main-66:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.example.freshgrade.app-debug-65:/navigation_mobile_navigation.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/navigation/mobile_navigation.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/menu_bottom_nav_menu.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/menu/bottom_nav_menu.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/navigation_auth_nav.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/navigation/auth_nav.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.freshgrade.app-main-66:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.example.freshgrade.app-debug-65:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.freshgrade.app-main-67:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_car8.jpeg.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/car8.jpeg"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_car1.jpg.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/car1.jpg"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_ic_info.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/ic_info.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.freshgrade.app-main-67:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.freshgrade.app-main-66:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_ic_profile.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/ic_profile.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_baseline_article_24.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/baseline_article_24.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_logo_fresh.png.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/logo_fresh.png"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_ic_profile.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/ic_profile.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_profile.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/fragment_profile.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_layout_bg.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/layout_bg.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_car4.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/car4.jpeg"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_baseline_image_24.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/baseline_image_24.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_activity_splash.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/activity_splash.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_baseline_lightbulb_outline_24.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/baseline_lightbulb_outline_24.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_ic_baseline_email_24.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/ic_baseline_email_24.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_ic_history.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/ic_history.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_activity_main.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_ic_notifications_black_24dp.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/ic_notifications_black_24dp.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/ic_dashboard_black_24dp.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/layout_fragment_result.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/layout/fragment_result.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.freshgrade.app-main-67:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_baseline_logout_24.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/baseline_logout_24.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_baseline_photo_library_24.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/baseline_photo_library_24.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/layout_item_view_carousel_camera.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/layout/item_view_carousel_camera.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_ic_back.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/ic_back.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.freshgrade.app-main-66:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/ic_notifications_black_24dp.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_car3.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/car3.jpeg"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_baseline_person_24.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/baseline_person_24.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/raw_animation_cam_carousel.json.flat",
+        "source": "com.example.freshgrade.app-main-67:/raw/animation_cam_carousel.json"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_car3.jpeg.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/car3.jpeg"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_about.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/fragment_about.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/layout_fragment_profile.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/layout/fragment_profile.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_view_percent_text_layout.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/view_percent_text_layout.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_ic_cam.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/ic_cam.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/menu/bottom_nav_menu.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.freshgrade.app-pngs-60:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.freshgrade.app-main-67:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/layout_fragment_history.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/layout/fragment_history.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_item_view_article.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/item_view_article.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.freshgrade.app-main-66:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_privacy.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/fragment_privacy.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/layout_fragment_article.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/layout/fragment_article.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_ic_article.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/ic_article.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_ic_dashboard_black_24dp.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/ic_dashboard_black_24dp.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_history.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/fragment_history.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_baseline_add_24.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/baseline_add_24.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_baseline_add_24.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/baseline_add_24.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/ic_launcher_background.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_car6.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/car6.jpeg"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/layout_activity_splash.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/layout/activity_splash.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/layout_fragment_register.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/layout/fragment_register.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_car2.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/car2.jpeg"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/layout_activity_main.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/layout/activity_main.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_baseline_lock_24.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/baseline_lock_24.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/xml/data_extraction_rules.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_car2.jpeg.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/car2.jpeg"
+        "merged": "com.example.freshgrade.app-debug-65:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.freshgrade.app-main-67:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_bg_button_disable.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/bg_button_disable.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_baseline_close_24.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/baseline_close_24.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/color_bottom_nav_icon_color.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/color/bottom_nav_icon_color.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_result.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/fragment_result.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.freshgrade.app-main-66:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_car9.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/car9.jpeg"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.freshgrade.app-main-66:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_layout_bg.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/layout_bg.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_ic_upload.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/ic_upload.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_circle_bg.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/circle_bg.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_ic_scan.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/ic_scan.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.freshgrade.app-main-67:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_baseline_lightbulb_24.xml.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/baseline_lightbulb_24.xml"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_activity_auth.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/activity_auth.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-64:/drawable_car9.jpeg.flat",
-        "source": "com.example.freshgrade.app-main-66:/drawable/car9.jpeg"
+        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_login.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_ic_camera.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/ic_camera.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_baseline_map_24.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/baseline_map_24.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_car8.jpeg.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/car8.jpeg"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_bg_button.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/bg_button.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-65:/color_bottom_nav_icon_color.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/color/bottom_nav_icon_color.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-65:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.freshgrade.app-pngs-61:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_inner_layout_bg.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/inner_layout_bg.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-65:/layout_item_view_carousel_camera.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/item_view_carousel_camera.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_baseline_lightbulb_24.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/baseline_lightbulb_24.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-65:/xml_backup_rules.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-65:/drawable_round_bg.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/drawable/round_bg.xml"
     }
 ]

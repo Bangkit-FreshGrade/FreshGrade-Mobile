@@ -5,10 +5,12 @@ import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AlertDialog
@@ -66,6 +68,8 @@ class LoginFragment : Fragment() {
             authenticate(email, password)
         }
 
+        binding.ChangePasswordLink.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.changePasswordFragment))
+
         playAnimation()
         onBackPress()
     }
@@ -83,10 +87,10 @@ class LoginFragment : Fragment() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 val email = s.toString()
                 if (android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                    binding.loginEmailEditTextLayout.error = null
+                    binding.loginEmailEditText.error = null
                     setLoginButtonEnable()
                 } else {
-                    binding.loginEmailEditText.error = getString(R.string.error_invalid_email)
+                    binding.loginEmailEditText.error
                 }
             }
             override fun afterTextChanged(s: Editable?) {}
@@ -96,9 +100,9 @@ class LoginFragment : Fragment() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 if (s != null && s.length < 8) {
-                    binding.loginPasswordEditText.error = getString(R.string.error_password)
+                    binding.loginPasswordEditText.error
                 } else {
-                    binding.loginPasswordEditTextLayout.error = null
+                    binding.loginPasswordEditText.error = null
                     setLoginButtonEnable()
                 }
             }
@@ -122,13 +126,13 @@ class LoginFragment : Fragment() {
                     val response = it.data
                     loginViewModel.saveUserData(
                         UserModel(
+                            response.signInResult?.name.toString(),
                             response.accessToken,
                             true
                         )
                     )
                     showDialog(SUCCESS)
                     findNavController().navigate(R.id.mainActivity)
-
                 }
             }
         }
@@ -192,6 +196,7 @@ class LoginFragment : Fragment() {
             val msg = message ?: getString(R.string.login_failed)
             builder.setTitle(title)
             builder.setMessage(msg)
+            message?.let { builder.setNeutralButton(android.R.string.ok) { _, _ -> } }
             builder.setPositiveButton(android.R.string.ok) { _, _ -> }
             builder.show()
         } else if (mode == SUCCESS) {

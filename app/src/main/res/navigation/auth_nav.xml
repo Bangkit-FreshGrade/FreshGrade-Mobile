@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_loginFragment_to_mainActivity"
             app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_loginFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -40,6 +43,11 @@
     </fragment>
     <activity
         android:id="@+id/mainActivity"
-        android:name="com.example.freshgrade.MainActivity"
+        android:name="com.example.freshgrade.ui.main.MainActivity"
         android:label="MainActivity" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.example.freshgrade.ui.changepass.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
 </navigation>

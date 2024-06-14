@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.freshgrade.app-mergeDebugResources-62:/values-km/values-km.xml",
+            "outputFile": "com.example.freshgrade.app-mergeDebugResources-63:/values-km/values-km.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-4\\b1a50edb16e2f3377e0f38fbbab45b5c\\transformed\\material-1.12.0\\res\\values-km\\values-km.xml",
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-4\\88d5a6bd3dcb399f6a8d98c6abc0b569\\transformed\\navigation-ui-2.7.7\\res\\values-km\\values-km.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,160",
+                        "endColumns": "104,104",
+                        "endOffsets": "155,260"
+                    },
+                    "to": {
+                        "startLines": "111,112",
+                        "startColumns": "4,4",
+                        "startOffsets": "9438,9543",
+                        "endColumns": "104,104",
+                        "endOffsets": "9538,9643"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-4\\752be3feb35a530259da49e4ca9e069f\\transformed\\material-1.12.0\\res\\values-km\\values-km.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,24 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-4\\f017a3d7b3d22a57830e7ca718713a10\\transformed\\navigation-ui-2.7.7\\res\\values-km\\values-km.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,160",
-                        "endColumns": "104,104",
-                        "endOffsets": "155,260"
-                    },
-                    "to": {
-                        "startLines": "111,112",
-                        "startColumns": "4,4",
-                        "startOffsets": "9438,9543",
-                        "endColumns": "104,104",
-                        "endOffsets": "9538,9643"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-4\\63dffa04cb48cab70a90090690c2b99b\\transformed\\appcompat-1.6.1\\res\\values-km\\values-km.xml",
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-4\\687230436fcc576834c600496a13c735\\transformed\\appcompat-1.6.1\\res\\values-km\\values-km.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -57,7 +57,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-4\\f3f74b3b39111217041f8e929df40d3a\\transformed\\core-1.13.1\\res\\values-km\\values-km.xml",
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-4\\118fbf11fe598848e22ee8f90e6c0b94\\transformed\\core-1.13.1\\res\\values-km\\values-km.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
