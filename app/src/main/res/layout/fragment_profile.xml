@@ -8,17 +8,27 @@
     tools:context=".ui.main.profile.ProfileFragment">
 
 
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/logo_fresh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <FrameLayout
         android:id="@+id/profil_layout_top"
         android:layout_width="326dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:background="@color/forth"
-        app:layout_constraintBottom_toTopOf="@+id/profile_layout_bottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9">
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -28,7 +38,7 @@
                 android:id="@+id/showUserText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="user name"
+                android:text="username"
                 android:textColor="@color/secondary"
                 app:layout_constraintBottom_toTopOf="@+id/showUserName"
                 app:layout_constraintStart_toStartOf="@+id/showUserName"
@@ -88,7 +98,7 @@
     </FrameLayout>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/backImageView"
         android:layout_width="37dp"
         android:layout_height="33dp"
         android:layout_marginStart="4dp"
@@ -100,10 +110,11 @@
     <FrameLayout
         android:id="@+id/profile_layout_bottom"
         android:layout_width="332dp"
-        android:layout_height="266dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="84dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="150dp"
         android:background="@color/forth"
+        android:paddingBottom="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -133,30 +144,22 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btn_privacy" />
 
-            <Button
-                android:id="@+id/btn_delete_acc"
-                android:layout_width="252dp"
-                android:layout_height="49dp"
-                android:layout_marginTop="24dp"
-                android:text="@string/delete_account"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_about" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
 
     <Button
         android:id="@+id/logoutButton"
-        android:theme="@style/Theme.FreshGrade.auth"
         android:layout_width="243dp"
         android:layout_height="55dp"
-        android:layout_marginTop="14dp"
         android:layout_marginBottom="16dp"
         android:text="@string/profile_logout_btn"
+        android:theme="@style/Theme.FreshGrade.auth"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_layout_bottom" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_layout_bottom"
+        app:layout_constraintVertical_bias="0.175" />
 
     <!-- Assuming you have another fragment for changing password, if not remove this fragment block -->
 

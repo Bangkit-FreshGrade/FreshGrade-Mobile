@@ -82,8 +82,6 @@ drawable logo_fresh
 drawable percent_circle_green_bg
 drawable percent_circle_red_bg
 drawable round_bg
-id ChangePasswordLink
-id ChangePasswordText
 id FirstLayout
 id LastFirstLayout
 id LasttLayout
@@ -115,15 +113,14 @@ id articleRecyclerView
 id authContainer
 id auth_nav
 id auth_nav_host_fragment
+id backImageView
 id btn_about
-id btn_delete_acc
 id btn_privacy
 id camera_btn
 id carousel_cam_rv
 id changePasswordButton
 id changePasswordFragment
 id changePasswordFragment2
-id changePasswordLayout
 id confirmPassword
 id confirmPasswordEdit
 id container
@@ -149,7 +146,6 @@ id historyCardView
 id historyRecyclerView
 id imageVewArticle
 id imageVewFruit
-id imageView2
 id info_iv
 id iv_logo
 id landiing_register_button
@@ -168,6 +164,7 @@ id loginImageView
 id loginPasswordEditText
 id loginPasswordEditTextLayout
 id loginTitleTextView
+id logoImageView
 id logoutButton
 id main
 id mainActivity
@@ -248,11 +245,13 @@ string about
 string about_desc
 string app_name
 string article_label
+string bad_request_error
 string camera_label
 string change_password
 string change_password_failed
 string change_password_success
 string change_profile
+string check_your_email_and_password
 string dashboard_label
 string delete_account
 string dont_have_permision
@@ -292,6 +291,8 @@ string name
 string next
 string normal_type
 string password
+string password_bad_request_error
+string password_unauthorized_error
 string previous
 string privacy_policy
 string privacy_policy_desc

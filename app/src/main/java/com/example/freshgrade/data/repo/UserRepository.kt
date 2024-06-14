@@ -53,13 +53,6 @@ class UserRepository private constructor(
         userPreference.logout()
         val userModel = userPreference.getUserData().first()
 
-        val isNameEmpty = userModel.name.isEmpty()
-        if (isNameEmpty) {
-            Log.d("Logout", "User name successfully removed")
-        } else {
-            Log.e("Logout", "Error: User name not removed")
-        }
-
         val isTokenEmpty = userModel.token.isEmpty()
         if (isTokenEmpty) {
             Log.d("Logout", "Token successfully removed")
@@ -69,8 +62,14 @@ class UserRepository private constructor(
     }
 
 
-    suspend fun changePassword(request: ChangePasswordRequest): LiveData<Result<ChangePasswordResponse>> = liveData {
-        val token = userPreference.getToken().firstOrNull() ?: throw IllegalStateException("Token not available")
+    fun changePassword(
+        currentPassword: String,
+        newPassword: String,
+        confirmPassword: String
+    ): LiveData<Result<ChangePasswordResponse>> = liveData {
+        val token = userPreference.getToken().firstOrNull()
+            ?: throw IllegalStateException("Token not available")
+        val request = ChangePasswordRequest(currentPassword, newPassword, confirmPassword)
         Log.d("UserRepository", "Token: $token")
         Log.d("UserRepository", "ChangePasswordRequest: $request")
 
@@ -88,10 +87,7 @@ class UserRepository private constructor(
     }
 
 
-    suspend fun deleteAccount() {
-        userPreference.deleteAccount()
-        Log.d("Logout", "User data successfully removed")
-    }
+
 
 
     fun register(
