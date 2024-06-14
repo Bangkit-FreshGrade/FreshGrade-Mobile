@@ -107,7 +107,6 @@ class RegisterFragment : Fragment() {
             }
             builder.show()
         } else if (mode == SUCCESS) {
-//            Toast.makeText(this,R.string.register_success, Toast.LENGTH_SHORT).show()
             Toast.makeText( requireContext(), getString(R.string.register_success), Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.loginFragment)
         }

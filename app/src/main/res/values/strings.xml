@@ -116,5 +116,9 @@
     <string name="delete_account">Delete Account</string>
     <string name="change_password_failed">Failed to change password</string>
     <string name="change_password_success">Successfuly changed password</string>
+    <string name="password_unauthorized_error">password dosent exist</string>
+    <string name="bad_request_error">Bad Request: Please check your input and try again</string>
+    <string name="password_bad_request_error">your new password needs to be difrent from your new passowrd</string>
+    <string name="check_your_email_and_password">check your email and password</string>
 
 </resources>

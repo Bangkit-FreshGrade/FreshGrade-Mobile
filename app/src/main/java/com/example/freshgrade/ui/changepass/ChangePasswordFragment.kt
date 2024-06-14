@@ -13,6 +13,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.freshgrade.R
 import com.example.freshgrade.data.api.Result
+import com.example.freshgrade.data.api.Result.Error
 import com.example.freshgrade.databinding.FragmentChangePasswordBinding
 import com.example.freshgrade.ui.authorization.register.RegisterFragment
 import com.example.freshgrade.ui.util.ViewModelFactory
@@ -64,7 +65,7 @@ class ChangePasswordFragment : Fragment() {
         changePasswordViewModel.changePassword(currentPassword, newPassword, confirmPassword)
             .observe(viewLifecycleOwner) { result ->
                 when (result) {
-                    is Result.Error -> {
+                    is Error -> {
                         showDialog(RegisterFragment.ERROR, result.error)
                         Log.e(
                             "ChangePasswordFragment",
@@ -89,8 +90,15 @@ class ChangePasswordFragment : Fragment() {
     private fun showDialog(mode: String, message: String? = null) {
         val builder = AlertDialog.Builder(requireContext())
         if (mode == RegisterFragment.ERROR) {
+            val displayMessage = when {
+                message?.contains("401") == true -> getString(R.string.password_unauthorized_error)
+                message?.contains("400") == true -> getString(R.string.password_bad_request_error)
+
+                message != null -> message
+                else -> getString(R.string.change_password_failed)
+            }
             builder.setTitle("Error")
-            builder.setMessage(message ?: getString(R.string.change_password_failed))
+            builder.setMessage(displayMessage)
             builder.setPositiveButton(android.R.string.ok) { _, _ -> }
             builder.show()
         } else if (mode == RegisterFragment.SUCCESS) {

@@ -111,8 +111,6 @@ class LoginFragment : Fragment() {
                 is Result.Error -> {
                     showLoading(false)
                     showDialog(ERROR)
-                    Toast.makeText(context, it.error, Toast.LENGTH_LONG).show()
-
                 }
 
                 Result.Loading -> showLoading(true)
@@ -187,9 +185,10 @@ class LoginFragment : Fragment() {
         val builder = AlertDialog.Builder(requireContext())
         if (mode == ERROR) {
             val title = getString(R.string.login_failed)
-            val msg = message ?: getString(R.string.login_failed)
+            val msg = message ?: getString(R.string.check_your_email_and_password)
             builder.setTitle(title)
             builder.setMessage(msg)
+
             message?.let { builder.setNeutralButton(android.R.string.ok) { _, _ -> } }
             builder.setPositiveButton(android.R.string.ok) { _, _ -> }
             builder.show()
