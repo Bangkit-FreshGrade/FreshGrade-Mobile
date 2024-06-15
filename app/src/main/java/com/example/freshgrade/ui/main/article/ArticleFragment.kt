@@ -19,6 +19,7 @@ import retrofit2.Response
 
 class ArticleFragment : Fragment() {
 
+//    tessting
     private var _binding: FragmentArticleBinding? = null
     private val binding get() = _binding!!
 
