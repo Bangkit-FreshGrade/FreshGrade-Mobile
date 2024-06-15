@@ -116,6 +116,6 @@
     <string name="delete_account">Delete Account</string>
     <string name="change_password_failed">Failed to change password</string>
     <string name="change_password_success">Successfuly changed password</string>
-    <string name="article_topLeftTitle">Check out the Articles! :)</string>
+    <string name="article_topLeftTitle">Check out the Articles!! :)</string>
 
 </resources>
