@@ -107,12 +107,13 @@ id action_profileFragment_to_changePasswordFragment
 id action_profileFragment_to_privacyFragment
 id action_registerFragment_to_landingFragment
 id articleCardView
-id articleDescription
-id articleName
-id articleRecyclerView
+id article_iv
+id article_rv
+id article_title
 id authContainer
 id auth_nav
 id auth_nav_host_fragment
+id author
 id backImageView
 id btn_about
 id btn_privacy
@@ -139,12 +140,12 @@ id gallery_btn
 id guideline
 id guideline2
 id guideline3
+id guideline4
 id guideline5
 id guideline7
 id guideline9
 id historyCardView
 id historyRecyclerView
-id imageVewArticle
 id imageVewFruit
 id info_iv
 id iv_logo
@@ -183,8 +184,8 @@ id profil_layout_top
 id profileFragment
 id profileImageView
 id profile_layout_bottom
+id progressBar
 id progressbar
-id publishDate
 id registerButton
 id registerEmailEditText
 id registerEmailEditTextLayout
@@ -213,6 +214,8 @@ id showEmailText
 id showUserName
 id showUserText
 id sloganTextView
+id textView
+id upload_date
 id userNameLayout
 id view
 layout activity_auth
@@ -245,6 +248,7 @@ string about
 string about_desc
 string app_name
 string article_label
+string article_topLeftTitle
 string bad_request_error
 string camera_label
 string change_password
@@ -315,6 +319,7 @@ string title_notifications
 string title_register_page
 style RoundedTextViewStyle
 style ShapeAppearanceOverlay.CornerRadius
+style ShapeAppearanceOverlay.CornerRadiusArticle
 style Theme.FreshGrade
 style Theme.FreshGrade.auth
 style circleImageView
