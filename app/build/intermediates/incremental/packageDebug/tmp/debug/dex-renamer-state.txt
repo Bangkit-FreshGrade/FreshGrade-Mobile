@@ -1,4 +1,4 @@
-#Sun Jun 16 20:22:54 WITA 2024
+#Sun Jun 16 20:26:38 WITA 2024
 base.0=D\:\\program\\Smt6-Bangkit\\Capstone\\Fruty\\FreshGrade-Mobile\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=D\:\\program\\Smt6-Bangkit\\Capstone\\Fruty\\FreshGrade-Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=D\:\\program\\Smt6-Bangkit\\Capstone\\Fruty\\FreshGrade-Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
