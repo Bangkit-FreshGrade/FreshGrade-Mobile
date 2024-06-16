@@ -20,6 +20,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
@@ -28,8 +29,10 @@ import com.example.freshgrade.R
 import com.example.freshgrade.adapter.ImgCamAdapter
 import com.example.freshgrade.databinding.FragmentCameraBinding
 import com.example.freshgrade.ui.decoration.CarouselItemDecoration
+import com.example.freshgrade.ui.main.result.ResultFragment
 import java.io.ByteArrayOutputStream
 
+@Suppress("DEPRECATION")
 class CameraFragment : Fragment() {
 
     private var _binding: FragmentCameraBinding? = null
@@ -37,13 +40,7 @@ class CameraFragment : Fragment() {
 
     private val cameraViewModel: CameraViewModel by viewModels()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     private var selectedImageUri: Uri? = null
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -51,45 +48,14 @@ class CameraFragment : Fragment() {
     ): View {
         _binding = FragmentCameraBinding.inflate(inflater, container, false)
         return binding.root
-
     }
-
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapter = ImgCamAdapter(emptyList())
-        binding.carouselCamRv.adapter = adapter
-        binding.carouselCamRv.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-
-        val snapHelper = LinearSnapHelper()
-        snapHelper.attachToRecyclerView(binding.carouselCamRv)
-        binding.carouselCamRv.itemAnimator = DefaultItemAnimator()
-        binding.carouselCamRv.scrollToPosition(2)
-
-        binding.carouselCamRv.addItemDecoration(CarouselItemDecoration())
-
-        cameraViewModel.items.observe(viewLifecycleOwner, Observer { items ->
-            adapter.updateItems(items)
-        })
-
-        val imageView = binding.infoIv
-        val textView = binding.descTv
-
-        imageView.setOnClickListener {
-            imageView.visibility = View.GONE
-            textView.visibility = View.VISIBLE
-        }
-
-        textView.setOnClickListener {
-            textView.visibility = View.GONE
-            imageView.visibility = View.VISIBLE
-        }
-
         binding.cameraBtn.setOnClickListener { openCamera() }
         binding.galleryBtn.setOnClickListener { openGallery() }
-
+        binding.scanBtn.setOnClickListener{ moveToResult()}
     }
 
     private fun openCamera() {
@@ -105,7 +71,7 @@ class CameraFragment : Fragment() {
         val intent = Intent()
         intent.action = Intent.ACTION_GET_CONTENT
         intent.type = "image/*"
-        val chooser = Intent.createChooser(intent, "Pilih Gambar")
+        val chooser = Intent.createChooser(intent, "Pick a photo")
         launcherGallery.launch(chooser)
     }
 
@@ -114,45 +80,49 @@ class CameraFragment : Fragment() {
     ) { result ->
         if (result.resultCode == AppCompatActivity.RESULT_OK) {
             selectedImageUri = result.data?.data as Uri
-//            uriToFile(selectedImageUri as Uri)
-//            val myFile = uriToFile(selectedImg)
-//            selectedImageUri = myFile
-//            startUCrop(currentImageUri!!)
-//            binding.previewImageView.setImageURI(selectedImageUri)
+            binding.palceholderIv.setImageURI(selectedImageUri)
         } else {
             Log.d("Photo Picker", "No media selected")
         }
     }
 
-//    @Deprecated("Deprecated in Java")
-//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-//        super.onActivityResult(requestCode, resultCode, data)
-//        if (resultCode == Activity.RESULT_OK) {
-//            when (requestCode) {
-//                REQUEST_CODE_CAMERA -> {
-//                    val bitmap = data?.extras?.get("data") as Bitmap
-//                    val uri = getImageUriFromBitmap(bitmap)
-//                    uri?.let {
-//                        selectedImageUri = it
-//                        Glide.with(this).load(it).into(binding.previewImageView)
-//                    }
-//                }
-//                REQUEST_CODE_GALLERY -> {
-//                    data?.data?.let {
-//                        selectedImageUri = it
-//                        Glide.with(this).load(it).into(binding.previewImageView)
-//                    }
-//                }
-//            }
-//        }
-//    }
-//
-//    private fun getImageUriFromBitmap(bitmap: Bitmap): Uri? {
-//        val bytes = ByteArrayOutputStream()
-//        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, bytes)
-//        val path = MediaStore.Images.Media.insertImage(requireContext().contentResolver, bitmap, "Title", null)
-//        return Uri.parse(path)
-//    }
+    @Deprecated("Deprecated in Java")
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == Activity.RESULT_OK) {
+            when (requestCode) {
+                REQUEST_CODE_CAMERA -> {
+                    val bitmap = data?.extras?.get("data") as Bitmap
+                    val uri = getImageUriFromBitmap(bitmap)
+                    uri?.let {
+                        selectedImageUri = it
+                        Glide.with(this).load(it).into(binding.palceholderIv)
+                    }
+                }
+                REQUEST_CODE_GALLERY -> {
+                    data?.data?.let {
+                        selectedImageUri = it
+                        Glide.with(this).load(it).into(binding.palceholderIv)
+                    }
+                }
+            }
+        }
+    }
+
+    private fun getImageUriFromBitmap(bitmap: Bitmap): Uri? {
+        val bytes = ByteArrayOutputStream()
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, bytes)
+        val path = MediaStore.Images.Media.insertImage(requireContext().contentResolver, bitmap, "Title", null)
+        return Uri.parse(path)
+    }
+
+    private fun moveToResult() {
+        selectedImageUri?.let {
+            val navController = findNavController()
+            val action = CameraFragmentDirections.actionNavigationCameraToResultFragment(it.toString())
+            navController.navigate(action)
+        }
+    }
 
     companion object {
         private const val REQUEST_CODE_CAMERA = 1

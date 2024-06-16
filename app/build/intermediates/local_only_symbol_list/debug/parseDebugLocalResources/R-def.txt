@@ -118,7 +118,6 @@ id backImageView
 id btn_about
 id btn_privacy
 id camera_btn
-id carousel_cam_rv
 id changePasswordButton
 id changePasswordFragment
 id changePasswordFragment2
@@ -178,6 +177,7 @@ id navigation_camera
 id navigation_history
 id newPasswordEdit
 id newPasswordText
+id palceholder_iv
 id passwordLayout
 id privacyFragment
 id profil_layout_top
@@ -209,6 +209,7 @@ id registerUserNameEditTextLayout
 id registerUserNameTextView
 id resultFragment
 id scanAgain
+id scan_btn
 id showEmail
 id showEmailText
 id showUserName
