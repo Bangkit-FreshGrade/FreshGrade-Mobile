@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
+        android:contentDescription="info scan"
         android:src="@drawable/ic_info"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,46 +31,66 @@
         android:textSize="11sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/carousel_cam_rv"
+        app:layout_constraintBottom_toTopOf="@+id/palceholder_iv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline9"
         app:layout_constraintVertical_bias="0.0" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/carousel_cam_rv"
+    <ImageView
+        android:id="@+id/palceholder_iv"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        android:layout_height="400dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="placeholder img"
+        android:src="@drawable/baseline_image_24"
+        app:layout_constraintBottom_toTopOf="@id/guideline7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline9"
-        app:layout_constraintVertical_bias="0.717" />
+        app:layout_constraintTop_toBottomOf="@id/guideline9" />
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/carousel_cam_rv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="250dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/guideline7"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/guideline9"-->
+<!--        app:layout_constraintVertical_bias="0.717" />-->
 
     <Button
         android:id="@+id/camera_btn"
         android:layout_width="180dp"
         android:layout_height="65dp"
-        android:text="@string/camera_label"
         android:drawableEnd="@drawable/baseline_photo_camera_24"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        android:text="@string/camera_label"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline7"
-        app:layout_constraintVertical_bias="0.76" />
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
     <Button
         android:id="@+id/gallery_btn"
         android:layout_width="180dp"
         android:layout_height="65dp"
-        android:text="@string/gallery_label"
         android:drawableEnd="@drawable/baseline_photo_library_24"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        android:text="@string/gallery_label"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guideline7"
-        app:layout_constraintVertical_bias="0.76" />
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <Button
+        android:id="@+id/scan_btn"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:drawableEnd="@drawable/ic_scan"
+        android:text="@string/scan_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gallery_btn" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -83,14 +104,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.91928864" />
+        app:layout_constraintGuide_begin="672dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="557dp" />
+        app:layout_constraintGuide_percent="0.7" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline9"

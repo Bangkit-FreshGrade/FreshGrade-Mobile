@@ -2,6 +2,7 @@ package com.example.freshgrade.ui.main.result
 
 import android.annotation.SuppressLint
 import android.graphics.Color
+import android.net.Uri
 import androidx.fragment.app.viewModels
 import android.os.Bundle
 import android.text.Editable
@@ -11,6 +12,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
+import com.bumptech.glide.Glide
 import com.example.freshgrade.R
 import com.example.freshgrade.databinding.FragmentResultBinding
 
@@ -21,6 +24,9 @@ class ResultFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val resultViewModel: ResultViewModel by viewModels()
+
+    private var selectedImageUri: Uri? = null
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,8 +39,16 @@ class ResultFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        arguments?.getString(EXTRA_IMAGE_URI)?.let {
+            selectedImageUri = Uri.parse(it)
+            loadAndDisplayImage()
+        }
+
+
+
         // Example to simulate updating freshness
         resultViewModel.updateFreshness("100%")
+
 
         setupObservers()
     }
@@ -55,8 +69,19 @@ class ResultFragment : Fragment() {
         }
     }
 
+    private fun loadAndDisplayImage() {
+        selectedImageUri?.let {
+            Glide.with(this).load(it).into(binding.fruitImg)
+        }
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
+    companion object {
+        const val EXTRA_IMAGE_URI = "imageUri"
+    }
+
 }

@@ -3,6 +3,10 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.jetbrains.kotlin.kapt)
     alias(libs.plugins.jetbrains.kotlin.parcelize)
+    id("androidx.navigation.safeargs.kotlin")
+
+//    alias(libs.plugins.androidx.navigation.safe.args.gradle.plugin) // Ensure this line is present
+
 
 }
 

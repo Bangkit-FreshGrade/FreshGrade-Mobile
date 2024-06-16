@@ -19,10 +19,17 @@
             app:destination="@id/profileFragment" />
         <action
             android:id="@+id/action_navigation_camera_to_resultFragment"
-            app:destination="@id/resultFragment" />
+            app:destination="@id/resultFragment"
+            >
+            <argument
+                android:name="imageUri"
+                app:argType="string" />
+        </action>
         <action
             android:id="@+id/action_navigation_camera_to_navigation_article"
             app:destination="@id/navigation_article" />
+
+
     </fragment>
 
     <fragment
