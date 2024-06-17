@@ -38,36 +38,49 @@ class ResultFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        
+        arguments?.let { bundle ->
+            val id = bundle.getString("id")
+            val createdAt = bundle.getString("createdAt")
+            val fruit = bundle.getString("fruit")
+            val value = bundle.getDouble("value")
+            val disease = bundle.getString("disease")
+            val imageUrl = bundle.getString("imageUrl")
 
-        arguments?.getString(EXTRA_IMAGE_URI)?.let {
-            selectedImageUri = Uri.parse(it)
-            loadAndDisplayImage()
+            binding.fruitTv.text = fruit
+            binding.valueTv.text = value.toString()
+            binding.diseaseTv.text = disease
+            setTextColorBasedOnValue(value)
+            Glide.with(this).load(imageUrl).into(binding.fruitImg)
         }
 
-
-
-        // Example to simulate updating freshness
-        resultViewModel.updateFreshness("100%")
-
-
-        setupObservers()
     }
 
-    @SuppressLint("UseCompatLoadingForDrawables")
-    private fun setupObservers() {
-        resultViewModel.fruitFreshness.observe(viewLifecycleOwner) { freshness ->
-            Log.d("ResultFragment", "Freshness observed: $freshness")
-            binding.fruitFreshnesText.text = freshness
-            val freshnessValue = freshness.removeSuffix("%").toIntOrNull() ?: 0
-            if (freshnessValue < 50) {
-                binding.fruitFreshnes.background = resources.getDrawable(R.drawable.percent_circle_red_bg)
-                binding.fruitFreshnesText.setTextColor(Color.RED)
-            } else {
-                binding.fruitFreshnes.background = resources.getDrawable(R.drawable.percent_circle_green_bg)
-                binding.fruitFreshnesText.setTextColor(Color.GREEN)
-            }
+    private fun setTextColorBasedOnValue(value: Double) {
+        if (value < 50) {
+            binding.valueBg.background = resources.getDrawable(R.drawable.percent_circle_red_bg)
+            binding.valueTv.setTextColor(Color.RED)
+        } else {
+            binding.valueBg.background = resources.getDrawable(R.drawable.percent_circle_green_bg)
+            binding.valueTv.setTextColor(Color.GREEN)
         }
     }
+
+//    @SuppressLint("UseCompatLoadingForDrawables")
+//    private fun setupObservers() {
+//        resultViewModel.fruitFreshness.observe(viewLifecycleOwner) { freshness ->
+//            Log.d("ResultFragment", "Freshness observed: $freshness")
+//            binding.valueTv.text = freshness
+//            val freshnessValue = freshness.removeSuffix("%").toIntOrNull() ?: 0
+//            if (freshnessValue < 50) {
+//                binding.valueBg.background = resources.getDrawable(R.drawable.percent_circle_red_bg)
+//                binding.fruitTv.setTextColor(Color.RED)
+//            } else {
+//                binding.valueBg.background = resources.getDrawable(R.drawable.percent_circle_green_bg)
+//                binding.fruitTv.setTextColor(Color.GREEN)
+//            }
+//        }
+//    }
 
     private fun loadAndDisplayImage() {
         selectedImageUri?.let {
