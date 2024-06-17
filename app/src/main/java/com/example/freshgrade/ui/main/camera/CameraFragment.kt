@@ -76,6 +76,7 @@ class CameraFragment : Fragment() {
         binding.cameraBtn.setOnClickListener { openCamera() }
         binding.galleryBtn.setOnClickListener { openGallery() }
         binding.scanBtn.setOnClickListener{
+            binding.progressBarScan.visibility = View.VISIBLE
             val multipartBody = convertImageViewToMultipart(imageView, "image")
             predict(apiService,multipartBody)}
     }
@@ -158,8 +159,23 @@ class CameraFragment : Fragment() {
         call.enqueue(object : Callback<ScanResponse> {
             override fun onResponse(call: Call<ScanResponse>, response: Response<ScanResponse>) {
                 if (response.isSuccessful) {
-                    Log.d(TAG, "onResponse: Upload successful $response")
+                    binding.progressBarScan.visibility = View.GONE
+                    val scanResponse = response.body()
+                    Log.d(TAG, "onResponse: Upload successful ${response.body()}")
                     showToast("Upload successful!")
+
+                    val bundle = Bundle().apply {
+                        putString("id", scanResponse?.id)
+                        putString("createdAt", scanResponse?.createdAt)
+                        putString("fruit", scanResponse?.fruit)
+                        putDouble("value", scanResponse?.value ?: 0.0)
+                        putString("disease", scanResponse?.disease)
+                        putString("imageUrl", scanResponse?.imageUrl)
+                        putString("createdById", scanResponse?.createdById)
+                    }
+                    val navController = findNavController()
+                    navController.navigate(R.id.action_navigation_camera_to_navigation_result, bundle)
+
                 } else {
                     val errorResponse = response.errorBody()?.string()
                     Log.d(TAG, "onResponse: Upload failed: $errorResponse")
@@ -174,13 +190,13 @@ class CameraFragment : Fragment() {
         })
     }
 
-    private fun moveToResult() {
-        selectedImageUri?.let {
-            val navController = findNavController()
-            val action = CameraFragmentDirections.actionNavigationCameraToResultFragment(it.toString())
-            navController.navigate(action)
-        }
-    }
+//    private fun moveToResult() {
+//        selectedImageUri?.let {
+//            val navController = findNavController()
+//            val action = CameraFragmentDirections.actionNavigationCameraToResultFragment(it.toString())
+//            navController.navigate(action)
+//        }
+//    }
 
     private fun showToast(message: String) {
         context?.let {

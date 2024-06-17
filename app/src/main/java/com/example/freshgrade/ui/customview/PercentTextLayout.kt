@@ -18,7 +18,7 @@ class PercentTextLayout @JvmOverloads constructor(
 
     init {
         LayoutInflater.from(context).inflate(R.layout.view_percent_text_layout, this, true)
-        textView = findViewById(R.id.fruitFreshnesText)
+        textView = findViewById(R.id.value_tv)
         background = resources.getDrawable(R.drawable.percent_circle_red_bg, context.theme)
 
         // Initialize with the default background color
