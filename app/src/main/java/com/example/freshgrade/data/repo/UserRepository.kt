@@ -11,7 +11,8 @@ import com.example.freshgrade.data.pref.UserModel
 import com.example.freshgrade.data.response.ChangePasswordRequest
 import com.example.freshgrade.data.response.ChangePasswordResponse
 import com.example.freshgrade.data.response.GetUserResponse
-import com.example.freshgrade.data.response.ScanResponse
+import com.example.freshgrade.data.response.HistoryResponse
+import com.example.freshgrade.data.response.HistoryResponseItem
 import com.example.freshgrade.data.response.SignInRequest
 import com.example.freshgrade.data.response.SignInResponse
 import com.example.freshgrade.data.response.SignUpRequest
@@ -19,7 +20,7 @@ import com.example.freshgrade.data.response.SignUpResponse
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.firstOrNull
-import okhttp3.MultipartBody
+import retrofit2.Call
 
 
 class UserRepository private constructor(
@@ -40,19 +41,9 @@ class UserRepository private constructor(
         return userPreference.getToken()
     }
 
-//    fun predict(request: MultipartBody.Part): LiveData<Result<ScanResponse>> = liveData {
-//        emit(Result.Loading)
-//        try {
-//            val token = userPreference.getToken().firstOrNull() ?: throw IllegalStateException("Token not available")
-//            Log.d("UserRepository", "Token: $token")
-//            Log.d("UserRepository", "Predict Request: $request")
-//            val response = apiService.uploadImage("Bearer $token", request)
-//            emit(Result.Success(response))
-//        } catch (e: Exception) {
-//            Log.e("UserRepository", "FruitScan failed: ${e.message}")
-//            emit(Result.Error(e.message ?: "An unknown error occurred"))
-//        }
-//    }
+    fun getHistory(): Call<List<HistoryResponseItem>> {
+        return apiService.getHistory()
+    }
 
     suspend fun getUser(): GetUserResponse {
         val token = getToken().firstOrNull() ?: throw IllegalStateException("Token not available")

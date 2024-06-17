@@ -4,13 +4,13 @@ import com.example.freshgrade.data.response.ArticleResponse
 import com.example.freshgrade.data.response.ChangePasswordRequest
 import com.example.freshgrade.data.response.ChangePasswordResponse
 import com.example.freshgrade.data.response.GetUserResponse
+import com.example.freshgrade.data.response.HistoryResponseItem
 import com.example.freshgrade.data.response.ScanResponse
 import com.example.freshgrade.data.response.SignInRequest
 import com.example.freshgrade.data.response.SignInResponse
 import com.example.freshgrade.data.response.SignUpRequest
 import com.example.freshgrade.data.response.SignUpResponse
 import okhttp3.MultipartBody
-import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -54,5 +54,8 @@ interface ApiService {
     @Multipart
     @POST("api/predict")
     fun uploadImage(@Part image: MultipartBody.Part): Call<ScanResponse>
+
+    @GET("api/history")
+    fun getHistory(): Call<List<HistoryResponseItem>>
 
 }

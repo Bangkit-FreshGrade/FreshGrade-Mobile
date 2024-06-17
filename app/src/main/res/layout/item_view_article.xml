@@ -21,14 +21,14 @@
             android:id="@+id/article_iv"
             android:layout_width="78dp"
             android:layout_height="68dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="24dp"
             android:layout_marginBottom="16dp"
             android:importantForAccessibility="no"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:src="@tools:sample/avatars"
-            app:shapeAppearance="@style/ShapeAppearanceOverlay.CornerRadiusArticle"/>
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.CornerRadiusArticle"
+            tools:src="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/article_title"
@@ -49,10 +49,10 @@
             android:id="@+id/upload_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="32dp"
             android:layout_marginBottom="8dp"
-            android:textColor="@color/primary"
             android:maxLines="1"
+            android:textColor="@color/primary"
             android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

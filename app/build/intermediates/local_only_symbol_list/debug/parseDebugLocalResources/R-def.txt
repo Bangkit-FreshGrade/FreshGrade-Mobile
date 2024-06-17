@@ -133,6 +133,7 @@ id fruitDisease
 id fruitFreshnes
 id fruitFreshnesText
 id fruitFreshness
+id fruitFreshnessText
 id fruitImg
 id fruitName
 id gallery_btn
@@ -144,7 +145,7 @@ id guideline5
 id guideline7
 id guideline9
 id historyCardView
-id historyRecyclerView
+id history_rv
 id imageVewFruit
 id info_iv
 id iv_logo

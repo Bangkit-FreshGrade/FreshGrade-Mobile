@@ -118,6 +118,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/inner_layout_bg"
                         android:ems="8"
+                        android:textColor="@color/white"
                         android:inputType="text"
                         tools:ignore="SpeakableTextPresentCheck" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -159,6 +160,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/inner_layout_bg"
                         android:ems="8"
+                        android:textColor="@color/white"
                         android:inputType="text"
                         tools:ignore="SpeakableTextPresentCheck" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -212,6 +214,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/inner_layout_bg"
                     android:ems="8"
+                    android:textColor="@color/white"
                     tools:ignore="SpeakableTextPresentCheck"                    android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
