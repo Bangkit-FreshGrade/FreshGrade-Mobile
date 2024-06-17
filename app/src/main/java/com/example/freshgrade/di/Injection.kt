@@ -9,7 +9,7 @@ import com.example.freshgrade.data.repo.UserRepository
 object Injection {
     fun provideRepository(context: Context): UserRepository {
         val pref = UserPreference.getInstance(context.dataStore)
-        val apiService = ApiConfig.getApiService()
+        val apiService = ApiConfig.getApiService(context)
         val userPreference = UserPreference.getInstance(context.dataStore)
         return UserRepository.getInstance(apiService,pref)
     }
