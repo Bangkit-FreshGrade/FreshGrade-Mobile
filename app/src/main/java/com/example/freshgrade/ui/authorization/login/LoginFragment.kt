@@ -126,6 +126,8 @@ class LoginFragment : Fragment() {
                     showDialog(SUCCESS)
                     findNavController().navigate(R.id.mainActivity)
                 }
+
+                else -> {}
             }
         }
     }

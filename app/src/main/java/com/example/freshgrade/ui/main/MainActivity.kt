@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mainViewModel: MainViewModel
 
     companion object {
+        private const val TAG = "ahayo"
         private val REQUIRED_PERMISSIONS = arrayOf(Manifest.permission.CAMERA)
         private const val REQUEST_CODE_PERMISSIONS = 10
     }
@@ -78,7 +79,7 @@ class MainActivity : AppCompatActivity() {
         mainViewModel.getUser().observe(this@MainActivity) { user ->
             if (user.isLogin) {
                 Toast.makeText(this, R.string.have_permision, Toast.LENGTH_SHORT).show()
-                Log.d("MainActivity", "User: $user")
+                Log.d(TAG, "User: $user")
 
             } else {
                 Toast.makeText(this, R.string.dont_have_permision, Toast.LENGTH_SHORT).show()

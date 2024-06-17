@@ -68,7 +68,7 @@ class CameraFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val apiService = ApiConfig.getApiService()
+        val apiService = ApiConfig.getApiService(requireContext())
 
         val imageView = binding.palceholderIv
 
@@ -147,7 +147,7 @@ class CameraFragment : Fragment() {
         bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream)
         val imageInByte = byteArrayOutputStream.toByteArray()
 
-        val requestBody = RequestBody.create("image/*".toMediaTypeOrNull(), imageInByte)
+        val requestBody = RequestBody.create("image/jpeg".toMediaTypeOrNull(), imageInByte)
         return MultipartBody.Part.createFormData(fieldName, "image.jpg", requestBody)
     }
 
@@ -158,7 +158,7 @@ class CameraFragment : Fragment() {
         call.enqueue(object : Callback<ScanResponse> {
             override fun onResponse(call: Call<ScanResponse>, response: Response<ScanResponse>) {
                 if (response.isSuccessful) {
-                    Log.d(TAG, "onResponse: Upload successful")
+                    Log.d(TAG, "onResponse: Upload successful $response")
                     showToast("Upload successful!")
                 } else {
                     val errorResponse = response.errorBody()?.string()
