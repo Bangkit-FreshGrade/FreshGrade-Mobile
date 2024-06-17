@@ -5,6 +5,7 @@ import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
+import android.graphics.drawable.BitmapDrawable
 import android.net.Uri
 import androidx.fragment.app.viewModels
 import android.os.Bundle
@@ -15,6 +16,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -27,9 +30,20 @@ import androidx.recyclerview.widget.LinearSnapHelper
 import com.bumptech.glide.Glide
 import com.example.freshgrade.R
 import com.example.freshgrade.adapter.ImgCamAdapter
+import com.example.freshgrade.data.api.ApiConfig
+import com.example.freshgrade.data.api.ApiService
+import com.example.freshgrade.data.repo.UserRepository
+import com.example.freshgrade.data.response.ScanResponse
 import com.example.freshgrade.databinding.FragmentCameraBinding
 import com.example.freshgrade.ui.decoration.CarouselItemDecoration
 import com.example.freshgrade.ui.main.result.ResultFragment
+import okhttp3.MediaType
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import java.io.ByteArrayOutputStream
 
 @Suppress("DEPRECATION")
@@ -37,8 +51,9 @@ class CameraFragment : Fragment() {
 
     private var _binding: FragmentCameraBinding? = null
     private val binding get() = _binding!!
-
+    private lateinit var apiService: ApiService
     private val cameraViewModel: CameraViewModel by viewModels()
+    private lateinit var userRepo : UserRepository
 
     private var selectedImageUri: Uri? = null
 
@@ -53,9 +68,16 @@ class CameraFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val apiService = ApiConfig.getApiService()
+
+        val imageView = binding.palceholderIv
+
+
         binding.cameraBtn.setOnClickListener { openCamera() }
         binding.galleryBtn.setOnClickListener { openGallery() }
-        binding.scanBtn.setOnClickListener{ moveToResult()}
+        binding.scanBtn.setOnClickListener{
+            val multipartBody = convertImageViewToMultipart(imageView, "image")
+            predict(apiService,multipartBody)}
     }
 
     private fun openCamera() {
@@ -116,6 +138,42 @@ class CameraFragment : Fragment() {
         return Uri.parse(path)
     }
 
+    private fun convertImageViewToMultipart(imageView: ImageView, fieldName: String): MultipartBody.Part {
+        imageView.isDrawingCacheEnabled = true
+        imageView.buildDrawingCache()
+        val bitmap = (imageView.drawable as BitmapDrawable).bitmap
+
+        val byteArrayOutputStream = ByteArrayOutputStream()
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream)
+        val imageInByte = byteArrayOutputStream.toByteArray()
+
+        val requestBody = RequestBody.create("image/*".toMediaTypeOrNull(), imageInByte)
+        return MultipartBody.Part.createFormData(fieldName, "image.jpg", requestBody)
+    }
+
+    private fun predict(apiService: ApiService, image: MultipartBody.Part) {
+
+        Log.d(TAG, "uploadImage: Uploading image")
+        val call = apiService.uploadImage(image)
+        call.enqueue(object : Callback<ScanResponse> {
+            override fun onResponse(call: Call<ScanResponse>, response: Response<ScanResponse>) {
+                if (response.isSuccessful) {
+                    Log.d(TAG, "onResponse: Upload successful")
+                    showToast("Upload successful!")
+                } else {
+                    val errorResponse = response.errorBody()?.string()
+                    Log.d(TAG, "onResponse: Upload failed: $errorResponse")
+                    showToast("Upload failed: $errorResponse")
+                }
+            }
+
+            override fun onFailure(call: Call<ScanResponse>, t: Throwable) {
+                Log.d(TAG, "onFailure: Upload error: ${t.message}")
+                showToast("Upload error: ${t.message}")
+            }
+        })
+    }
+
     private fun moveToResult() {
         selectedImageUri?.let {
             val navController = findNavController()
@@ -124,10 +182,17 @@ class CameraFragment : Fragment() {
         }
     }
 
+    private fun showToast(message: String) {
+        context?.let {
+            Toast.makeText(it, message, Toast.LENGTH_SHORT).show()
+        }
+    }
+
     companion object {
         private const val REQUEST_CODE_CAMERA = 1
         private const val REQUEST_CODE_GALLERY = 2
         private const val REQUEST_CODE_PERMISSIONS = 3
+        private val TAG = "CamFeature"
     }
 
 }
