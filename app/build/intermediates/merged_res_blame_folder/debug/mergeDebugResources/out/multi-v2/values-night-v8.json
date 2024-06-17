@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.freshgrade.app-mergeDebugResources-63:/values-night-v8/values-night-v8.xml",
+            "outputFile": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-mergeDebugResources-63:\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-4\\687230436fcc576834c600496a13c735\\transformed\\appcompat-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "D:\\program\\Smt6-Bangkit\\Capstone\\Fruty\\FreshGrade-Mobile\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "D:\\program\\Smt6-Bangkit\\Capstone\\FreshGrade\\FreshGrade-Mobile\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2,19",
                         "startColumns": "4,4",
@@ -54,6 +54,60 @@
                         "endLines": "23,39",
                         "endColumns": "12,12",
                         "endOffsets": "1377,2094"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.example.freshgrade.app-mergeDebugResources-63:/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-4\\687230436fcc576834c600496a13c735\\transformed\\appcompat-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,66",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,4979",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,5063"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-4\\752be3feb35a530259da49e4ca9e069f\\transformed\\material-1.12.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,67,68,69,70,71,72,73,74",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2091,2166,2277,2366,2467,2574,2681,2780,2887,2990,3117,3205,3329,3431,3533,3649,3751,3865,3993,4109,4231,4367,4487,4621,4741,4853,5068,5185,5309,5439,5561,5699,5833,5949",
+                        "endColumns": "74,110,88,100,106,106,98,106,102,126,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
+                        "endOffsets": "2161,2272,2361,2462,2569,2676,2775,2882,2985,3112,3200,3324,3426,3528,3644,3746,3860,3988,4104,4226,4362,4482,4616,4736,4848,4974,5180,5304,5434,5556,5694,5828,5944,6064"
+                    }
+                },
+                {
+                    "source": "D:\\program\\Smt6-Bangkit\\Capstone\\FreshGrade\\FreshGrade-Mobile\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "2,19",
+                        "startColumns": "4,4",
+                        "startOffsets": "102,950",
+                        "endLines": "16,34",
+                        "endColumns": "12,12",
+                        "endOffsets": "916,1790"
+                    },
+                    "to": {
+                        "startLines": "9,24",
+                        "startColumns": "4,4",
+                        "startOffsets": "687,1382",
+                        "endLines": "23,39",
+                        "endColumns": "12,12",
+                        "endOffsets": "1377,2086"
                     }
                 }
             ]

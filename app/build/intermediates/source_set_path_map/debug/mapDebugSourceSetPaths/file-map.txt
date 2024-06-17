@@ -59,10 +59,10 @@ com.example.freshgrade.app-core-runtime-2.2.0-57 C:\Users\HP\.gradle\caches\tran
 com.example.freshgrade.app-activity-ktx-1.9.0-58 C:\Users\HP\.gradle\caches\transforms-4\f883e22c8f5ae966d64b4baf9bfc2b6c\transformed\activity-ktx-1.9.0\res
 com.example.freshgrade.app-room-ktx-2.6.1-59 C:\Users\HP\.gradle\caches\transforms-4\fd4792f395d56850dede57c5106b6f61\transformed\room-ktx-2.6.1\res
 com.example.freshgrade.app-lifecycle-viewmodel-savedstate-2.8.0-60 C:\Users\HP\.gradle\caches\transforms-4\fe822b59bc3cc54450c1ee6ba56a63be\transformed\lifecycle-viewmodel-savedstate-2.8.0\res
-com.example.freshgrade.app-pngs-61 D:\program\Smt6-Bangkit\Capstone\Fruty\FreshGrade-Mobile\app\build\generated\res\pngs\debug
-com.example.freshgrade.app-resValues-62 D:\program\Smt6-Bangkit\Capstone\Fruty\FreshGrade-Mobile\app\build\generated\res\resValues\debug
-com.example.freshgrade.app-packageDebugResources-63 D:\program\Smt6-Bangkit\Capstone\Fruty\FreshGrade-Mobile\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.freshgrade.app-packageDebugResources-64 D:\program\Smt6-Bangkit\Capstone\Fruty\FreshGrade-Mobile\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.freshgrade.app-debug-65 D:\program\Smt6-Bangkit\Capstone\Fruty\FreshGrade-Mobile\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.freshgrade.app-debug-66 D:\program\Smt6-Bangkit\Capstone\Fruty\FreshGrade-Mobile\app\src\debug\res
-com.example.freshgrade.app-main-67 D:\program\Smt6-Bangkit\Capstone\Fruty\FreshGrade-Mobile\app\src\main\res
+com.example.freshgrade.app-pngs-61 D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\build\generated\res\pngs\debug
+com.example.freshgrade.app-resValues-62 D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\build\generated\res\resValues\debug
+com.example.freshgrade.app-packageDebugResources-63 D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.freshgrade.app-packageDebugResources-64 D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.freshgrade.app-debug-65 D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.freshgrade.app-debug-66 D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\src\debug\res
+com.example.freshgrade.app-main-67 D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\src\main\res
