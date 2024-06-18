@@ -208,12 +208,12 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_navigation_camera_to_profileFragment">
+                            <entry key="action_navigation_camera_to_navigation_result">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_navigation_camera_to_resultFragment">
+                            <entry key="action_navigation_camera_to_profileFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -240,6 +240,18 @@
                               </value>
                             </entry>
                           </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="navigation_result">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="256" />
+                            <option name="y" value="724" />
+                          </Point>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -272,7 +284,7 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_profileFragment_to_changePasswordFragment2">
+                            <entry key="action_profileFragment_to_changePasswordFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -283,18 +295,6 @@
                               </value>
                             </entry>
                           </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="resultFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="256" />
-                            <option name="y" value="724" />
-                          </Point>
                         </option>
                       </LayoutPositions>
                     </value>

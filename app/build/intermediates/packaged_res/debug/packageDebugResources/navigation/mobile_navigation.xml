@@ -18,8 +18,8 @@
             android:id="@+id/action_navigation_camera_to_profileFragment"
             app:destination="@id/profileFragment" />
         <action
-            android:id="@+id/action_navigation_camera_to_resultFragment"
-            app:destination="@id/resultFragment"
+            android:id="@+id/action_navigation_camera_to_navigation_result"
+            app:destination="@id/navigation_result"
             >
             <argument
                 android:name="imageUri"
@@ -52,10 +52,14 @@
             app:destination="@id/profileFragment" />
     </fragment>
     <fragment
-        android:id="@+id/resultFragment"
+        android:id="@+id/navigation_result"
         android:name="com.example.freshgrade.ui.main.result.ResultFragment"
         android:label="fragment_result"
-        tools:layout="@layout/fragment_result" />
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_navigation_result_to_navigation_history"
+            app:destination="@id/navigation_history" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.freshgrade.ui.main.profile.ProfileFragment"

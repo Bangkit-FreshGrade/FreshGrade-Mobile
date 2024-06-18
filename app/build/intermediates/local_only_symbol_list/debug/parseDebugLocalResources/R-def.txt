@@ -99,9 +99,10 @@ id action_loginFragment_to_mainActivity
 id action_navigation_article_to_profileFragment
 id action_navigation_camera_to_navigation_article
 id action_navigation_camera_to_navigation_history
+id action_navigation_camera_to_navigation_result
 id action_navigation_camera_to_profileFragment
-id action_navigation_camera_to_resultFragment
 id action_navigation_history_to_profileFragment
+id action_navigation_result_to_navigation_history
 id action_profileFragment_to_aboutFragment
 id action_profileFragment_to_changePasswordFragment
 id action_profileFragment_to_privacyFragment
@@ -128,14 +129,14 @@ id currentPasswordEdit
 id currentPasswordText
 id dateFruit
 id desc_tv
+id disease_tv
 id emailLayout
 id fruitDisease
 id fruitFreshnes
-id fruitFreshnesText
 id fruitFreshness
 id fruitFreshnessText
 id fruitImg
-id fruitName
+id fruit_tv
 id gallery_btn
 id guideline
 id guideline2
@@ -176,6 +177,7 @@ id nav_view
 id navigation_article
 id navigation_camera
 id navigation_history
+id navigation_result
 id newPasswordEdit
 id newPasswordText
 id palceholder_iv
@@ -186,6 +188,7 @@ id profileFragment
 id profileImageView
 id profile_layout_bottom
 id progressBar
+id progressBarScan
 id progressbar
 id registerButton
 id registerEmailEditText
@@ -208,7 +211,6 @@ id registerTitleTextView
 id registerUserNameEditText
 id registerUserNameEditTextLayout
 id registerUserNameTextView
-id resultFragment
 id scanAgain
 id scan_btn
 id showEmail
@@ -219,6 +221,8 @@ id sloganTextView
 id textView
 id upload_date
 id userNameLayout
+id value_bg
+id value_tv
 id view
 layout activity_auth
 layout activity_main

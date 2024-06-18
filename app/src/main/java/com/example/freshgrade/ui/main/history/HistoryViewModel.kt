@@ -13,6 +13,8 @@ import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.text.SimpleDateFormat
+import java.util.Locale
 
 class HistoryViewModel(private val repository: UserRepository) : ViewModel() {
     private val _history = MutableLiveData<List<HistoryResponseItem>?>()
@@ -20,6 +22,30 @@ class HistoryViewModel(private val repository: UserRepository) : ViewModel() {
 
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> = _isLoading
+
+//    fun fetchHistory() {
+//        _isLoading.value = true
+//        viewModelScope.launch(Dispatchers.IO) {
+//            repository.getHistory().enqueue(object : Callback<List<HistoryResponseItem>> {
+//                override fun onResponse(
+//                    call: Call<List<HistoryResponseItem>>,
+//                    response: Response<List<HistoryResponseItem>>
+//                ) {
+//                    if (response.isSuccessful) {
+//                        _history.postValue(response.body())
+//                    } else {
+//                        _history.postValue(null)
+//                    }
+//                    _isLoading.postValue(false)
+//                }
+//
+//                override fun onFailure(call: Call<List<HistoryResponseItem>>, t: Throwable) {
+//                    _history.postValue(null)
+//                    _isLoading.postValue(false)
+//                }
+//            })
+//        }
+//    }
 
     fun fetchHistory() {
         _isLoading.value = true
@@ -29,17 +55,19 @@ class HistoryViewModel(private val repository: UserRepository) : ViewModel() {
                     call: Call<List<HistoryResponseItem>>,
                     response: Response<List<HistoryResponseItem>>
                 ) {
+                    _isLoading.value = false
                     if (response.isSuccessful) {
-                        _history.postValue(response.body())
+                        response.body()?.let {
+                            _history.postValue(it)
+                        }
                     } else {
-                        _history.postValue(null)
+                        _history.postValue(emptyList())
                     }
-                    _isLoading.postValue(false)
                 }
 
                 override fun onFailure(call: Call<List<HistoryResponseItem>>, t: Throwable) {
+                    _isLoading.value = false
                     _history.postValue(null)
-                    _isLoading.postValue(false)
                 }
             })
         }

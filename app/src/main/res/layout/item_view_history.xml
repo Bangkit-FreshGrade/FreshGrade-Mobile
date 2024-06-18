@@ -4,7 +4,6 @@
     android:layout_height="wrap_content"
     app:strokeWidth="2.75dp"
     app:strokeColor="@color/primary"
-
     android:layout_margin="5dp"
     android:padding="8dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -38,7 +37,7 @@
             android:layout_marginStart="12dp"
             android:textAlignment="center"
             android:textColor="@color/primary"
-            android:textSize="15.5sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:transitionName="fruit_name"
             app:layout_constraintStart_toEndOf="@+id/imageVewFruit"
@@ -95,6 +94,7 @@
             android:maxLines="1"
             android:textColor="@color/primary"
             android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/fruitDisease"
             tools:text="DD/MM/yyyy" />

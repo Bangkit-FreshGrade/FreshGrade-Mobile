@@ -14,8 +14,8 @@ import java.util.Locale
 class HistoryAdapter(private var historyList: List<HistoryResponseItem>) : RecyclerView.Adapter<HistoryAdapter.ViewHolder>() {
 
     inner class ViewHolder(private val binding: ItemViewHistoryBinding) : RecyclerView.ViewHolder(binding.root) {
+        @SuppressLint("SetTextI18n")
         fun bind(historyItem: HistoryResponseItem) {
-            // Use Glide to load the image from the URL
             Glide.with(binding.imageVewFruit.context)
                 .load(historyItem.imageUrl)
                 .into(binding.imageVewFruit)

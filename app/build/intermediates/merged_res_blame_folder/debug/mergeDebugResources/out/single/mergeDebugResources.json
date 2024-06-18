@@ -264,16 +264,16 @@
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\color\\bottom_nav_icon_color.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-65:/layout_item_view_article.xml.flat",
-        "source": "com.example.freshgrade.app-main-67:/layout/item_view_article.xml"
-    },
-    {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_ic_home_black_24dp.xml.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\drawable\\ic_home_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_baseline_article_24.xml.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\drawable\\baseline_article_24.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_history.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/fragment_history.xml"
     },
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_circle_bg.xml.flat",
@@ -300,12 +300,12 @@
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\drawable\\round_bg.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_car1.jpg.flat",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\drawable\\car1.jpg"
-    },
-    {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\layout_fragment_history.xml.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\layout\\fragment_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_car1.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\drawable\\car1.jpg"
     },
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_baseline_person_24.xml.flat",

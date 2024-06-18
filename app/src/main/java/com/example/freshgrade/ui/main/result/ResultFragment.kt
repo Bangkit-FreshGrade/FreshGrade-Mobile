@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.example.freshgrade.R
@@ -54,8 +55,13 @@ class ResultFragment : Fragment() {
             Glide.with(this).load(imageUrl).into(binding.fruitImg)
         }
 
+        binding.scanAgain.setOnClickListener() {
+            findNavController().navigate(R.id.navigation_camera)
+        }
+
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     private fun setTextColorBasedOnValue(value: Double) {
         if (value < 50) {
             binding.valueBg.background = resources.getDrawable(R.drawable.percent_circle_red_bg)

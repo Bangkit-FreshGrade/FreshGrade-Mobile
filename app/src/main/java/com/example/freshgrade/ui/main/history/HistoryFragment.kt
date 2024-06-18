@@ -37,7 +37,11 @@ class HistoryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.historyRv.layoutManager = LinearLayoutManager(context)
+        binding.historyRv.layoutManager = LinearLayoutManager(context).apply {
+            reverseLayout = true
+            stackFromEnd = true
+        }
+
         historyAdapter = HistoryAdapter(emptyList())
         binding.historyRv.adapter = historyAdapter
 
@@ -48,11 +52,7 @@ class HistoryFragment : Fragment() {
         }
 
         historyViewModel.isLoading.observe(viewLifecycleOwner) { isLoading ->
-            if (isLoading) {
-                binding.progressBar.visibility = View.VISIBLE
-            } else {
-                binding.progressBar.visibility = View.GONE
-            }
+            binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
         }
 
         historyViewModel.fetchHistory()
