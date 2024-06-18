@@ -15,7 +15,6 @@ class CameraViewModel : ViewModel() {
     }
 
     private fun loadItems() {
-        // Sample data, this could be loaded from a repository or database
         val sampleItems = listOf(
             ImgCamera(R.drawable.car1),
             ImgCamera(R.drawable.car2),
