@@ -14,27 +14,26 @@ class ProfileViewModel(private val repository: UserRepository) : ViewModel() {
     private val _userResponse = MutableLiveData<GetUserResponse>()
     val userResponse: LiveData<GetUserResponse> = _userResponse
 
+    private val _isLoading = MutableLiveData<Boolean>()
+    val isLoading: LiveData<Boolean> = _isLoading
+
     fun getUserData() {
         viewModelScope.launch {
+            _isLoading.value = true
             try {
                 val response = repository.getUser()
                 _userResponse.value = response
             } catch (e: Exception) {
                 Log.e("ProfileViewModel", "getUserData: ${e.message}")
+            } finally {
+                _isLoading.value = false
             }
         }
     }
 
-
-        fun logout() {
+    fun logout() {
         viewModelScope.launch {
-
             repository.logout()
         }
     }
-
-
-
-
-
 }

@@ -112,7 +112,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/registerFirstNameTextView"
                     tools:alpha="100">
 
-                    <com.cscorner.storyapp.ui.customview.FirstNameEdit
+                    <com.example.freshgrade.ui.customview.FirstNameEdit
                         android:id="@+id/registerFirstNameEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -154,7 +154,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/registerLastNameTextView"
                     tools:alpha="100">
 
-                    <com.cscorner.storyapp.ui.customview.LastNameEdit
+                    <com.example.freshgrade.ui.customview.LastNameEdit
                         android:id="@+id/registerLastNameEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -208,7 +208,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/registerUserNameTextView"
                 tools:alpha="100">
 
-                <com.cscorner.storyapp.ui.customview.NameEdit
+                <com.example.freshgrade.ui.customview.NameEdit
                     android:id="@+id/registerUserNameEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -264,7 +264,7 @@
                 tools:ignore="SmallSp">
 
 
-                <com.cscorner.storyapp.ui.customview.EmailEdit
+                <com.example.freshgrade.ui.customview.EmailEdit
                     android:id="@+id/registerEmailEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -318,7 +318,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/registerPasswordTextView"
                 tools:alpha="100">
 
-                <com.cscorner.storyapp.ui.customview.PasswordEdit
+                <com.example.freshgrade.ui.customview.PasswordEdit
                     android:id="@+id/registerPasswordEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -332,7 +332,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-        <com.cscorner.storyapp.ui.customview.RegisterButton
+        <com.example.freshgrade.ui.customview.RegisterButton
             android:id="@+id/registerButton"
             android:layout_width="282dp"
             android:layout_height="49dp"

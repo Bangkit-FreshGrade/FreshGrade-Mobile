@@ -55,21 +55,28 @@ class ProfileFragment : Fragment() {
 
         showUserProfile()
 
+        profileViewModel.isLoading.observe(viewLifecycleOwner) { isLoading ->
+            if (isLoading) {
+                binding.progressbar.visibility = View.VISIBLE
+            } else {
+                binding.progressbar.visibility = View.GONE
+            }
+        }
     }
 
     @SuppressLint("SetTextI18n")
     private fun showUserProfile() {
-
         profileViewModel.userResponse.observe(viewLifecycleOwner) { userResponse ->
-            binding.showUserName.text =userResponse.username
+            binding.showUserName.text = userResponse.username
             binding.showEmail.text = userResponse.email
-
-            Log.println( Log.INFO, "userResponse", userResponse.toString())
-
+            Log.i("userResponse", userResponse.toString())
         }
-
         profileViewModel.getUserData()
+    }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 

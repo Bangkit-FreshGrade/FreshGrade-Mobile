@@ -105,7 +105,7 @@
                 tools:ignore="SmallSp">
 
 
-                <com.cscorner.storyapp.ui.customview.EmailEdit
+                <com.example.freshgrade.ui.customview.EmailEdit
                     android:id="@+id/loginEmailEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -160,7 +160,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/LoginPasswordText"
                 tools:alpha="100">
 
-                <com.cscorner.storyapp.ui.customview.PasswordEdit
+                <com.example.freshgrade.ui.customview.PasswordEdit
                     android:id="@+id/loginPasswordEditText"
 
                     android:layout_width="match_parent"
@@ -204,7 +204,7 @@
 <!--        </LinearLayout>-->
 
 
-        <com.cscorner.storyapp.ui.customview.LoginButton
+        <com.example.freshgrade.ui.customview.LoginButton
             android:id="@+id/loginButton"
             android:layout_width="match_parent"
             android:layout_height="64dp"
