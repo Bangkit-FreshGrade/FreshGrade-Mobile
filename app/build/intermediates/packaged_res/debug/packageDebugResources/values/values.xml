@@ -173,7 +173,6 @@
     </style>
     <style name="Theme.FreshGrade.auth" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
-        
         <item name="colorPrimary">@color/on_primary</item>
         <item name="colorPrimaryVariant">@color/primary</item>
         <item name="colorOnPrimary">@color/primary</item>
@@ -189,7 +188,7 @@
         <item name="android:textColorHint">@color/secondary_text</item>
 
 
-        <item name="android:statusBarColor">@color/on_primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
         
         <item name="strokeColor">@color/white</item>
         <item name="editTextColor">@color/white</item>

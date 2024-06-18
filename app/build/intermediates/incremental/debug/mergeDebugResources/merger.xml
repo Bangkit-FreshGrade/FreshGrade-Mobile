@@ -11705,7 +11705,6 @@
         <item name="cornerSize">50%</item>
     </style><style name="Theme.FreshGrade.auth" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
-        
         <item name="colorPrimary">@color/on_primary</item>
         <item name="colorPrimaryVariant">@color/primary</item>
         <item name="colorOnPrimary">@color/primary</item>
@@ -11721,7 +11720,7 @@
         <item name="android:textColorHint">@color/secondary_text</item>
 
 
-        <item name="android:statusBarColor">@color/on_primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
         
         <item name="strokeColor">@color/white</item>
         <item name="editTextColor">@color/white</item>
@@ -11753,7 +11752,7 @@
         <item name="colorSecondaryVariant">@color/primary</item>
         <item name="colorOnSecondary">@color/white</item>
         
-        <item name="android:statusBarColor">@color/on_primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
         
     </style></file><file name="backup_rules" path="D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\src\main\res\xml\backup_rules.xml" qualifiers="" type="xml"/><file name="data_extraction_rules" path="D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\src\main\res\xml\data_extraction_rules.xml" qualifiers="" type="xml"/></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\build\generated\res\resValues\debug"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
