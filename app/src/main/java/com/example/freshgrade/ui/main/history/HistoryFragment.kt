@@ -1,18 +1,15 @@
 package com.example.freshgrade.ui.main.history
 
-import androidx.fragment.app.viewModels
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.freshgrade.R
 import com.example.freshgrade.adapter.HistoryAdapter
 import com.example.freshgrade.databinding.FragmentHistoryBinding
-import com.example.freshgrade.databinding.FragmentProfileBinding
 import com.example.freshgrade.di.Injection
-import com.example.freshgrade.ui.main.profile.ProfileViewModel
 import com.example.freshgrade.ui.util.ViewModelFactory
 
 class HistoryFragment : Fragment() {

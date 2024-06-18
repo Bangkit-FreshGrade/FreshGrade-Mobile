@@ -43,7 +43,4 @@ class LandingFragment : Fragment() {
         _binding = null
     }
 
-    companion object {
-
-    }
 }

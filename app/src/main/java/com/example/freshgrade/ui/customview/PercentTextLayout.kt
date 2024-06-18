@@ -1,5 +1,6 @@
 package com.example.freshgrade.ui.customview
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Build
 import android.util.AttributeSet
@@ -8,6 +9,7 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.freshgrade.R
 
+@SuppressLint("UseCompatLoadingForDrawables")
 class PercentTextLayout @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
@@ -21,7 +23,6 @@ class PercentTextLayout @JvmOverloads constructor(
         textView = findViewById(R.id.value_tv)
         background = resources.getDrawable(R.drawable.percent_circle_red_bg, context.theme)
 
-        // Initialize with the default background color
         updateBackgroundColor()
     }
 

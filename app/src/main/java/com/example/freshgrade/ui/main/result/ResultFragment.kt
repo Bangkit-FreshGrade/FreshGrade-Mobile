@@ -3,17 +3,13 @@ package com.example.freshgrade.ui.main.result
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.net.Uri
-import androidx.fragment.app.viewModels
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.example.freshgrade.R
 import com.example.freshgrade.databinding.FragmentResultBinding
@@ -72,21 +68,6 @@ class ResultFragment : Fragment() {
         }
     }
 
-//    @SuppressLint("UseCompatLoadingForDrawables")
-//    private fun setupObservers() {
-//        resultViewModel.fruitFreshness.observe(viewLifecycleOwner) { freshness ->
-//            Log.d("ResultFragment", "Freshness observed: $freshness")
-//            binding.valueTv.text = freshness
-//            val freshnessValue = freshness.removeSuffix("%").toIntOrNull() ?: 0
-//            if (freshnessValue < 50) {
-//                binding.valueBg.background = resources.getDrawable(R.drawable.percent_circle_red_bg)
-//                binding.fruitTv.setTextColor(Color.RED)
-//            } else {
-//                binding.valueBg.background = resources.getDrawable(R.drawable.percent_circle_green_bg)
-//                binding.fruitTv.setTextColor(Color.GREEN)
-//            }
-//        }
-//    }
 
     private fun loadAndDisplayImage() {
         selectedImageUri?.let {

@@ -1,5 +1,6 @@
 package com.example.freshgrade.adapter
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.view.LayoutInflater
@@ -31,6 +32,7 @@ class ArticleAdapter(private var articleList: List<ArticleResponse>) :
         return ArticleViewHolder(itemView)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ArticleViewHolder, position: Int) {
         val article = articleList[position]
         holder.titleTextView.text = article.title

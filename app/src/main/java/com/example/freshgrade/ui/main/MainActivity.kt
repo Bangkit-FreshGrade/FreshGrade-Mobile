@@ -8,8 +8,6 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
-import androidx.activity.viewModels
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -19,8 +17,8 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.freshgrade.R
 import com.example.freshgrade.databinding.ActivityMainBinding
 import com.example.freshgrade.ui.authorization.AuthActivity
-import com.example.freshgrade.ui.main.profile.ProfileFragment
 import com.example.freshgrade.ui.util.ViewModelFactory
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
@@ -74,7 +72,7 @@ class MainActivity : AppCompatActivity() {
 
         // Initialize the ViewModel using the custom factory
         val factory = ViewModelFactory.getInstance(this)
-        mainViewModel = ViewModelProvider(this, factory).get(MainViewModel::class.java)
+        mainViewModel = ViewModelProvider(this, factory)[MainViewModel::class.java]
 
         mainViewModel.getUser().observe(this@MainActivity) { user ->
             if (user.isLogin) {

@@ -15,9 +15,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
-import com.cscorner.storyapp.ui.customview.EmailEdit
-import com.cscorner.storyapp.ui.customview.LoginButton
-import com.cscorner.storyapp.ui.customview.PasswordEdit
+import com.example.freshgrade.ui.customview.EmailEdit
+import com.example.freshgrade.ui.customview.LoginButton
+import com.example.freshgrade.ui.customview.PasswordEdit
 import com.example.freshgrade.R
 import com.example.freshgrade.data.api.Result
 import com.example.freshgrade.data.pref.UserModel

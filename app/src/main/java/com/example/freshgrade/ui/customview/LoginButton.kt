@@ -1,4 +1,4 @@
-package com.cscorner.storyapp.ui.customview
+package com.example.freshgrade.ui.customview
 
 import android.content.Context
 import android.graphics.Canvas
