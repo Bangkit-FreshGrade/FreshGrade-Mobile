@@ -18,24 +18,26 @@
         app:layout_constraintTop_toTopOf="parent" />
     <LinearLayout
         android:id="@+id/landing_buttons_layout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/landing_login_button"
-            android:layout_width="170dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_margin="12dp"
             android:text="@string/login" />
 
         <Button
             android:id="@+id/landiing_register_button"
-            android:layout_width="170dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_margin="12dp"
             android:text="@string/Register" />
     </LinearLayout>
 
