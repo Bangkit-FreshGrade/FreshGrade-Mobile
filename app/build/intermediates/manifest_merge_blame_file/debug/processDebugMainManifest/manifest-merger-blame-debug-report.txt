@@ -43,8 +43,8 @@
 28        android:extractNativeLibs="true"
 29        android:fullBackupContent="@xml/backup_rules"
 29-->D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\src\main\AndroidManifest.xml:14:9-54
-30        android:icon="@mipmap/ic_launcher"
-30-->D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\src\main\AndroidManifest.xml:15:9-43
+30        android:icon="@drawable/icon"
+30-->D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\src\main\AndroidManifest.xml:15:9-38
 31        android:label="@string/app_name"
 31-->D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\src\main\AndroidManifest.xml:16:9-41
 32        android:roundIcon="@mipmap/ic_launcher_round"

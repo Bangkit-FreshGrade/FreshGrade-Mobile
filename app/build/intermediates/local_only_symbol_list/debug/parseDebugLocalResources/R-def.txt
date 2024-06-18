@@ -75,6 +75,7 @@ drawable ic_notifications_black_24dp
 drawable ic_profile
 drawable ic_scan
 drawable ic_upload
+drawable icon
 drawable inner_bg
 drawable inner_layout_bg
 drawable layout_bg
@@ -305,7 +306,7 @@ string password_bad_request_error
 string password_unauthorized_error
 string previous
 string privacy_policy
-string privacy_policy_desc
+string privacy_policy_description
 string profile_email
 string profile_forgot_your_pass
 string profile_logout_btn
