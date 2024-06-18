@@ -35,13 +35,12 @@ class HistoryAdapter(private var historyList: List<HistoryResponseItem>) : Recyc
 
     private fun formatDate(dateString: String): String {
         return try {
-            // Adjust the parsing format according to your date string format
             val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.getDefault())
             val date: Date = inputFormat.parse(dateString) ?: Date()
             val outputFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
             outputFormat.format(date)
         } catch (e: Exception) {
-            dateString // Return the original string in case of an error
+            dateString
         }
     }
 

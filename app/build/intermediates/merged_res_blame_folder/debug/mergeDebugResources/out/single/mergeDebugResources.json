@@ -8,10 +8,6 @@
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_register.xml.flat",
-        "source": "com.example.freshgrade.app-main-67:/layout/fragment_register.xml"
-    },
-    {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_baseline_close_24.xml.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\drawable\\baseline_close_24.xml"
     },
@@ -22,6 +18,10 @@
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_landing.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/fragment_landing.xml"
     },
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_ic_cam.xml.flat",
