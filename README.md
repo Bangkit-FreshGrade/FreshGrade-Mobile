@@ -1,6 +1,20 @@
 
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-![FG](https://imgur.com/dDSU3hD.png)
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/Bangkit-FreshGrade">
+    <img src="https://imgur.com/dDSU3hD.png" width='400dp' alt="Logo" >
+  </a>
+<!-- PROJECT LOGO -->
+
+
+![FG](https://raw.githubusercontent.com/Afwann/profile-assets/main/FG.png)
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -80,7 +94,7 @@ Based on this, we have developed an application that can help sellers and buyers
 ## Appp Design
 
 <p align="center"> 
-    <img src="https://imgur.com/undefined"
+    <img src="https://imgur.com/E1ZijkW.png"
         alt="SplashScreen"    
         style="margin-right: 10px;"    
         width="150" />
