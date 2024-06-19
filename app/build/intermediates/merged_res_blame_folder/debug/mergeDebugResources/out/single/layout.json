@@ -12,10 +12,6 @@
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\layout\\fragment_about.xml"
     },
     {
-        "merged": "com.example.freshgrade.app-mergeDebugResources-64:/layout/fragment_landing.xml",
-        "source": "com.example.freshgrade.app-main-67:/layout/fragment_landing.xml"
-    },
-    {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-mergeDebugResources-64:\\layout\\fragment_privacy.xml",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\layout\\fragment_privacy.xml"
     },
@@ -42,6 +38,10 @@
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-mergeDebugResources-64:\\layout\\fragment_camera.xml",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\layout\\fragment_camera.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-mergeDebugResources-64:/layout/fragment_result.xml",
+        "source": "com.example.freshgrade.app-main-67:/layout/fragment_result.xml"
     },
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-mergeDebugResources-64:\\layout\\fragment_register.xml",

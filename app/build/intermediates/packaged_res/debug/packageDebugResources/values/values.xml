@@ -7,6 +7,7 @@
     <color name="black">#FF000000</color>
     <color name="blue">#2196F3</color>
     <color name="dark">#FF2c3e50</color>
+    <color name="fifth">#40A578</color>
     <color name="forth">#00484A</color>
     <color name="freshness_high">#00FF00</color>
     <color name="freshness_low">#FF0000</color>
@@ -53,8 +54,10 @@
     <string name="change_password_success">Successfuly changed password</string>
     <string name="change_profile">Change Profile</string>
     <string name="check_your_email_and_password">check your email and password</string>
+    <string name="choose_ur_picture">Choose ur picture</string>
     <string name="dashboard_label">Dashboard</string>
     <string name="delete_account">Delete Account</string>
+    <string name="disease_name">Disease Name</string>
     <string name="dont_have_permision">"Dont have permision, please login first"</string>
     <string name="email">Email</string>
     <string name="error_first_name">first name required</string>
@@ -90,6 +93,7 @@
     <string name="message_main_page">Selamat Belajar di Dicoding.</string>
     <string name="name">Name</string>
     <string name="next">Next</string>
+    <string name="no_disease_detected">No Disease Detected</string>
     <string name="normal_type">Normal</string>
     <string name="password">Password</string>
     <string name="password_bad_request_error">your new password needs to be difrent from your new passowrd</string>

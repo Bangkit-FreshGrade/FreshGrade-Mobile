@@ -20,10 +20,6 @@
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_landing.xml.flat",
-        "source": "com.example.freshgrade.app-main-67:/layout/fragment_landing.xml"
-    },
-    {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_ic_cam.xml.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\drawable\\ic_cam.xml"
     },
@@ -48,6 +44,10 @@
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\drawable\\baseline_lock_24.xml"
     },
     {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_car11.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\drawable\\car11.png"
+    },
+    {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_inner_bg.xml.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\drawable\\inner_bg.xml"
     },
@@ -58,6 +58,10 @@
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\layout_fragment_register.xml.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\layout\\fragment_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_disease_bg.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\drawable\\disease_bg.xml"
     },
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\layout_fragment_landing.xml.flat",
@@ -188,12 +192,12 @@
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\drawable\\bg_button.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_car10.jpeg.flat",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\drawable\\car10.jpeg"
-    },
-    {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\layout_fragment_camera.xml.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\layout\\fragment_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_car10.jpeg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\drawable\\car10.jpeg"
     },
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_car9.jpeg.flat",
@@ -298,6 +302,10 @@
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_baseline_add_24.xml.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-main-67:\\drawable\\baseline_add_24.xml"
+    },
+    {
+        "merged": "com.example.freshgrade.app-debug-65:/layout_fragment_result.xml.flat",
+        "source": "com.example.freshgrade.app-main-67:/layout/fragment_result.xml"
     },
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.6\\com.example.freshgrade.app-debug-65:\\drawable_round_bg.xml.flat",

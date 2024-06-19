@@ -8,6 +8,7 @@ color black
 color blue
 color bottom_nav_icon_color
 color dark
+color fifth
 color forth
 color freshness_high
 color freshness_low
@@ -50,6 +51,7 @@ drawable bg_button
 drawable bg_button_disable
 drawable car1
 drawable car10
+drawable car11
 drawable car2
 drawable car3
 drawable car4
@@ -59,6 +61,7 @@ drawable car7
 drawable car8
 drawable car9
 drawable circle_bg
+drawable disease_bg
 drawable fruit_img_circle_bg
 drawable ic_article
 drawable ic_back
@@ -119,12 +122,14 @@ id author
 id backImageView
 id btn_about
 id btn_privacy
+id cam_tv
 id camera_btn
 id changePasswordButton
 id changePasswordFragment
 id changePasswordFragment2
 id confirmPassword
 id confirmPasswordEdit
+id constraintLayout
 id container
 id currentPasswordEdit
 id currentPasswordText
@@ -144,12 +149,14 @@ id guideline2
 id guideline3
 id guideline4
 id guideline5
+id guideline6
 id guideline7
 id guideline9
 id historyCardView
 id history_rv
 id imageVewFruit
 id info_iv
+id info_tv
 id iv_logo
 id landiing_register_button
 id landingFragment
@@ -181,8 +188,8 @@ id navigation_history
 id navigation_result
 id newPasswordEdit
 id newPasswordText
-id palceholder_iv
 id passwordLayout
+id placeholder_iv
 id privacyFragment
 id profil_layout_top
 id profileFragment
@@ -263,8 +270,10 @@ string change_password_failed
 string change_password_success
 string change_profile
 string check_your_email_and_password
+string choose_ur_picture
 string dashboard_label
 string delete_account
+string disease_name
 string dont_have_permision
 string email
 string error_first_name
@@ -300,6 +309,7 @@ string message_login_page
 string message_main_page
 string name
 string next
+string no_disease_detected
 string normal_type
 string password
 string password_bad_request_error

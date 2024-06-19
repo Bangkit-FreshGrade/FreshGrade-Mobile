@@ -36,6 +36,7 @@
             android:layout_marginTop="12dp"
             android:textStyle="bold"
             android:textSize="25sp"
+            android:textColor="@color/primary"
             android:text="FruitName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
