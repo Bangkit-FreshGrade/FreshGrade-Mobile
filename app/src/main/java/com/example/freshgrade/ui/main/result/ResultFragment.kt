@@ -36,11 +36,7 @@ class ResultFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        val profileIv = (activity as? MainActivity)?.getProfileIv()
-        profileIv?.let {
-            it.visibility = View.GONE
-        }
+        (activity as? MainActivity)?.hideProfileIv()
         
         arguments?.let { bundle ->
             val id = bundle.getString("id")
@@ -89,6 +85,7 @@ class ResultFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+        (activity as? MainActivity)?.showProfileIv()
     }
 
     companion object {

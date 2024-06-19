@@ -101,10 +101,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun getProfileIv(): ImageView {
-        return binding.profileImageView
+    fun showProfileIv() {
+        binding.profileImageView.visibility = View.VISIBLE
     }
-
-
+    fun hideProfileIv() {
+        binding.profileImageView.visibility = View.GONE
+    }
 
 }
