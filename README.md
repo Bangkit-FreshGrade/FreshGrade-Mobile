@@ -58,7 +58,7 @@ Based on this, we have developed an application that can help sellers and buyers
 
     - ### Prerequisites
         - ##### Tools Sofware
-          1. Android Studio at least version[Android Studio](https://developer.android.com/studio)
+          1. Android Studio at least version [Android Studio](https://developer.android.com/studio)
           2. JRE (Java Runtime Environment) or JDK (Java Development Kit).
           3. Kotlin
 
