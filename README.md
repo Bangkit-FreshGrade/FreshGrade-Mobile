@@ -1,18 +1,5 @@
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
 <!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/Bangkit-FreshGrade">
-    <img src="https://imgur.com/dDSU3hD.png" width='400dp' alt="Logo" >
-  </a>
-<!-- PROJECT LOGO -->
-
 
 ![FG](https://raw.githubusercontent.com/Afwann/profile-assets/main/FG.png)
 
@@ -20,18 +7,16 @@
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
+    <li><a href="#freshGrade-mobile">FreshGrade Mobile</a></li>
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#machine-learning-development-documentation">Machine Learning Development Documentation</a></li>
-        <li><a href="#mobile-development-documentation">Mobile Development Documentation</a></li>
-        <li><a href="#cloud-computing-documentation">Cloud Computing Documentation</a></li>
+        <li><a href="#feture">Feature</a></li>
+        <li><a href="#dependencies">Dependencies</a></li>
+        <li><a href="#getting-started-application">Getting Started Application</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#appp-design">Appp Design</a></li>
   </ol>
 </details>
 
