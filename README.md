@@ -32,7 +32,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="D:\program\Smt6-Bangkit\Capstone\FreshGrade\FreshGrade-Mobile\app\src\main\res\drawable\logo_fresh.png" alt="Logo" width="80" height="80">
+    <img src="app\src\main\res\drawable\logo_fresh.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
