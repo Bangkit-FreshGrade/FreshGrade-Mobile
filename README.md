@@ -1,66 +1,52 @@
-@@ -0,0 +1,270 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://imgur.com/dDSU3hD" alt="Logo" width="80" height="80">
+<p align="center">
+  <a href="https://github.com/faniabdullah/bangkit-final-project">
+    <img src="https://imgur.com/dDSU3hD" width='400dp' alt="Logo" >
   </a>
-</div>
+
+<h3 align="center">SkinSkan App </h3>
+
+  <p align="center">
+    Application that helps users to know how to help users examine their own bodies to detect early stage skin cancer.
+   This is a project to fulfill the  <a href="https://grow.google/intl/id_id/bangkit/"><strong>Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka »</strong></a>
+   Program.
+    <br />
+    <a href="https://github.com/faniabdullah/bangkit-final-project"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/faniabdullah/bangkit-final-project">View Demo</a>
+    ·
+    <a href="https://github.com/faniabdullah/bangkit-final-project/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/faniabdullah/bangkit-final-project/issues">Request Feature</a>
+  </p>
+</p>
 
 
 
 <!-- TABLE OF CONTENTS -->
-<details>
+<details open="open">
   <summary>Table of Contents</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#machine-learning-development-documentation">Machine Learning Development Documentation</a></li>
+        <li><a href="#mobile-development-documentation">Mobile Development Documentation</a></li>
+        <li><a href="#cloud-computing-documentation">Cloud Computing Documentation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -69,76 +55,177 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Indonesia, as an agricultural country, has so many different kinds of fruits and become the main occupation of either sellers or farmers. However, lack of awareness of the abnormalities of a fruit such as freshness and quality, can lead to losses for both sellers and buyers. Here we focus on the problem of both sellers and buyers recognizing the condition of the fruits.
+Based on this, we have developed an application that can help sellers and buyers detect the freshness and disease of fruits.
 
 
+## Machine Learning Development Documentation
 
-### Built With
+The project is based from Google Colab (due to limited system requirements of our laptop/PC). Using Machine Learning with Tensorflow as framework to Classify the skin disease.
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Link to Colab: <br>
+https://colab.research.google.com/drive/1EYhFL717FUyu_vZ7_Mmh0kJ_XZfzgVUe
 
-* [![Next][Kotloin.js]][Kotlin-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+- ## 1. Load Datasets
+    - Load datasets from modified dataset that we host to Google Drive, here is the link: <br> https://drive.google.com/file/d/1-dOK_6g-Bkf8_SKcZKUwiCIj8TSqC7O5/view?usp=sharing
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- ## 2. Pre-processing Datasets
+    - Defining target and feature from existing CSV file:
+        - `df['cell_type']` as target
+        - `df['img']` as feature
+    - Spliting datasets into:
+        - 80% of train data
+        - 5% of validation data
+        - 20% of test data
+    - Balancing datasets with `imblearn.over_sampling` module
+    - Resizing the datasets into 150 x 150 and convert it to numpy array
+
+- ## 3. Training
+
+    - Using transfer learning Xception to make model accuracy better.
+    - Using `SparseCategoricalCrossentropy` as loss
+    - Using `Adam(learning_rate=1e-5)` as optimizer
+    - Added more layer too to `model.Sequential` to make model accuracy more better:
+        -  Added `AveragePooling2D` layer
+        -  Added `Flatten` layer
+        -  Added `Dense(units=64, activation='relu')` layer
+        -  Added `Dropout(units=0.05)` layer
+        -  Added more `Dense(units=16, activation='relu')` layer
+        -  Added output layer `Dense(units=2, activation='sigmoid' kernel_regularizer=l2(0.01))`
+    - Training with 20 epochs
+    - Set the callbacks `EarlyStopping` to stop training when accuracy doesn't improve
+    - Set the callbacks `ModelCheckpoint` to saved the model (also the weight) in every epochs with *.h5 format
+    - From the result, got:
+        - `loss: 33%`
+        - `accuracy: 97%`
+        - `val_loss: 60%`
+        - `val_accuracy: 89%`
+
+- ## 4. Saved the Model to Google Drive
+
+    - Then, saved the model (*.h5 format) to Google Drive (saved only the best model to Google Drive):<br>
+      https://drive.google.com/file/d/1-0ODyEWBJcERmvXXM5Ejk_VoxV7gI6SW/view
 
 
 
-### Installation
-
-_You can install by Cloning this repository or Intall with the link._
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/Bangkit-FreshGrade/FreshGrade-Mobile.git
-   ```
-2. Install [APK](https://drive.google.com/drive/folders/1vYNimo_RB8CZasxj8HnE-SGlA-IHyVIb?usp=drive_link)
 
 
 
+<!-- Mobile Development Documentation -->
+## Mobile Development Documentation
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+- ### Feature
+    * **Splash screen**, in this application there is a splashscreen before entering the main page
+
+    * **Show case**, there is showcase feature for guides when you first use this application
+
+    * **Support dark mode**, you can change the dark / light theme on your smartphone, so this app can customize the dark / light theme by setting it on your smartphone.
+
+    * **Pick image from gallery**, you can select an image from the gallery in preparation for uploading an image to detect malignant or benign skin cancer.
+
+    * **Take an image from camera**, you can take image from camera in preparation for uploading an image to detect malignant or benign skin cancer.
+
+    * **Send image to the cloud to get prediction**, after you prepare the image, you can click the process button to send the image and detect the image is benign or malignant skin cancer
+
+    * **Find nearby hospitals**, You can see the nearest hospital from your location , This is useful for helping you find the nearest hospital in your location so that it is faster to get the first treatment / examination.
+
+    * **Skin cancer and skin care related article**,  in this application you can read articles about skin cancer
 
 
+* #### Dependencies :
+    - [Lifecycle & Livedata](https://developer.android.com/jetpack/androidx/releases/lifecycle)
+    - [Navigation Component](https://developer.android.com/jetpack/androidx/releases/navigation)
+    - [kotlinx-coroutines](https://developer.android.com/kotlin/coroutines)
+    - [Retrofit 2](https://square.github.io/retrofit/)
+    - [Glide](https://github.com/bumptech/glide)
+    - [Material Show Case](https://github.com/deano2390/MaterialShowcaseView)
+    - [Ok Http 3](https://square.github.io/okhttp/)
+    - [Air Bnb Lottie](https://airbnb.io/lottie/#/)
+    - [Google Play services Maps](https://developers.google.com/maps/documentation/android-sdk/get-api-key)
+
+  ### Getting Started Application
+
+    - ### Prerequisites
+        - ##### Tools Sofware
+          1. Android Studio at least version 4.1. [Android Studio](https://developer.android.com/studio)
+          2. JRE (Java Runtime Environment) or JDK (Java Development Kit).
+
+    - ### Installation
+        1. Get a free API Key at [Google Maps Platform](https://developers.google.com/maps/documentation/android-sdk/get-api-key)
+        2. Clone this repository and import into Android Studio
+            ```
+               https://github.com/faniabdullah/bangkit-final-project.git
+            ``` 
+        4. Enter your API in buildConfigField `build.graddle`
+           ``` defaultConfig {
+              buildConfigField("String", "MAPS_TOKEN", '"Your Api Key"')}
+           ```
+  ## Acknowledgements
+    * [Clean Architecture Guide](https://developer.android.com/jetpack/guide)
+    * [Android Application Fundamental](https://developer.android.com/guide/components/fundamentals)
+    * [Android Jetpack Pro](https://developer.android.com/jetpack)
+    * [Dependency injection](https://developer.android.com/training/dependency-injection)
+    * [Lottie Animation AirBnb ](https://choosealicense.com)
+
+
+## Cloud Computing Documentation
+
+- ### 1. Write the Flask server app using Python
+    - Save the model in '.h5' format in the same directory as `main.py`
+    - Load the model and write Flask code in `main.py`
+    - Test the Flask server locally by running `main.py`, copy the assigned local URL to `test.py` then run it with test images.
+- ### 2. Setup Google Cloud
+    - Enable Cloud Run and Cloud Build API
+- ### 3. Install and init Google Cloud SDK
+    - https://cloud.google.com/sdk/docs/install
+
+- ### 4. Dockerfile, requirements.txt, .dockerignore
+    - https://cloud.google.com/run/docs/quickstarts/build-and-deploy#containerizing
+- ### 5. Cloud build & deploy
+    ```
+    gcloud builds submit --tag gcr.io/just-program-311914/cancerprediction
+    ```
+
+    ```
+    gcloud run deploy --image gcr.io/just-program-311914/cancerprediction --platform managed
+    ```
+
+- ### Test
+
+    - Test the code with `test/test.py` with the Cloud Build image URL
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+<p align="center"> 
+    <img src="https://media.giphy.com/media/jNCU8W4WuolTGeNHgP/giphy.gif"
+        alt="SplashScreen"    
+        style="margin-right: 10px;"    
+        width="150" />
+    <img src="https://media.giphy.com/media/k8Yp7JzdZkjlOEvRxQ/giphy.gif"
+        alt="Create Image"    
+        style="margin-right: 10px;"    
+        width="150" />
+    <img src="https://media.giphy.com/media/muOvgYcShlIwuMEdph/giphy.gif"
+        alt="Send Image"    
+        style="margin-right: 10px;"    
+        width="150" />
+    <img src="https://media.giphy.com/media/2fOFDiROVCK5eCMMLw/giphy.gif"
+        alt="Nearest Hospital"    
+        style="margin-right: 10px;"    
+        width="150" />
+    <img src="https://media.giphy.com/media/n8iBaoVwxexcsLgSXn/giphy.gif"
+        alt="Article"    
+        style="margin-right: 10px;"    
+        width="150" />
+</p>
 
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -146,70 +233,42 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- LICENSE -->
+## License
 
+Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+[Rheivant Bosco Theoffilus ](https://www.linkedin.com/in/rheivant-bosco-theoffilus-1839991b8/) - rheivant4@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+[Fani Abdullah ](https://www.linkedin.com/in/fani-abdullah/) - faniabdullah27@gmail.com
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+[Saharudin](#) -  saharudinsh98@gmail.com
 
+[Auzan Widhatama](https://www.linkedin.com/in/auzan-widhatama-7986ba16b/) -widhatamaauzan@gmail.com
 
+[Muhammad Naufal  ](https://www.linkedin.com/in/muhammad-naufal-9745b2175/) - mnaufal0999@gmail.com
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+[Imam Lutfi Rahmatullah  ](https://www.linkedin.com/in/imam-lutfi-r-27980711a/) - lutfi640@gmail.com
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/faniabdullah/bangkit-final-project.svg?style=for-the-badge
+[contributors-url]: https://github.com/faniabdullah/bangkit-final-project/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/faniabdullah/bangkit-final-project.svg?style=for-the-badge
+[forks-url]: https://github.com/faniabdullah/bangkit-final-project/network/members
+[stars-shield]: https://img.shields.io/github/stars/faniabdullah/bangkit-final-project.svg?style=for-the-badge
+[stars-url]: https://github.com/faniabdullah/bangkit-final-project/stargazers
+[issues-shield]: https://img.shields.io/github/issues/faniabdullah/bangkit-final-project.svg?style=for-the-badge
+[issues-url]: https://github.com/faniabdullah/bangkit-final-project/issues
+[license-shield]: https://img.shields.io/github/license/faniabdullah/bangkit-final-project.svg?style=for-the-badge
+[license-url]: https://github.com/faniabdullah/bangkit-final-project/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
