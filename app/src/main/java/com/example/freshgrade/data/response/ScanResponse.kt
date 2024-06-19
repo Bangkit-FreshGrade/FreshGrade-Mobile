@@ -9,6 +9,7 @@ data class ScanResponse (
     @SerializedName("value") val value: Double,
     @SerializedName("disease") val disease: String,
     @SerializedName("imageUrl") val imageUrl: String?,
+    @SerializedName("desc") val desc: String?,
     @SerializedName("createdById") val createdById: String
 )
 

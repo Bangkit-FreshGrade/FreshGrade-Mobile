@@ -61,15 +61,24 @@ class CameraFragment : Fragment() {
 
         val apiService = ApiConfig.getApiService(requireContext())
 
-        val imageView = binding.palceholderIv
+        val imageView = binding.placeholderIv
+        Log.d(TAG, "onViewCreated: $imageView")
 
-
+        binding.infoIv.setOnClickListener {toggleInfoTvVisibility()}
         binding.cameraBtn.setOnClickListener { openCamera() }
         binding.galleryBtn.setOnClickListener { openGallery() }
         binding.scanBtn.setOnClickListener{
             binding.progressBarScan.visibility = View.VISIBLE
             val multipartBody = convertImageViewToMultipart(imageView, "image")
             predict(apiService,multipartBody)}
+    }
+
+    private fun toggleInfoTvVisibility() {
+        if (binding.infoTv.visibility == View.VISIBLE) {
+            binding.infoTv.visibility = View.GONE
+        } else {
+            binding.infoTv.visibility = View.VISIBLE
+        }
     }
 
     private fun openCamera() {
@@ -87,6 +96,7 @@ class CameraFragment : Fragment() {
         intent.type = "image/*"
         val chooser = Intent.createChooser(intent, "Pick a photo")
         launcherGallery.launch(chooser)
+
     }
 
     private val launcherGallery = registerForActivityResult(
@@ -94,7 +104,9 @@ class CameraFragment : Fragment() {
     ) { result ->
         if (result.resultCode == AppCompatActivity.RESULT_OK) {
             selectedImageUri = result.data?.data as Uri
-            binding.palceholderIv.setImageURI(selectedImageUri)
+            binding.placeholderIv.setImageURI(selectedImageUri)
+            binding.placeholderIv.visibility = View.VISIBLE
+            binding.camTv.visibility = View.GONE
         } else {
             Log.d("Photo Picker", "No media selected")
         }
@@ -110,13 +122,19 @@ class CameraFragment : Fragment() {
                     val uri = getImageUriFromBitmap(bitmap)
                     uri?.let {
                         selectedImageUri = it
-                        Glide.with(this).load(it).into(binding.palceholderIv)
+                        Glide.with(this).load(it).into(binding.placeholderIv)
+                        binding.placeholderIv.visibility = View.VISIBLE
+                        binding.camTv.visibility = View.GONE
+                        Log.d(TAG, "onActivityResult: aman")
                     }
                 }
                 REQUEST_CODE_GALLERY -> {
                     data?.data?.let {
                         selectedImageUri = it
-                        Glide.with(this).load(it).into(binding.palceholderIv)
+                        Glide.with(this).load(it).into(binding.placeholderIv)
+                        binding.placeholderIv.visibility = View.VISIBLE
+                        binding.camTv.visibility = View.GONE
+                        Log.d(TAG, "onActivityResult: aman")
                     }
                 }
             }
@@ -162,12 +180,14 @@ class CameraFragment : Fragment() {
                         putDouble("value", scanResponse?.value ?: 0.0)
                         putString("disease", scanResponse?.disease)
                         putString("imageUrl", scanResponse?.imageUrl)
+                        putString("desc", scanResponse?.desc)
                         putString("createdById", scanResponse?.createdById)
                     }
                     val navController = findNavController()
                     navController.navigate(R.id.action_navigation_camera_to_navigation_result, bundle)
 
                 } else {
+                    binding.progressBarScan.visibility = View.GONE
                     val errorResponse = response.errorBody()?.string()
                     Log.d(TAG, "onResponse: Upload failed: $errorResponse")
                     showToast("Upload failed: $errorResponse")
@@ -175,6 +195,7 @@ class CameraFragment : Fragment() {
             }
 
             override fun onFailure(call: Call<ScanResponse>, t: Throwable) {
+                binding.progressBarScan.visibility = View.GONE
                 Log.d(TAG, "onFailure: Upload error: ${t.message}")
                 showToast("Upload error: ${t.message}")
             }

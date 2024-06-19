@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.freshgrade.R
 import com.example.freshgrade.databinding.FragmentResultBinding
+import com.example.freshgrade.ui.main.MainActivity
 
 @Suppress("DEPRECATION")
 class ResultFragment : Fragment() {
@@ -35,6 +36,11 @@ class ResultFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val profileIv = (activity as? MainActivity)?.getProfileIv()
+        profileIv?.let {
+            it.visibility = View.GONE
+        }
         
         arguments?.let { bundle ->
             val id = bundle.getString("id")
@@ -43,10 +49,15 @@ class ResultFragment : Fragment() {
             val value = bundle.getDouble("value")
             val disease = bundle.getString("disease")
             val imageUrl = bundle.getString("imageUrl")
+            val desc = bundle.getString("desc")
 
             binding.fruitTv.text = fruit
-            binding.valueTv.text = value.toString()
+            binding.valueTv.text = value.toString() + "%"
             binding.diseaseTv.text = disease
+            if (desc != null) {
+                binding.descTv.text = desc
+            } else { binding.descTv.text = "We cant detect any disease"}
+
             setTextColorBasedOnValue(value)
             Glide.with(this).load(imageUrl).into(binding.fruitImg)
         }
