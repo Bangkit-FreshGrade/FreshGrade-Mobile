@@ -64,13 +64,21 @@ class CameraFragment : Fragment() {
         val imageView = binding.placeholderIv
         Log.d(TAG, "onViewCreated: $imageView")
 
-
+        binding.infoIv.setOnClickListener {toggleInfoTvVisibility()}
         binding.cameraBtn.setOnClickListener { openCamera() }
         binding.galleryBtn.setOnClickListener { openGallery() }
         binding.scanBtn.setOnClickListener{
             binding.progressBarScan.visibility = View.VISIBLE
             val multipartBody = convertImageViewToMultipart(imageView, "image")
             predict(apiService,multipartBody)}
+    }
+
+    private fun toggleInfoTvVisibility() {
+        if (binding.infoTv.visibility == View.VISIBLE) {
+            binding.infoTv.visibility = View.GONE
+        } else {
+            binding.infoTv.visibility = View.VISIBLE
+        }
     }
 
     private fun openCamera() {
@@ -172,12 +180,14 @@ class CameraFragment : Fragment() {
                         putDouble("value", scanResponse?.value ?: 0.0)
                         putString("disease", scanResponse?.disease)
                         putString("imageUrl", scanResponse?.imageUrl)
+                        putString("desc", scanResponse?.desc)
                         putString("createdById", scanResponse?.createdById)
                     }
                     val navController = findNavController()
                     navController.navigate(R.id.action_navigation_camera_to_navigation_result, bundle)
 
                 } else {
+                    binding.progressBarScan.visibility = View.GONE
                     val errorResponse = response.errorBody()?.string()
                     Log.d(TAG, "onResponse: Upload failed: $errorResponse")
                     showToast("Upload failed: $errorResponse")
@@ -185,6 +195,7 @@ class CameraFragment : Fragment() {
             }
 
             override fun onFailure(call: Call<ScanResponse>, t: Throwable) {
+                binding.progressBarScan.visibility = View.GONE
                 Log.d(TAG, "onFailure: Upload error: ${t.message}")
                 showToast("Upload error: ${t.message}")
             }

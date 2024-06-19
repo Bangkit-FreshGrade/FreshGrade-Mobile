@@ -4,125 +4,212 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ACE1AF"
+    android:background="@color/primary"
     tools:context=".ui.main.result.ResultFragment">
 
-
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/fruitImg"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:background="@drawable/fruit_img_circle_bg"
-        android:padding="4dp"
-        tools:src="@drawable/car1"
-        tools:ignore="ImageContrastCheck"
-        app:civ_border_color="@color/white"
-        app:civ_border_width="3dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="353dp"
+        android:layout_height="668dp"
+        android:background="@drawable/round_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03"
-        />
+        app:layout_constraintVertical_bias="0.492">
 
-    <TextView
-        android:id="@+id/fruit_tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:textColor="@color/primary"
-        android:gravity="center"
-        android:text="@string/name"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="@id/fruitImg"
-        app:layout_constraintStart_toStartOf="@id/fruitImg"
-        app:layout_constraintTop_toBottomOf="@+id/fruitImg" />
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/value_bg"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/percent_circle_red_bg"
-        app:layout_constraintEnd_toEndOf="@id/fruitImg"
-        app:layout_constraintStart_toStartOf="@id/fruitImg"
-        app:layout_constraintTop_toBottomOf="@id/fruit_tv">
-
-        <TextView
-            android:id="@+id/value_tv"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/circle_bg"
-            android:gravity="center"
-            android:text="0%"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/fruitImg"
+            android:layout_width="141dp"
+            android:layout_height="122dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/car7"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.333" />
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.CornerRadius" />
+
+        <TextView
+            android:id="@+id/fruit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="FruitName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fruitImg" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/value_bg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/percent_circle_red_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fruit_tv">
+
+            <TextView
+                android:id="@+id/value_tv"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/circle_bg"
+                android:gravity="center"
+                android:text="0%"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.333" />
 
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="260dp"
+            android:layout_height="172dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/disease_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/value_bg">
+
+            <TextView
+                android:id="@+id/disease_tv"
+                android:layout_width="236dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="@string/disease_name"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="49dp" />
+
+            <TextView
+                android:id="@+id/desc_tv"
+                android:layout_width="227dp"
+                android:layout_height="84dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/no_disease_detected"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline6"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/scanAgain"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Scan Again"
+            android:textAllCaps="false"
+            android:theme="@style/Theme.FreshGrade.auth"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0.111" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <TextView
-        android:id="@+id/disease_tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:gravity="center"
-        android:text="Disease"
-        android:textColor="@color/primary"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/fruitImg"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@id/fruitImg"
-        app:layout_constraintTop_toBottomOf="@id/value_bg" />
+    <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:id="@+id/fruitImg"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:background="@drawable/fruit_img_circle_bg"-->
+<!--        android:padding="4dp"-->
+<!--        app:civ_border_color="@color/white"-->
+<!--        app:civ_border_width="3dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.107"-->
+<!--        tools:ignore="ImageContrastCheck"-->
+<!--        tools:src="@drawable/car1" />-->
 
-    <Button
-        android:id="@+id/scanAgain"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="448dp"
-        android:text="Scan Again"
-        android:textAllCaps="false"
-        android:theme="@style/Theme.FreshGrade.auth"
-        app:layout_constraintEnd_toEndOf="@+id/fruitImg"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="@+id/fruitImg"
-        app:layout_constraintTop_toBottomOf="@+id/fruitImg" />
+<!--    <TextView-->
+<!--        android:id="@+id/fruit_tv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/name"-->
+<!--        android:textColor="@color/primary"-->
+<!--        android:textSize="25sp"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/fruitImg"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="@id/fruitImg"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/fruitImg" />-->
 
-    <View
-        android:id="@+id/view2"
-        android:layout_width="338dp"
-        android:layout_height="120dp"
-        android:background="@color/primary"
-        app:layout_constraintBottom_toTopOf="@+id/scanAgain"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/disease_tv"
-        app:layout_constraintVertical_bias="1.0"/>
+    <!--    <TextView-->
+<!--        android:id="@+id/disease_tv"-->
+<!--        android:layout_width="337dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Disease"-->
+<!--        android:textColor="@color/primary"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/desc_tv"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/desc_tv"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/value_bg" />-->
 
-    <TextView
-        android:id="@+id/desc_tv"
-        android:layout_width="239dp"
-        android:layout_height="59dp"
-        android:gravity="center"
-        android:text="TextView"
-        android:textColor="@color/on_primary"
-        app:layout_constraintBottom_toTopOf="@+id/scanAgain"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toTopOf="@+id/view2" />
+    <!--    <TextView-->
+<!--        android:id="@+id/desc_tv"-->
+<!--        android:layout_width="338dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:text="cek"-->
+<!--        android:textColor="@color/primary"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/scanAgain"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.506"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/disease_tv"-->
+<!--        app:layout_constraintVertical_bias="0.266" />-->
+
+    <!--    <TextView-->
+<!--        android:id="@+id/desc_tv"-->
+<!--        android:layout_width="239dp"-->
+<!--        android:layout_height="59dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="TextView"-->
+<!--        android:textColor="@color/on_primary"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/scanAgain"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/view2"-->
+<!--        app:layout_constraintHorizontal_bias="0.515"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/view2"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/view2" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

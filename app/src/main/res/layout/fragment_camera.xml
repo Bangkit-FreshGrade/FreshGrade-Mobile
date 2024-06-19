@@ -18,25 +18,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
-    <TextView
-        android:id="@+id/desc_tv"
-        android:layout_width="385dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="12dp"
-        style="@style/RoundedTextViewStyle"
-        android:gravity="center"
-        android:padding="15dp"
-        android:text="@string/info_desc"
-        android:textColor="@color/primary"
-        android:textSize="11sp"
-        android:textStyle="bold"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/placeholder_iv"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline9"
-        app:layout_constraintVertical_bias="0.0" />
-
 
 <!--    <androidx.recyclerview.widget.RecyclerView-->
 <!--        android:id="@+id/carousel_cam_rv"-->
@@ -143,6 +124,24 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+    <TextView
+        android:id="@+id/info_tv"
+        android:visibility="gone"
+        android:layout_width="332dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_bg"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:text="@string/info_desc"
+        android:textColor="@color/forth"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/info_iv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
