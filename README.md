@@ -1,7 +1,6 @@
 
 
-<!-- PROJECT LOGO -->
-![FG](https://imgur.com/dDSU3hD)
+![FG](https://imgur.com/dDSU3hD.png)
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
