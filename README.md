@@ -1,7 +1,7 @@
 
 
 <!-- PROJECT LOGO -->
-![FG](https://raw.githubusercontent.com/Afwann/profile-assets/main/FG.png)
+![FG](https://imgur.com/dDSU3hD)
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
