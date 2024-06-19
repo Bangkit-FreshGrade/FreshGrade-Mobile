@@ -61,7 +61,8 @@ class CameraFragment : Fragment() {
 
         val apiService = ApiConfig.getApiService(requireContext())
 
-        val imageView = binding.palceholderIv
+        val imageView = binding.placeholderIv
+        Log.d(TAG, "onViewCreated: $imageView")
 
 
         binding.cameraBtn.setOnClickListener { openCamera() }
@@ -87,6 +88,7 @@ class CameraFragment : Fragment() {
         intent.type = "image/*"
         val chooser = Intent.createChooser(intent, "Pick a photo")
         launcherGallery.launch(chooser)
+
     }
 
     private val launcherGallery = registerForActivityResult(
@@ -94,7 +96,9 @@ class CameraFragment : Fragment() {
     ) { result ->
         if (result.resultCode == AppCompatActivity.RESULT_OK) {
             selectedImageUri = result.data?.data as Uri
-            binding.palceholderIv.setImageURI(selectedImageUri)
+            binding.placeholderIv.setImageURI(selectedImageUri)
+            binding.placeholderIv.visibility = View.VISIBLE
+            binding.camTv.visibility = View.GONE
         } else {
             Log.d("Photo Picker", "No media selected")
         }
@@ -110,13 +114,19 @@ class CameraFragment : Fragment() {
                     val uri = getImageUriFromBitmap(bitmap)
                     uri?.let {
                         selectedImageUri = it
-                        Glide.with(this).load(it).into(binding.palceholderIv)
+                        Glide.with(this).load(it).into(binding.placeholderIv)
+                        binding.placeholderIv.visibility = View.VISIBLE
+                        binding.camTv.visibility = View.GONE
+                        Log.d(TAG, "onActivityResult: aman")
                     }
                 }
                 REQUEST_CODE_GALLERY -> {
                     data?.data?.let {
                         selectedImageUri = it
-                        Glide.with(this).load(it).into(binding.palceholderIv)
+                        Glide.with(this).load(it).into(binding.placeholderIv)
+                        binding.placeholderIv.visibility = View.VISIBLE
+                        binding.camTv.visibility = View.GONE
+                        Log.d(TAG, "onActivityResult: aman")
                     }
                 }
             }
