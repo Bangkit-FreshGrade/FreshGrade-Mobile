@@ -6,6 +6,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.drawable.BitmapDrawable
+import android.graphics.drawable.Drawable
 import android.net.Uri
 import androidx.fragment.app.viewModels
 import android.os.Bundle
@@ -29,6 +30,7 @@ import com.example.freshgrade.data.api.ApiService
 import com.example.freshgrade.data.repo.UserRepository
 import com.example.freshgrade.data.response.ScanResponse
 import com.example.freshgrade.databinding.FragmentCameraBinding
+import com.google.android.material.imageview.ShapeableImageView
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
@@ -68,9 +70,26 @@ class CameraFragment : Fragment() {
         binding.cameraBtn.setOnClickListener { openCamera() }
         binding.galleryBtn.setOnClickListener { openGallery() }
         binding.scanBtn.setOnClickListener{
-            binding.progressBarScan.visibility = View.VISIBLE
-            val multipartBody = convertImageViewToMultipart(imageView, "image")
-            predict(apiService,multipartBody)}
+            val isDefaultImage = isDefaultImageDisplayed(binding.placeholderIv, R.drawable.car11)
+
+            if(isDefaultImage) {
+                Toast.makeText(requireContext(), "Please Insert Image", Toast.LENGTH_SHORT).show()
+            } else {
+                binding.progressBarScan.visibility = View.VISIBLE
+                val multipartBody = convertImageViewToMultipart(imageView, "image")
+                predict(apiService,multipartBody)}
+            }
+
+
+    }
+
+    private fun isDefaultImageDisplayed(imageView: ShapeableImageView, defaultDrawableResId: Int): Boolean {
+        val currentDrawable: Drawable? = imageView.drawable
+        val defaultDrawable: Drawable? = ContextCompat.getDrawable(requireContext(), defaultDrawableResId)
+
+        return currentDrawable != null && currentDrawable.constantState != null
+                && defaultDrawable != null && defaultDrawable.constantState != null
+                && currentDrawable.constantState == defaultDrawable.constantState
     }
 
     private fun toggleInfoTvVisibility() {
